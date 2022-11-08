@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.21eaae9a.css",
-    "main.js": "/static/js/main.628c8f16.js",
-    "static/js/787.84f719dc.chunk.js": "/static/js/787.84f719dc.chunk.js",
-    "static/media/JohnDeere-Background2.jpg": "/static/media/JohnDeere-Background2.5a6b71abc1924cba4272.jpg",
-    "static/media/android-chrome-512x512.png": "/static/media/android-chrome-512x512.5d2da5ec0d159a0736ab.png",
-    "index.html": "/index.html",
-    "main.21eaae9a.css.map": "/static/css/main.21eaae9a.css.map",
-    "main.628c8f16.js.map": "/static/js/main.628c8f16.js.map",
-    "787.84f719dc.chunk.js.map": "/static/js/787.84f719dc.chunk.js.map"
+    "main.css": "/prototyp_2.0/static/css/main.e1a93586.css",
+    "main.js": "/prototyp_2.0/static/js/main.2353086c.js",
+    "static/js/787.84f719dc.chunk.js": "/prototyp_2.0/static/js/787.84f719dc.chunk.js",
+    "static/media/JohnDeere-Background2.jpg": "/prototyp_2.0/static/media/JohnDeere-Background2.5a6b71abc1924cba4272.jpg",
+    "static/media/android-chrome-512x512.png": "/prototyp_2.0/static/media/android-chrome-512x512.5d2da5ec0d159a0736ab.png",
+    "index.html": "/prototyp_2.0/index.html",
+    "main.e1a93586.css.map": "/prototyp_2.0/static/css/main.e1a93586.css.map",
+    "main.2353086c.js.map": "/prototyp_2.0/static/js/main.2353086c.js.map",
+    "787.84f719dc.chunk.js.map": "/prototyp_2.0/static/js/787.84f719dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21eaae9a.css",
-    "static/js/main.628c8f16.js"
+    "static/css/main.e1a93586.css",
+    "static/js/main.2353086c.js"
   ]
 }
