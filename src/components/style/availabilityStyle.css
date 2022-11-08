@@ -1,0 +1,60 @@
+.avalForm{
+    display: flex;
+    margin-left: 4%;
+}
+
+.avalForm-inner{
+    display: block;
+}
+
+.avalForm-group{
+    display: block;
+}
+
+.avalH2{
+    margin-top: 50px;
+}
+
+.avalLabel{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.avalForm-group:focus-within .avalLabel{
+    color: rgb(242, 169, 0);
+}
+
+.avalInput{
+    margin-bottom: 10px;
+}
+
+.avalInput{
+    display: block;
+    width: 80%;
+    padding: 6px 15px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.4s;
+    border-color: rgb(195, 189, 189);
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.avalInput:focus{
+    background-color: rgb(240, 240, 240);
+}
+
+.avalCheckButton{
+    background-color: rgb(255, 222, 0);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
+}
+.avalCheckButton:hover{
+    background-color: rgba(207, 180, 6, 0.925);
+}

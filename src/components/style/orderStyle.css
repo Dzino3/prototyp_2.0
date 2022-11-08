@@ -1,0 +1,97 @@
+.orderForm{
+    display: flex;
+    margin-left: 4%;
+}
+
+.orderForm-inner{
+    display: block;
+}
+
+.order-inner-inner{
+    display: flex;
+    
+}
+
+.orderForm-group{
+    display: block;
+}
+
+.orderLabel{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.orderForm-group:focus-within .orderLabel{
+    color: rgb(242, 169, 0);
+}
+
+.orderInput{
+    margin-bottom: 10px;
+}
+
+.orderInput{
+    display: block;
+    width: 80%;
+    padding: 6px 15px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.4s;
+    border-color: rgb(195, 189, 189);
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.orderInput:focus{
+    background-color: rgb(240, 240, 240);
+}
+
+.checkButton{
+    background-color: rgb(255, 222, 0);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
+}
+.checkButton:hover{
+    background-color: rgba(207, 180, 6, 0.925);
+}
+
+/*
+    INFO STYLE
+*/
+.orderInfo{
+    display: flex;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    background-color: rgb(229, 230, 230);
+    border-radius: 15px;
+}
+
+.reqInfo{
+    padding: 10px;
+    display: block;
+    margin-left: 1rem;  
+}
+
+.orderH3{
+    margin-left: 1rem;
+}
+.orderH3i{
+    margin-left: 1rem;
+    margin-bottom: 22px;
+}
+
+.reqInfoOut{
+    display: block;
+    margin-bottom: 1rem;
+    background-color: white;
+    height: 17px;
+    
+}
+
+
+
