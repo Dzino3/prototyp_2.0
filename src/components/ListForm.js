@@ -5,7 +5,7 @@ function ListForm(user) {
   return (
     <>
       <div className='listDiv'>
-        <h2 className='listH2'>Order list</h2>
+        
 
       </div>
 

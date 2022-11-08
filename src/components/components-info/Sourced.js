@@ -21,7 +21,6 @@ function Sourced(sourcedInfo) {
                 <label className='reqInfo'>Req. ship date:</label>
                 <label className='reqInfo'>Pres date:</label>
                 <label className='reqInfo'>Qty.:</label>
-                <label className='reqInfo'>CC:</label>
             </div>
             <div className='infoSourced'>
                 <h3 className='orderH3i'>Info</h3>
@@ -38,7 +37,7 @@ function Sourced(sourcedInfo) {
                 <input type='text' name='info' id='Req. ship dateinfo' className='reqInfoOut' placeholder={sourcedInfo.sourcedInfo.REQ_SHIP_DATE} disabled></input>
                 <input type='text' name='info' id='Pres dateinfo' className='reqInfoOut' placeholder={sourcedInfo.sourcedInfo.PRES_DATE} disabled></input>
                 <input type='text' name='info' id='Qtyinfo' className='reqInfoOut' placeholder={sourcedInfo.sourcedInfo.QTY} disabled></input>
-                <input type='text' name='info' id='CCinfo' className='reqInfoOut' placeholder={sourcedInfo.sourcedInfo.CC} disabled></input>
+                
             </div>
         </div>
     </div>

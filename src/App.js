@@ -9,6 +9,7 @@ import FooterForm from './components/FooterForm';
 import './components/style/appStyle.css';
 import Axios from "axios";
 
+
 function App() {
   const adminUser = { name: "admin123" }
   const [user, setUser] = useState({ acc: "" , unit: ""});
@@ -40,10 +41,13 @@ function App() {
 
   return (
     <>
+      
       <div className="App">
         {(user.acc !== "") ? (
           <div className='website'>
-            <NavbarForm Logout={Logout}></NavbarForm>
+            <div>
+              <NavbarForm Logout={Logout}/>
+            </div>
             <div className='pageContent'>
               <HeroForm user={user}></HeroForm>
               <div className='mainContent'>

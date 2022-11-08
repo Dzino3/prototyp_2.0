@@ -1,5 +1,4 @@
 {
-  "homepage": "https://dzino3.github.io/prototyp_2.0/",
   "name": "johndeere_web",
   "version": "0.1.0",
   "private": true,
@@ -10,13 +9,12 @@
     "axios": "^1.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject"
@@ -40,7 +38,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.18.6",
-    "gh-pages": "^4.0.0"
+    "@babel/preset-react": "^7.18.6"
   }
 }
