@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering HeroForm should render HeroForm with empty user 1`] = `
+<div
+  className="heroDiv"
+>
+  <h1>
+    Welcome, 
+    <span />
+  </h1>
+</div>
+`;
+
+exports[`Rendering HeroForm should render HeroForm with user Hallo42 1`] = `
+<div
+  className="heroDiv"
+>
+  <h1>
+    Welcome, 
+    <span>
+      Hallo42
+    </span>
+  </h1>
+</div>
+`;

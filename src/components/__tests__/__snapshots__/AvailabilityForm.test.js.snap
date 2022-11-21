@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AvailabilityForm Rendering should render AvailabilityForm with Availability 1`] = `
+<form
+  className="avalForm"
+>
+  <div
+    className="avalForm-inner"
+  >
+    <div
+      className="avalForm-group"
+    >
+      <h2
+        className="avalH2"
+      >
+        Availability
+      </h2>
+      <label
+        className="avalLabel"
+      >
+        Base Code:
+      </label>
+      <input
+        className="avalInput"
+        id="base_code"
+        name="base_code"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <input
+        className="avalCheckButton"
+        onClick={[Function]}
+        type="button"
+        value="Check"
+      />
+    </div>
+  </div>
+</form>
+`;
+
+exports[`AvailabilityForm Rendering should render AvailabilityForm with no Availability 1`] = `
+<form
+  className="avalForm"
+>
+  <div
+    className="avalForm-inner"
+  >
+    <div
+      className="avalForm-group"
+    >
+      <h2
+        className="avalH2"
+      >
+        Availability
+      </h2>
+      <label
+        className="avalLabel"
+      >
+        Base Code:
+      </label>
+      <input
+        className="avalInput"
+        id="base_code"
+        name="base_code"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <input
+        className="avalCheckButton"
+        onClick={[Function]}
+        type="button"
+        value="Check"
+      />
+    </div>
+  </div>
+</form>
+`;

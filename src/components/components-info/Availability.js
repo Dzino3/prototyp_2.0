@@ -4,7 +4,7 @@ function Availability(produktInfo) {
   return (
     <div>
       
-      <h2>{produktInfo.produktInfo.PRODUCT}</h2>
+      <h2 className='avalH22'>{produktInfo.produktInfo.PRODUCT}</h2>
         <div className='orderInfo'>
             <div className='infoSourcedLabel'>
                 <h3 className='orderH3'>Availability</h3>

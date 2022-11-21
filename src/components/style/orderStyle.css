@@ -1,6 +1,7 @@
 .orderForm{
     display: flex;
     margin-left: 4%;
+    justify-content: center;
 }
 
 .orderForm-inner{
@@ -8,12 +9,20 @@
 }
 
 .order-inner-inner{
-    display: flex;
-    
+    display: block;
+}
+
+.orderForm-groupOut{
+    display: flex; 
 }
 
 .orderForm-group{
     display: block;
+    margin-left: 50px;
+}
+
+.orderForm-groupButton{
+    display: flex;
 }
 
 .orderLabel{
@@ -24,7 +33,7 @@
 }
 
 .orderForm-group:focus-within .orderLabel{
-    color: rgb(242, 169, 0);
+    color: rgb(54, 124, 43);
 }
 
 .orderInput{
@@ -40,6 +49,7 @@
     transition: 0.4s;
     border-color: rgb(195, 189, 189);
     margin-bottom: 15px;
+    margin-right: 20px;
     font-size: 14px;
 }
 .orderInput:focus{
@@ -50,10 +60,12 @@
     background-color: rgb(255, 222, 0);
     display: inline-block;
     padding: 10px 15px;
+    height: 30px;
     border-radius: 8px;
     font-weight: bold;
     border: none;
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
+    height: 35px;
 }
 .checkButton:hover{
     background-color: rgba(207, 180, 6, 0.925);
@@ -69,6 +81,7 @@
     margin-left: 4rem;
     background-color: rgb(229, 230, 230);
     border-radius: 15px;
+    margin-bottom: 40px;
 }
 
 .reqInfo{
@@ -92,6 +105,12 @@
     height: 17px;
     
 }
+
+.orderItem{
+    margin-left: 4%;
+    width: 91%;
+}
+
 
 
 

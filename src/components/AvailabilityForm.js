@@ -27,12 +27,13 @@ function AvailabilityForm({user}) {
     <form className='avalForm'>
 
     <div className='avalForm-inner'>
-        <h2 className='avalH2'>Availability</h2>
+        
         <div className='avalForm-group'>
+            <h2 className='avalH2'>Availability</h2>
             <label className='avalLabel'>Base Code:</label>
             <input className='avalInput' type="text" name='base_code' id='base_code' onChange={e => setEnteredBaseCode(e.target.value)} value={enteredBaseCode}></input>
+            <input className='avalCheckButton' type="button" value="Check" onClick={LookForProduct}></input>
         </div>
-        <input className='avalCheckButton' type="button" value="CHECK" onClick={LookForProduct}></input>
         {produktInfo.length !== 0 ? <Availability produktInfo={produktInfo}></Availability> : <></>}
     </div>
     </form>

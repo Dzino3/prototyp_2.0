@@ -4,10 +4,10 @@ function Sourced(sourcedInfo) {
   return (
     <div>
       
-      <h2>{sourcedInfo.sourcedInfo.ORDER_NUMBER}</h2>
         <div className='orderInfo'>
             <div className='infoSourcedLabel'>
                 <h3 className='orderH3'>Sourced</h3>
+                <label className='reqInfo'>ACC:</label>
                 <label className='reqInfo'>Base Code Description:</label>
                 <label className='reqInfo'>Factory Delivery:</label>
                 <label className='reqInfo'>Original Factory Delivery:</label>
@@ -24,6 +24,7 @@ function Sourced(sourcedInfo) {
             </div>
             <div className='infoSourced'>
                 <h3 className='orderH3i'>Info</h3>
+                <input type='text' name='info' id='ACCinfo' className='reqInfoOut' placeholder={sourcedInfo.sourcedInfo.ACC} disabled></input>
                 <input type='text' name='info' id='Base Code Descriptioninfo' className='reqInfoOut' placeholder={sourcedInfo.sourcedInfo.BASE_CODE_DESCR} disabled></input>
                 <input type='text' name='info' id='FDDinfo' className='reqInfoOut' placeholder={sourcedInfo.sourcedInfo.FDD} disabled></input>
                 <input type='text' name='info' id='OFDDinfo' className='reqInfoOut' placeholder={sourcedInfo.sourcedInfo.OFDD} disabled></input>

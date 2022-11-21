@@ -12,7 +12,7 @@ import Axios from "axios";
 
 function App() {
   const adminUser = { name: "admin123" }
-  const [user, setUser] = useState({ acc: "" , unit: ""});
+  const [user, setUser] = useState({ acc: '' , unit: '', dealer: ''});
   const [error, setError] = useState("");
 
 
@@ -29,7 +29,8 @@ function App() {
 
         setUser({
           acc: details.acc,
-          unit:  details.unit
+          unit:  details.unit,
+          dealer: response.data[0].DEALER
         });
       }
     });
@@ -49,10 +50,11 @@ function App() {
               <NavbarForm Logout={Logout}/>
             </div>
             <div className='pageContent'>
-              <HeroForm user={user}></HeroForm>
+              
               <div className='mainContent'>
-                <OrderForm user={user} error={error} setError={setError}></OrderForm>
+                <HeroForm user={user}></HeroForm>
                 <AvailabilityForm user={user}></AvailabilityForm>
+                <OrderForm user={user} error={error} setError={setError}></OrderForm>
                 <ListForm user={user}></ListForm>
               </div>
             </div>

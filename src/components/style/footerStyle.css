@@ -1,0 +1,25 @@
+.footer{
+    background-color: rgb(54, 124, 43);
+    padding: 20px;
+    margin-top: 10px;
+    
+}
+.footerLinks{
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.footerLinks a{
+    margin-right: 90px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 35px;
+}

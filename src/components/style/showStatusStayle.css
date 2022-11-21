@@ -1,32 +1,31 @@
-.custom-select {
+.custom-select-Show {
     position: relative;
-    width: 160px;
-    
+    width: 120px;
 }
 
-.radios input:hover{
+.radios-Show input:hover{
     color: rgb(54, 124, 43);
 }
 
-.radios input{
+.radios-Show input{
     font-weight: bold;
 }
   
-.custom-select[open] {
+.custom-select-Show[open] {
     z-index: 1;
 }
   
-.radios {
+.radios-Show {
     cursor: pointer;
     border-radius: 5px;
     list-style: none;
 }
   
-.radios::-webkit-details-marker {
+.radios-Show::-webkit-details-marker {
     display: none;
 }
   
-.custom-select[open] .radios:before {
+.custom-select-Show[open] .radios-Show:before {
     content: '';
     display: block;
     width: 100vw;
@@ -37,7 +36,7 @@
     left: 0;
 }
   
-.radios:after {
+.radios-Show:after {
     content: '';
     display: inline-block;
     float: right;
@@ -51,79 +50,77 @@
     transition: transform ease-in-out 100ms
 }
   
-.radios:focus {
+.radios-Show:focus {
     outline: none;
 }
   
-.custom-select[open] .radios:after {
+.custom-select-Show[open] .radios-Show:after {
     transform: rotate(-45deg) translate(0%, 0%);
 }
   
-.list {
+.list-Show {
     width: 100%;
-    background: #ddd;
+    background: white;
     position: absolute;
     top: calc(100% + .5rem);
     
     padding: 1rem;
-    width: 210px;
-    margin-left: -25px;
+    width: 220px;
+    margin-left: -50px;
+    margin-top: 3px;
+    
 
     box-sizing: border-box;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);;
     border-radius: 5px;
-    max-height: 200px;
+    max-height: 250px;
     overflow-y: auto;
 }
   
-.kundenLi {
+.kundenLi-Show {
     margin: 0;
     margin-left: 10px;
     padding: 1rem 0;
     border-bottom: 1px solid #ccc;
 }
-
-.kundenLi a {
-    color: black;
-    text-decoration: none;
-}
-
-.kundenLi label a:hover{
-    color: rgb(54, 124, 43);
-}
   
-.kundenLi:first-child {
+.kundenLi-Show:first-child {
     padding-top: 0;
 }
   
-.kundenLi:last-child {
-    padding-bottom: 0;
+.kundenLi-Show:last-child {
+    padding-bottom: 0px;
     border-bottom: none;
 }
   
   /* FAKE SELECT */
   
-.radios.radios {
-    counter-reset: radios;
+.radios-Show.radios-Show {
+    counter-reset: radios-Show;
 }
   
-.radios.radios:before {
+.radios-Show.radios:before {
     content: var(--selection);
 }
+
   
-.kundenInput[type=radio] {
-    counter-increment: radios;
+.kundenInput-Show[type=radio] {
+    counter-increment: radios-Show;
     appearance: none;
     display: none;
 }
-  
-.kundenInput[type=radio]:checked {
+
+.kundenInput-Show[type=radio]:checked {
     display: inline;
    --display: block;
 }
   
-.kundenInput[type=radio]:after {
+.kundenInput-Show[type=radio]:after {
     content: attr(title);
     display: inline;
     font-size: 1rem;
 }
+
+  
   

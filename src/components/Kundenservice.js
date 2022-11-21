@@ -31,7 +31,7 @@ function Kundenservice() {
         </li>
         <li className='kundenLi'>
           <label for="item4">
-            <a target="blank" href='https://www.deere.de/de/datenschutzerkl%C3%A4rung/'>Privacy policy</a>
+            <a target="blank" href='https://www.deere.de/de/datenschutzerkl%C3%A4rung/'>Privacy and Data</a>
             </label>
         </li>
         </ul>

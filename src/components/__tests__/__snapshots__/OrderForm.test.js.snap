@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderForm Rendering should render OrderForm with empty user 1`] = `
+[
+  <form
+    className="orderForm"
+  >
+    <div
+      className="orderForm-inner"
+    >
+      <div
+        className="order-inner-inner"
+      >
+        <div
+          className="orderForm-groupOut"
+        >
+          <h2>
+            Search order
+          </h2>
+          <div
+            className="orderForm-group"
+          >
+            <label
+              className="orderLabel"
+            >
+              Order number:
+            </label>
+            <div
+              className="orderForm-groupButton"
+            >
+              <input
+                className="orderInput"
+                id="bestellnummer"
+                name="bestellnummer"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+              <input
+                className="checkButton"
+                onClick={[Function]}
+                type="button"
+                value="Check"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>,
+  <div
+    className="orderItem"
+  />,
+]
+`;
+
+exports[`OrderForm Rendering should render OrderForm with user Hallo42 1`] = `
+[
+  <form
+    className="orderForm"
+  >
+    <div
+      className="orderForm-inner"
+    >
+      <div
+        className="order-inner-inner"
+      >
+        <div
+          className="orderForm-groupOut"
+        >
+          <h2>
+            Search order
+          </h2>
+          <div
+            className="orderForm-group"
+          >
+            <label
+              className="orderLabel"
+            >
+              Order number:
+            </label>
+            <div
+              className="orderForm-groupButton"
+            >
+              <input
+                className="orderInput"
+                id="bestellnummer"
+                name="bestellnummer"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+              <input
+                className="checkButton"
+                onClick={[Function]}
+                type="button"
+                value="Check"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>,
+  <div
+    className="orderItem"
+  />,
+]
+`;
