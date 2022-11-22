@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style/listStyle.css';
 import './style/showStatusStayle.css';
+import './style/filterStyle.css'
 import ListItem from './components-info/OrderListItem';
 import Checkbox from './Checkbox';
 import Axios from 'axios';
@@ -84,28 +85,28 @@ function ListForm({ user }) {
 
 
         <div className="checkboxDiv">
-          <details className="custom-select-Show">
-            <summary className="radios-Show">
-              <input className='kundenInput-Show' type="radio" name="item-Show" id="default-Show" title="Sort By" checked />
+          <details className="custom-select-Show-2">
+            <summary className="radios-Show-2">
+              <input className='kundenInput-Show-2' type="radio" name="item-Show-2" id="default-Show-2" title="Sort By" checked />
             </summary>
-            <ul className="list-Show">
-              <li className='kundenLi-Show'>
-                <label for="item1-Sort">
+            <ul className="list-Show-2">
+              <li className='kundenLi-Show-2'>
+                <label for="item1-Sort-2">
                   <input type="button" value="Order Number ↓" onClick={()=>addSort("order_number", false)}></input>
                 </label>
               </li>
-              <li className='kundenLi-Show'>
-                <label for="item2-Sort">
+              <li className='kundenLi-Show-2'>
+                <label for="item2-Sort-2">
                   <input type="button" value="Order Number ↑" onClick={()=>addSort("order_number", true)}></input>
                 </label>
               </li>
-              <li className='kundenLi-Show'>
-                <label for="item3-Sort">
+              <li className='kundenLi-Show-2'>
+                <label for="item3-Sort-2">
                 <input type="button" value="Model ↓" onClick={()=>addSort("base_code_description", false)}></input>
                 </label>
               </li>
-              <li className='kundenLi-Show'>
-                <label for="item4-Sort">
+              <li className='kundenLi-Show-2'>
+                <label for="item4-Sort-2">
                 <input type="button" value="Model ↑" onClick={()=>addSort("base_code_description", true)}></input>
                 </label>
               </li>
