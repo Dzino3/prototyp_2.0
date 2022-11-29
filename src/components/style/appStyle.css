@@ -6,6 +6,25 @@
     background-color: rgb(240, 240, 240);
     width: 80%;
     margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     border-radius: 20px;
     box-shadow:2px 5px 5px 5px rgba(0, 0, 0, 0.183);
+}
+
+
+@media only screen and (max-width : 480px) {
+    .App{
+        font-family: sans-serif;
+    }
+    
+    .mainContent{
+        background-color: rgb(240, 240, 240);
+        width: 94%;
+        margin-left: 3%;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        border-radius: 20px;
+        box-shadow:2px 5px 5px 5px rgba(0, 0, 0, 0.183);
+    }
 }

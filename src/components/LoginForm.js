@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './style/loginStyle.css'
+import { useTranslation } from 'react-i18next'
 
 
 
+function LoginForm({Login, error, t}) {
 
-function LoginForm({Login, error}) {
     const [details, setDetails] = useState({acc: "", unit: ""});
-
     const submitHandler = e => {
         console.log(details.unit)
         e.preventDefault();
@@ -17,14 +17,14 @@ function LoginForm({Login, error}) {
   return (
     <div className='loginFormWhole'>
     <div className='backImg'></div>
-    <div className='fuckYou'>
+    <div className='loginDivnt'>
     <div className='logoImg'></div>
     <form onSubmit={submitHandler} className='loginForm'>
         <div className='form-inner'>
-        <h2 className='loginH2'>Welcome to the Tracker</h2>
+        <h2 className='loginH2'>{t('loginWelcome')}</h2>
             
         <select className='countrySelect' id="country" name="country" onChange={e => setDetails({...details, unit: e.target.value})}>
-            <option>Select your (unit) country</option>
+            <option>{t('loginSelect')}</option>
             
             <option className='unitOption' value="48">(48) Austria</option>
             <option className='unitOption' value="48">(48) Belgium</option>
@@ -68,9 +68,9 @@ function LoginForm({Login, error}) {
             
             <div className='loginForm-group'>
                 {(error !== "") ? (<div className='error'>{error}</div>) : ""}
-                <label className='loginLabel'>Account number:</label>
+                <label className='loginLabel'>{t('loginAccN')}</label>
                 <input type="text" name='acc' id='acc'className='loginInput' onChange={e => setDetails({...details, acc: e.target.value})} value={details.acc}></input>
-                <input type="submit" value="Login" className='loginButton'></input>
+                <input type="submit" value={t('loginButton')} className='loginButton'></input>
             </div>
             
         </div>

@@ -1,10 +1,10 @@
 import React, { useReducer } from 'react'
 import './style/heroStyle.css';
 
-function HeroForm({user}) {
+function HeroForm({user , t}) {
   return (
     <div className='heroDiv'>
-        <h1>Welcome, <span>{user.dealer}</span></h1>
+        <h1>{t('heroWelcome')} <span>{user.dealer}</span></h1>
     </div>
   )
 }

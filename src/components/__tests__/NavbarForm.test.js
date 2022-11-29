@@ -15,7 +15,7 @@ import renderer from 'react-test-renderer';
 //     });
 // })
 
-describe(`NavbarForm Rendering`, () => {
+describe(`Rendering NavbarForm`, () => {
 
     test('should render NavbarForm', function () {
         let tree = renderer.create(

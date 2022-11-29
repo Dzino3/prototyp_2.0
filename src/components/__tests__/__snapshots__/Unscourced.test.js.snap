@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering Unsourced should render OrderListItemSourced with no unsourcedInfo 1`] = `
+<div>
+  <div
+    className="orderInfo"
+  >
+    <div
+      className="infoUnsourcedLabel"
+    >
+      <h3
+        className="orderH3"
+      >
+        Unsourced
+      </h3>
+      <label
+        className="reqInfo"
+      >
+        RDD:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Req. ship date:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Pres date:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Base Code:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Qty.:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Order entry date:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Order Source date:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Order staus:
+      </label>
+    </div>
+    <div
+      className="infoUnsourced"
+    >
+      <h3
+        className="orderH3i"
+      >
+        Info
+      </h3>
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Rendering Unsourced should render Unsourced with UnsourcedInfo unsourced 1`] = `
+<div>
+  <div
+    className="orderInfo"
+  >
+    <div
+      className="infoUnsourcedLabel"
+    >
+      <h3
+        className="orderH3"
+      >
+        Unsourced
+      </h3>
+      <label
+        className="reqInfo"
+      >
+        RDD:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Req. ship date:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Pres date:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Base Code:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Qty.:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Order entry date:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Order Source date:
+      </label>
+      <label
+        className="reqInfo"
+      >
+        Order staus:
+      </label>
+    </div>
+    <div
+      className="infoUnsourced"
+    >
+      <h3
+        className="orderH3i"
+      >
+        Info
+      </h3>
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+      <input
+        className="reqInfoOut"
+        disabled={true}
+        id="ACCinfo"
+        name="info"
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering OrderListItemCanceled should render OrderListItemCanceled with item CANCELED 1`] = `
+<div
+  className="orderListItemCanceled"
+>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      RDD: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Req. ship date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Order entry date: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Date of cancellation:
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Cancellation Moth: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Reason: 
+    </p>
+    <p />
+  </div>
+</div>
+`;
+
+exports[`Rendering OrderListItemCanceled should render OrderListItemCanceled with no item 1`] = `
+<div
+  className="orderListItemCanceled"
+>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      RDD: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Req. ship date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Order entry date: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Date of cancellation:
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Cancellation Moth: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Reason: 
+    </p>
+    <p />
+  </div>
+</div>
+`;

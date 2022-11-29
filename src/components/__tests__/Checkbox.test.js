@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import { useState } from "react";
 
-describe(`Checkbox Rendering`, () => {
+describe(`Rendering Checkbox `, () => {
 
     test.skip('should render Checkbox', function () {
         // let tree = renderer.create(<App/>);

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering OrderListItemSourced should render OrderListItemSourced with item UNSOURCED 1`] = `
+<div
+  className="orderListItemUnsourced"
+>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Factory delivery date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Order entry date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Order source date: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Order status: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Req. ship date: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Pres. date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Base Code Desciption: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Qty.: 
+    </p>
+    <p />
+  </div>
+</div>
+`;

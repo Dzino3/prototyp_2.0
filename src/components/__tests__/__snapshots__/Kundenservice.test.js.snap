@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Kundenservice Rendering should render Kundenservice 1`] = `
+exports[`Rendering Kundenservice should render Kundenservice 1`] = `
 <details
   className="custom-select"
 >

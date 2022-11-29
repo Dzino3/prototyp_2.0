@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OrderForm Rendering should render OrderForm with empty user 1`] = `
+exports[`Rendering OrderForm should render OrderForm with empty user 1`] = `
 [
   <form
     className="orderForm"
@@ -54,7 +54,7 @@ exports[`OrderForm Rendering should render OrderForm with empty user 1`] = `
 ]
 `;
 
-exports[`OrderForm Rendering should render OrderForm with user Hallo42 1`] = `
+exports[`Rendering OrderForm should render OrderForm with user Hallo42 1`] = `
 [
   <form
     className="orderForm"

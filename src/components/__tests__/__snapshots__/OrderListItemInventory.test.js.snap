@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering OrderListItemInventory should render OrderListItemInventory with item INVENTORY 1`] = `
+<div
+  className="orderListItemInventory"
+>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Factory delivery date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      ADD: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Inv. date: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Billing date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Billing number: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Days on Inv.: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Order status: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Qty.: 
+    </p>
+    <p />
+  </div>
+</div>
+`;
+
+exports[`Rendering OrderListItemInventory should render OrderListItemInventory with no item 1`] = `
+<div
+  className="orderListItemInventory"
+>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Factory delivery date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      ADD: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Inv. date: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Billing date: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Billing number: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Days on Inv.: 
+    </p>
+    <p />
+    <p
+      className="p2"
+    >
+      Order status: 
+    </p>
+    <p />
+  </div>
+  <div
+    className="block"
+  >
+    <p
+      className="p2"
+    >
+      Qty.: 
+    </p>
+    <p />
+  </div>
+</div>
+`;

@@ -1,11 +1,12 @@
 import React from 'react';
 import Kundenservice from './Kundenservice';
 import './style/navbarStyle.css';
-import {Link} from 'react-router-dom';
-import {BrowserRouter as Router, Switch, Route, Routes} from "react-router-dom";
 
 
-function NavbarForm({Logout}) {
+function NavbarForm({Logout, ShowsOrdersFalse, ShowsOrdersTrue , t}) {
+
+
+
   return (
     <>       
       <div className='navbarDiv'>
@@ -13,14 +14,13 @@ function NavbarForm({Logout}) {
           <div className='logoImgNav'></div>
           <nav className='navbarNav'>
             <ul className='navbarUl'>
-              <li className='li'><a>Order</a></li>
-              <li className='li'><a>Availability</a></li>
-              <li className='li'><a>Order List</a></li>
-              <li className='li'><a className='impressum' href='https://www.deere.de/de/impressum/' target="_blank" rel="noopener noreferrer">Impressum</a></li>
-              <li className='li'><Kundenservice></Kundenservice></li>
+              <li className='li'><a onClick={()=>{ShowsOrdersTrue();}}>{t('navbarLabel1')}</a></li>
+              <li className='li'><a onClick={()=>{ShowsOrdersFalse();}}>{t('navbarLabel2')}</a></li>
+              <li className='li'><a className='impressum' href='https://www.deere.de/de/impressum/' target="_blank" rel="noopener noreferrer">{t('navbarLabel3')}</a></li>
+              <li className='li'><Kundenservice t={t}></Kundenservice></li>
             </ul>
           </nav>
-          <button onClick={Logout} className="logoutButton">Logout</button>
+          <button onClick={Logout} className="logoutButton">{t('navbarLabel5')}</button>
         </div>
       </div>
     </>

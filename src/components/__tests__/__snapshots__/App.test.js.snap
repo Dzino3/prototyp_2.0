@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App Rendering should render App 1`] = `
+exports[`Rendering App should render App 1`] = `
 <div
   className="App"
 >

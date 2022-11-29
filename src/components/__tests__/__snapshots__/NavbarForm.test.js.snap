@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavbarForm Rendering should render NavbarForm 1`] = `
+exports[`Rendering NavbarForm should render NavbarForm 1`] = `
 <div
   className="navbarDiv"
 >

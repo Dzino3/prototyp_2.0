@@ -2,7 +2,7 @@ import React from "react";
 import renderer from 'react-test-renderer';
 import OrderForm from "../OrderForm.js";
 
-describe(`OrderForm Rendering`, () => {
+describe(`Rendering OrderForm`, () => {
 
     it('should render OrderForm with user Hallo42', function () {
         let userX = {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AvailabilityForm Rendering should render AvailabilityForm with Availability 1`] = `
+exports[`Rendering AvailabilityForm should render AvailabilityForm with empty 1`] = `
 <form
   className="avalForm"
 >
@@ -39,7 +39,7 @@ exports[`AvailabilityForm Rendering should render AvailabilityForm with Availabi
 </form>
 `;
 
-exports[`AvailabilityForm Rendering should render AvailabilityForm with no Availability 1`] = `
+exports[`Rendering AvailabilityForm should render AvailabilityForm with user Hallo42 1`] = `
 <form
   className="avalForm"
 >

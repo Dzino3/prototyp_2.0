@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FooterForm Rendering should render FooterForm 1`] = `
+exports[`Rendering FooterForm should render FooterForm 1`] = `
 <div
   className="footer"
 >

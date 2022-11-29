@@ -112,7 +112,7 @@
     background-image: url(./pictures/icons/tractor2.webp);
     height: 130px;
     width: 220px;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -241,10 +241,10 @@
     background-color: white;
     display: flex;
     margin-bottom: 20px;
-    padding: 10px;
-    
+    padding: 5px;
+    margin-right: 10px;
     border-radius: 5px;
-    width: 200px;
+    width: 150px;
     justify-content: center;
     border: 2px;
     border-color: black;
@@ -254,11 +254,298 @@
     margin-right: 20px;
 }
 
-.spanLabel{
-    
-}
 
 .checkBoxInput:checked + .spanLabel{
     color: rgb(54, 124, 43);
 }
 
+.listCheckDiv{
+    display: flex;
+}
+
+
+
+/*
+
+------------------------------------------------------------
+MOBIL
+------------------------------------------------------------
+
+
+*/
+
+
+
+@media only screen and (max-width : 480px) {
+    .listDiv{
+        margin-left: 4%;
+    }
+    
+    .listH2{
+        padding: 20px;
+    }
+    
+    
+    /*
+    
+        ORDER LIST ITEM
+    
+    */
+    
+    .wrapper{
+        display: flex;
+    }
+    
+    .accordion{
+        width: 95%;
+    }
+    
+    .item{
+        font-size: 15px;
+        background: white;
+        margin-bottom: 5px;
+        padding: 20px 40px;
+        border-radius: 20px;
+    }
+    .item:hover{
+        background: rgb(251, 251, 251);
+    }
+    
+    .beforeDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .listItemH3{
+        color: rgb(54, 124, 43);
+    }
+    
+    .toggleSpan{
+        font-size: 20px;
+        color: gray;
+    }
+    
+    .afterDiv{
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0,1,0,1);
+    }
+    
+    .afterDivshow{
+        height: auto;
+        max-height: 9999px;
+        transition: all 0.3s cubic-bezier(0,1,0,1);
+    }
+    
+    .orderDiv1{
+        margin-left: -20px;
+        display: flex;
+    }
+    
+    .orderListDivFlex{
+        display: flex;
+        margin-right: 10px;
+        margin-bottom: -10px;
+    }
+    
+    .orderDiv2{
+        display: flex;
+        margin-left: 10px;
+        margin-top: 6px;
+    }
+    .orderStatusDiv{
+        display: flex;
+    }
+    
+    .orderStatusLabel{
+        margin-left: -130px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .orderStatussourced{
+        color: rgb(24, 189, 98);
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .orderStatusunsourced{
+        color: rgb(242, 169, 0);
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .orderStatuscanceled{
+        color: rgb(242, 56, 0);
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .orderStatusinventory{
+        color: rgb(0, 196, 179);
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    
+    .orderImg{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .orderImg2{
+        background-image: url(./pictures/icons/tractor1.webp);
+        height: 130px;
+        width: 220px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .orderBar{
+        background-image: url('./pictures/icons/bar1.png');
+        height: 160px;
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .checkButtonShow{
+        background-color: rgb(255, 222, 0);
+        display: inline-block;
+        padding: 10px 15px;
+        height: 35px;
+        border-radius: 8px;
+        font-weight: bold;
+        border: none;
+        box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
+        margin-top: 38px;
+        margin-bottom: 30px;
+    }
+    
+    .block{
+        display: block;
+    }
+    
+    .p1{
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    .p1Status{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .p2{
+        font-weight: bold;
+        margin-bottom: -13px;
+    }
+    /*
+    
+        ITEM SOURCED
+    
+    */
+    .orderListItemSourced{
+        margin-left: -20px;
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .orderListItemSourced p{
+        margin-right: 20px;
+        display: flex;
+    }
+    
+    
+    /*
+    
+        ITEM UNSOURCED
+    
+    */
+    
+    .orderListItemUnsourced{
+        margin-left: -20px;
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .orderListItemUnsourced p {
+        margin-right: 20px;
+        display: flex;
+        
+    }
+    
+    /*
+    
+        ITEM INVENTORY
+    
+    */
+    
+    .orderListItemInventory{
+        margin-left: -20px;
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .orderListItemInventory p{
+        margin-right: 20px;
+        display: flex;
+       
+    }
+    
+    /*
+    
+        ITEM CANCELED
+    
+    */
+    
+    .orderListItemCanceled{
+        margin-left: -20px;
+        margin-top: 20px;
+        display: flex;
+    }
+    
+    .orderListItemCanceled p{
+        margin-right: 20px;
+        display: flex;
+       
+    }
+    
+    /*
+    
+        CHECKBOX
+    
+    */
+    
+    .checkboxDiv{
+        background-color: white;
+        display: flex;
+        margin-bottom: 20px;
+        padding: 5px;
+        margin-right: 10px;
+        border-radius: 5px;
+        width: 150px;
+        justify-content: center;
+        border: 2px;
+        border-color: black;
+    }
+    
+    .checkbox-wrapper{
+        margin-right: 20px;
+    }
+    
+    
+    .checkBoxInput:checked + .spanLabel{
+        color: rgb(54, 124, 43);
+    }
+    
+    .listCheckDiv{
+        display: flex;
+    }
+    
+    
+    
+}

@@ -6,7 +6,7 @@ import ListItem from './components-info/OrderListItem';
 import Checkbox from './Checkbox';
 import Axios from 'axios';
 
-function ListForm({ user }) {
+function ListForm({ user, t }) {
   const [orders, setOrders] = useState([]);
   const [amountOfOrdersShown, setAmountOfOrdersShown] = useState(5);
   const [filter, setFilter] = useState(["unsourced","sourced","inventory"])
@@ -81,33 +81,33 @@ function ListForm({ user }) {
   return (
     <>
       <div className='listDiv'>
-        {orders.length !== 0 ? <h2 className='listH2'> Your Orders: {orders.length}</h2> : <h2 className='listH2'> Your Orders: </h2>}
+        {orders.length !== 0 ? <h2 className='listH2'>{t('listLabel1')} {orders.length}</h2> : <h2 className='listH2'>{t('listLabel1')} </h2>}
 
-
+        <div className='listCheckDiv'>
         <div className="checkboxDiv">
           <details className="custom-select-Show-2">
             <summary className="radios-Show-2">
-              <input className='kundenInput-Show-2' type="radio" name="item-Show-2" id="default-Show-2" title="Sort By" checked />
+              <input className='kundenInput-Show-2' type="radio" name="item-Show-2" id="default-Show-2" title={t('listSort1')} checked />
             </summary>
             <ul className="list-Show-2">
               <li className='kundenLi-Show-2'>
                 <label for="item1-Sort-2">
-                  <input type="button" value="Order Number ↓" onClick={()=>addSort("order_number", false)}></input>
+                  <input type="button" value={t('listSort1o1')} onClick={()=>addSort("order_number", false)}></input>
                 </label>
               </li>
               <li className='kundenLi-Show-2'>
                 <label for="item2-Sort-2">
-                  <input type="button" value="Order Number ↑" onClick={()=>addSort("order_number", true)}></input>
+                  <input type="button" value={t('listSort1o2')} onClick={()=>addSort("order_number", true)}></input>
                 </label>
               </li>
               <li className='kundenLi-Show-2'>
                 <label for="item3-Sort-2">
-                <input type="button" value="Model ↓" onClick={()=>addSort("base_code_description", false)}></input>
+                <input type="button" value={t('listSort1o3')} onClick={()=>addSort("base_code_description", false)}></input>
                 </label>
               </li>
               <li className='kundenLi-Show-2'>
                 <label for="item4-Sort-2">
-                <input type="button" value="Model ↑" onClick={()=>addSort("base_code_description", true)}></input>
+                <input type="button" value={t('listSort1o4')} onClick={()=>addSort("base_code_description", true)}></input>
                 </label>
               </li>
             </ul>
@@ -117,34 +117,34 @@ function ListForm({ user }) {
         <div className="checkboxDiv">
           <details className="custom-select-Show">
             <summary className="radios-Show">
-              <input className='kundenInput-Show' type="radio" name="item-Show" id="default-Show" title="Show Status" checked />
+              <input className='kundenInput-Show' type="radio" name="item-Show" id="default-Show" title={t('listFilter1')} checked />
             </summary>
             <ul className="list-Show">
               <li className='kundenLi-Show'>
                 <label for="item1-Show">
-                  <Checkbox label="Show Sourced" onClick={()=>addFilter("sourced")} checked={true}></Checkbox>
+                  <Checkbox label={t('listFilter1o1')} onClick={()=>addFilter("sourced")} checked={true}></Checkbox>
                   <span></span>
                 </label>
               </li>
               <li className='kundenLi-Show'>
                 <label for="item2-Show">
-                  <Checkbox label="Show Unsourced" onClick={()=>addFilter("unsourced")} checked={true}></Checkbox>
+                  <Checkbox label={t('listFilter1o2')} onClick={()=>addFilter("unsourced")} checked={true}></Checkbox>
                 </label>
               </li>
               <li className='kundenLi-Show'>
                 <label for="item3-Show">
-                  <Checkbox label="Show Inventory" onClick={()=>addFilter("inventory")} checked={true}></Checkbox>
+                  <Checkbox label={t('listFilter1o3')} onClick={()=>addFilter("inventory")} checked={true}></Checkbox>
                 </label>
               </li>
               <li className='kundenLi-Show'>
                 <label for="item4-Show">
-                  <Checkbox label="Show Canceled" onClick={()=>addFilter("canceled")} checked={false}></Checkbox>
+                  <Checkbox label={t('listFilter1o4')} onClick={()=>addFilter("canceled")} checked={false}></Checkbox>
                 </label>
               </li>
             </ul>
           </details>
         </div>
-
+        </div>
         
 
         <div className='wrapper'>
@@ -155,13 +155,13 @@ function ListForm({ user }) {
               orders.filter(unfiltered_item => checkFilter(unfiltered_item.PROCESS_STATUS) === true).sort((a,b) => checkSort(a,b)).map((item, index) => {
                 //either 5 or all orders are rendered
                 if (index < amountOfOrdersShown) {
-                  return <ListItem item={item}></ListItem>;
+                  return <ListItem item={item} t={t}></ListItem>;
                 }
               })
               : <></>}
           </div>
         </div>
-        <input className='checkButtonShow' type="button" value={amountOfOrdersShown !== orders.length ? "Show all" : "Show less"} onClick={showAll}></input>
+        <input className='checkButtonShow' type="button" value={amountOfOrdersShown !== orders.length ? t('listButton1') : t('listButton2')} onClick={showAll}></input>
 
       </div>
     </>
