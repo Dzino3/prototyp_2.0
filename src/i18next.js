@@ -126,7 +126,26 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 /*
                     Availability List
                 */
+               avalListLabel1: "Our Products",
+               avalListLabel2: "Sort By",
+               avalListLabel2o1: "Product Name ↓",
+               avalListLabel2o2: "Product Name ↑",
+               avalListLabel2o3: "Base Code ↓",
+               avalListLabel2o4: "Base Code ↑",
+               avalListLabel3: "Filter after",
+               avalListLabel3o1: "Commercial Mowing",
+               avalListLabel3o2: "Compact Utility Tractory & Loaders",
+               avalListLabel3o3: "Golf",
+               avalListLabel3o4: "Riding Lawn Tractors",
+               avalListLabel3o5: "Utility Tractors",
+               avalListLabel3o6: "Utility Vehicles",
 
+               avalItemLabel1: "Base Code:",
+               avalItemLabel2: "Bundle:",
+               avalItemLabel3: "Category:",
+               avalItemLabel4: "Best case shipping month",
+               avalItemLabel5: "Worst case shipping month",
+               avalItemLabel6: "Comment",
             }
         },
         de: {
@@ -248,6 +267,26 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 /*
                     Availability List
                 */
+               avalListLabel1: "Unsere Produkte",
+               avalListLabel2: "Sortieren nach",
+               avalListLabel2o1: "Produktname ↓",
+               avalListLabel2o2: "Produktname ↑",
+               avalListLabel2o3: "Basiscode ↓",
+               avalListLabel2o4: "Basiscode ↑",
+               avalListLabel3: "Filtern nach",
+               avalListLabel3o1: "Kommerzielles Mähen",
+               avalListLabel3o2: "Kompakte Kommunaltraktoren und Lader",
+               avalListLabel3o3: "Golf",
+               avalListLabel3o4: "Rasentraktoren",
+               avalListLabel3o5: "Nutztraktoren",
+               avalListLabel3o6: "Nutzfahrzeuge",
+
+               avalItemLabel1: "Basiscode:",
+               avalItemLabel2: "Bündeln:",
+               avalItemLabel3: "Kategorie:",
+               avalItemLabel4: "Versandmonat im günstigsten Fall",
+               avalItemLabel5: "Versandmonat im ungünstigsten Fall",
+               avalItemLabel6: "Kommentar",
             }
         }
     }

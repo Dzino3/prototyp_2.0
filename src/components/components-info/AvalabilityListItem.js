@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 
-function AvalabilityListItem({ item, selec = false }) {
+function AvalabilityListItem({ item, selec = false, t}) {
 
   const [selected, setSelected] = useState(selec);
 
@@ -19,18 +19,18 @@ function AvalabilityListItem({ item, selec = false }) {
 
             <div className='orderDiv2'>
               <div className='orderListDivFlex'>
-                <p className='p1'>Base Code: {item.BASE_CODE}</p>
+                <p className='p1'>{t('avalItemLabel1')} {item.BASE_CODE}</p>
                 <p></p>
               </div>
               <div className='orderListDivFlex'>
-                <p className='p1'>Bundle: {item.BUNDLE}</p>
+                <p className='p1'>{t('avalItemLabel2')} {item.BUNDLE}</p>
                 <p></p>
               </div>
             </div>
 
           </div>
             <div className='orderListDivFlex'>
-              <p className='p1Status'>Category: {item.CATEGORY}</p>
+              <p className='p1Status'>{t('avalItemLabel3')} {item.CATEGORY}</p>
               <p></p>
             </div>
 
@@ -41,9 +41,9 @@ function AvalabilityListItem({ item, selec = false }) {
           <div className={selected === true ? 'afterDivshow' : 'afterDiv'}>
             <div className='afterDiv1'>
               <div className='flex'>
-                <p className='p3'>Best case shiping month: {item.BEST_CASE}</p>
-                <p className='p3'>Worst case shiping month: {item.WORST_CASE}</p>
-                <p className='p3'>Comment: {item.COMMENTS_RESTRICTIONS}</p>
+                <p className='p3'>{t('avalItemLabel4')}: {item.BEST_CASE}</p>
+                <p className='p3'>{t('avalItemLabel5')}: {item.WORST_CASE}</p>
+                <p className='p3'>{t('avalItemLabel6')}: {item.COMMENTS_RESTRICTIONS}</p>
               </div>
             </div>
           </div>

@@ -45,7 +45,7 @@ function OrderListItem({ item, selec = false, t }) {
           </div>
         </div>
         <div className='orderStatusDiv'>
-          <p className='p1Status'>{t('listItemLabel4')} </p>
+          
           
           <p className={'orderStatus' + item.PROCESS_STATUS}>{item.PROCESS_STATUS}</p>
         </div>

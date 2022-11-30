@@ -92,22 +92,22 @@ function ListForm({ user, t }) {
             <ul className="list-Show-2">
               <li className='kundenLi-Show-2'>
                 <label for="item1-Sort-2">
-                  <input type="button" value={t('listSort1o1')} onClick={()=>addSort("order_number", false)}></input>
+                  <input className='sortButton' type="button" value={t('listSort1o1')} onClick={()=>addSort("order_number", false)}></input>
                 </label>
               </li>
               <li className='kundenLi-Show-2'>
                 <label for="item2-Sort-2">
-                  <input type="button" value={t('listSort1o2')} onClick={()=>addSort("order_number", true)}></input>
+                  <input className='sortButton' type="button" value={t('listSort1o2')} onClick={()=>addSort("order_number", true)}></input>
                 </label>
               </li>
               <li className='kundenLi-Show-2'>
                 <label for="item3-Sort-2">
-                <input type="button" value={t('listSort1o3')} onClick={()=>addSort("base_code_description", false)}></input>
+                  <input className='sortButton' type="button" value={t('listSort1o3')} onClick={()=>addSort("base_code_description", false)}></input>
                 </label>
               </li>
               <li className='kundenLi-Show-2'>
                 <label for="item4-Sort-2">
-                <input type="button" value={t('listSort1o4')} onClick={()=>addSort("base_code_description", true)}></input>
+                <input className='sortButton' type="button" value={t('listSort1o4')} onClick={()=>addSort("base_code_description", true)}></input>
                 </label>
               </li>
             </ul>

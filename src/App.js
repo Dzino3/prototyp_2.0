@@ -13,8 +13,8 @@ import { useTranslation, Trans } from 'react-i18next'
 
 //Sprachen
 const lngs = {
-  en: { nativeName: 'English'},
-  de: { nativeName: 'Deutsch'}
+  en: { nativeName: 'EN'},
+  de: { nativeName: 'DE'}
 }
 
 function App() {
@@ -65,9 +65,10 @@ function App() {
         {(user.acc !== "") ? (
           <div className='website'>
             <div>
-              <NavbarForm Logout={Logout} ShowsOrdersFalse={ShowsOrdersFalse} ShowsOrdersTrue={ShowsOrdersTrue} t={t}/>
+              <NavbarForm lngs={lngs} i18n={i18n} Logout={Logout} ShowsOrdersFalse={ShowsOrdersFalse} ShowsOrdersTrue={ShowsOrdersTrue} t={t}/>
             </div>
             <div className='pageContent'>
+              
               <HeroForm user={user} t={t}></HeroForm>
               {(showsOrders === true) ? (
                 <div className='mainContent'>
@@ -82,9 +83,6 @@ function App() {
                   </div>
                 </div>)}
             </div>
-            {Object.keys(lngs).map((lng) => (
-              <input type='button' value={lngs[lng].nativeName} key={lng} onClick={() => i18n.changeLanguage(lng)} disabled={i18n.resolvedLanguage === lng}></input>
-            ))}
             <FooterForm t={t}></FooterForm>
           </div>
         ) : (
