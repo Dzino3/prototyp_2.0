@@ -1,6 +1,13 @@
 .App{
     font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
+
 
 .mainContent{
     background-color: rgb(240, 240, 240);
@@ -30,6 +37,12 @@
 @media only screen and (max-width : 480px) {
     .App{
         font-family: sans-serif;
+        width: 100vw;
+        height: 100vh;
+    }
+    body{
+        margin: 0;
+        padding: 0;
     }
     
     .mainContent{

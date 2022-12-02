@@ -144,6 +144,10 @@
     margin-top: 38px;
     margin-bottom: 30px;
 }
+.checkButtonShow:hover{
+    cursor: pointer;
+    background-color: rgba(207, 180, 6, 0.925);
+}
 
 .block{
     display: block;

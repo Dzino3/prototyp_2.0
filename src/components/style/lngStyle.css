@@ -1,5 +1,4 @@
 .lngSelect{
-    margin-left: -470px;
     margin-top: 8px;
 }
 
@@ -21,6 +20,11 @@
 }
   
 .radios-Lng{
+    background-image: url("./pictures/icons/globus.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
     border-radius: 5px;
     list-style: none;

@@ -1,6 +1,9 @@
+
 .custom-select {
     position: relative;
-    width: 160px;
+    width: auto;
+    display: inline-flex;
+    margin-left: 15px;
     
 }
 
@@ -20,6 +23,7 @@
     cursor: pointer;
     border-radius: 5px;
     list-style: none;
+    display: flex;
 }
   
 .radios::-webkit-details-marker {
@@ -35,20 +39,21 @@
     position: fixed;
     top: 0;
     left: 0;
+
 }
   
 .radios:after {
     content: '';
     display: inline-block;
-    float: right;
-    width: .5rem;
-    height: .5rem;
+    width: .7rem;
+    height: .7rem;
+    margin-top: 2px;
     border-bottom: 1px solid currentColor;
     border-left: 1px solid currentColor;
-    border-bottom-left-radius: 2px;
     transform: rotate(45deg) translate(50%, 0%);
     transform-origin: center center;
     transition: transform ease-in-out 100ms
+
 }
   
 .radios:focus {
@@ -67,12 +72,14 @@
     
     padding: 1rem;
     width: 210px;
-    margin-left: -25px;
+    margin-left: -5px;
+    margin-top: -5px;
 
     box-sizing: border-box;
     border-radius: 5px;
     max-height: 200px;
     overflow-y: auto;
+
 }
   
 .kundenLi {
@@ -115,15 +122,46 @@
     appearance: none;
     display: none;
 }
-  
+
+
 .kundenInput[type=radio]:checked {
     display: inline;
    --display: block;
+
 }
   
 .kundenInput[type=radio]:after {
     content: attr(title);
-    display: inline;
-    font-size: 1rem;
+    font-size: 18px;
 }
-  
+
+@media only screen and (max-width: 1192px) {
+    .kundenInput[type=radio]:after {
+        font-size: 18px;
+    }
+    .radios:after {
+        margin-top: 7px;
+        width: .5rem;
+        height: .5rem;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .kundenInput[type=radio]:after {
+        font-size: 15px;
+    }
+    .radios:after {
+        width: .4rem;
+        height: .4rem;
+        margin-top: 6px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .kundenInput[type=radio]:after {
+        font-size: 18px;
+    }
+    .custom-select{
+        display: none;
+    }
+}

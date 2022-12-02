@@ -38,10 +38,6 @@ function OrderListItem({ item, selec = false, t }) {
               <p className='p1'>{t('listItemLabel2')}: </p>
               <p>{item.BASE_CODE_DESCR} ({item.BASE_CODE})</p>
             </div>
-            <div className='orderListDivFlex'>
-              <p className='p1'>{t('listItemLabel3')} </p>
-              <p>{item.PRES_DATE}</p>
-            </div>
           </div>
         </div>
         <div className='orderStatusDiv'>

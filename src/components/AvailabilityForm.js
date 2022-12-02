@@ -33,7 +33,7 @@ function AvailabilityForm({t}) {
             <input className='avalInput' type="text" name='base_code' id='base_code' onChange={e => setEnteredInput(e.target.value)} value={enteredInput}></input>
             <input className='avalCheckButton' type="button" value={t('availabilityButton')} onClick={LookForProduct}></input>
         </div>
-        {produktInfo.length !== 0 ? produktInfo.map((item)=>{return <ListItem item={item} selec={true}></ListItem>; }) : <></>}
+        {produktInfo.length !== 0 ? produktInfo.map((item)=>{return <ListItem item={item} selec={true} t={t}></ListItem>; }) : <></>}
     </div>
     </form>
     </>
