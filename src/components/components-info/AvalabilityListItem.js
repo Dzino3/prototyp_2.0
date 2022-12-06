@@ -40,7 +40,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
                 <p className='p1'>{t('avalItemLabel1')} </p>
                 <p>{item.BASE_CODE}</p>
               </div>
-              <div className='orderListDivFlex'>
+              <div className='AvalorderListDivFlex'>
                 <p className='p1'>{t('avalItemLabel2')}</p>
                 <p> {item.BUNDLE}</p>
               </div>
