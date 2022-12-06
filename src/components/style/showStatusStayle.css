@@ -1,6 +1,6 @@
 .custom-select-Show {
     position: relative;
-    width: 120px;
+    width: 150px;
 }
 
 .radios-Show input:hover{
@@ -65,9 +65,9 @@
     top: calc(100% + .5rem);
     
     padding: 1rem;
-    width: 220px;
-    margin-left: -50px;
-    margin-top: 3px;
+    width: 176px;
+    margin-left: -27px;
+    margin-top: -1px;
     
 
     box-sizing: border-box;

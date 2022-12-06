@@ -1,7 +1,8 @@
 .avalForm{
     display: flex;
     margin-left: 4%;
-    
+    margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 .avalForm-inner{
@@ -13,38 +14,22 @@
     display: block;
 }
 
-.avalH2{
-    margin-top: 50px;
-}
-.avalH22{
-    margin-top: 50px;
-    margin-left: 67px;
-}
+.orderForm-AvalgroupButton{
+    display: flex;
 
-.avalLabel{
-    display: block;
-    font-size: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.avalForm-group:focus-within .avalLabel{
-    color: rgb(54, 124, 43);
-}
-
-.avalInput{
-    margin-bottom: 10px;
 }
 
 .avalInput{
     display: block;
-    padding: 6px 15px;
+    width: 200px;
+    height: 18px;
+    padding: 8px 15px;
     background-color: white;
-    border-radius: 8px;
     transition: 0.4s;
     border-color: rgb(195, 189, 189);
-    margin-bottom: 15px;
-    font-size: 14px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 15px;
 }
 .avalInput:focus{
     background-color: rgb(240, 240, 240);
@@ -53,8 +38,7 @@
 .avalCheckButton{
     background-color: rgb(255, 222, 0);
     display: inline-block;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 10px 20px;
     font-weight: bold;
     border: none;
     margin-bottom: 40px;
@@ -69,15 +53,40 @@
     
 }
 
+.avalError{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.p1Aval{
+    color: rgb(54, 124, 43);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mobilStatusAval{
+    width: 45%;
+    justify-content: space-between;
+    display: flex;
+}
+.mobilStatusAvalHidden{
+    display: none;
+}
+
+.EmailDiv{
+    display: none;
+}
+
 /*
 
     AVAL AFTER
 
 */
 
+
 .flex{
     display: flex;
-    margin-left: 146px;
+    margin-left: 95px;
 }
 
 .p3{
@@ -85,11 +94,41 @@
     margin-right: 200px;
 }
 
+@media only screen and (max-width : 1000px) {
+    .mobilStatusAval{
+        justify-content: space-between;
+        display: none !important;
+        width: 90%;
+    }
+    .mobilStatusAvalHidden{
+        justify-content: right;
+        width: 90%;
+        display:flex;
+    }
+    
+    /*
+    
+        AVAL AFTER
+    
+    */
+    .EmailDiv{
+        display: block;
+    }
+    .flex{
+        display: block;
+        margin-left: 14px;
+    }
+    
+    .p3{
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
+
 @media only screen and (max-width : 480px) {
     .avalForm{
         display: flex;
         margin-left: 4%;
-        
     }
     
     .avalForm-inner{
@@ -126,9 +165,9 @@
     
     .avalInput{
         display: block;
-        padding: 6px 15px;
+        width: 200px;
+        padding: 8px 15px;
         background-color: white;
-        border-radius: 8px;
         transition: 0.4s;
         border-color: rgb(195, 189, 189);
         margin-bottom: 15px;
@@ -141,8 +180,7 @@
     .avalCheckButton{
         background-color: rgb(255, 222, 0);
         display: inline-block;
-        padding: 10px 15px;
-        border-radius: 8px;
+        padding: 10px 20px;
         font-weight: bold;
         border: none;
         margin-bottom: 40px;
@@ -156,6 +194,12 @@
         display: flex;
         
     }
+
+    .mobilStatus{
+        justify-content: space-between;
+        display: flex;
+        width: 90%;
+    }
     
     /*
     
@@ -164,7 +208,7 @@
     */
     
     .flex{
-        display: flex;
+        display: block;
         margin-left: 14px;
     }
     

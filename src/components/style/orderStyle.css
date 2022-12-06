@@ -1,8 +1,10 @@
+.orderWholeDiv{
+    margin-bottom: 80px;
+}
+
 .orderForm{
     display: flex;
     margin-left: 4%;
-    
-    justify-content: center;
 }
 
 .orderForm-inner{
@@ -11,48 +13,34 @@
 
 .order-inner-inner{
     display: block;
+    margin-top: 40px;
 }
 
 .orderForm-groupOut{
     margin-top: 5%;
-    display: flex; 
+    display: block; 
 }
 
 .orderForm-group{
     display: block;
-    margin-left: 50px;
+    
 }
 
 .orderForm-groupButton{
     display: flex;
 }
 
-.orderLabel{
-    display: block;
-    font-size: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.orderForm-group:focus-within .orderLabel{
+.orderInput{
     color: rgb(54, 124, 43);
-}
-
-.orderInput{
-    margin-bottom: 10px;
-}
-
-.orderInput{
     display: block;
     width: 80%;
-    padding: 6px 15px;
+    padding: 8px 15px;
     background-color: white;
-    border-radius: 8px;
     transition: 0.4s;
     border-color: rgb(195, 189, 189);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-right: 20px;
-    font-size: 14px;
+    font-size: 15px;
 }
 .orderInput:focus{
     background-color: rgb(240, 240, 240);
@@ -61,9 +49,8 @@
 .checkButton{
     background-color: rgb(255, 222, 0);
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 20px;
     height: 30px;
-    border-radius: 8px;
     font-weight: bold;
     border: none;
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
@@ -73,6 +60,12 @@
     cursor: pointer;
     background-color: rgba(207, 180, 6, 0.925);
 }
+
+.orderError{
+    margin-bottom: 10px;
+    color: red;
+}
+
 
 /*
     INFO STYLE
@@ -118,8 +111,6 @@
 @media only screen and (max-width : 480px) {
     .orderForm{
         display: flex;
-        margin-left: 4%;
-        justify-content: center;
     }
 
     .orderForm-inner{
@@ -131,27 +122,16 @@
     }
     
     .orderForm-groupOut{
-        display: flex; 
+        display: block; 
     }
     
     .orderForm-group{
         display: block;
-        margin-left: 50px;
+        margin-left: 30px;
     }
     
     .orderForm-groupButton{
         display: flex;
-    }
-    
-    .orderLabel{
-        display: block;
-        font-size: 16px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    
-    .orderForm-group:focus-within .orderLabel{
-        color: rgb(54, 124, 43);
     }
     
     .orderInput{
@@ -161,7 +141,6 @@
     .orderInput{
         display: flex;
         background-color: white;
-        border-radius: 8px;
         transition: 0.4s;
         border-color: rgb(195, 189, 189);
         margin-bottom: 15px;
@@ -173,6 +152,7 @@
         background-color: rgb(240, 240, 240);
     }
 
+    
     
     /*
         INFO STYLE

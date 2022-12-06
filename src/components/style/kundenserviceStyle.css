@@ -3,27 +3,37 @@
     position: relative;
     width: auto;
     display: inline-flex;
-    margin-left: 15px;
-    
+    z-index: 1;
 }
 
 .radios input:hover{
     color: rgb(54, 124, 43);
+    z-index: -1;
 }
 
-.radios input{
-    font-weight: bold;
-}
   
 .custom-select[open] {
-    z-index: 1;
+    z-index: 0;
 }
   
 .radios {
+    
     cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
     border-radius: 5px;
     list-style: none;
     display: flex;
+    z-index: 1;
+    padding: 15px;
+}
+
+.radios:hover{
+    background-color: rgb(240, 240, 240);
+    color: rgb(54, 124, 43);
+    border-color: rgb(54, 124, 43);
+
+    cursor: pointer;
 }
   
 .radios::-webkit-details-marker {
@@ -39,21 +49,14 @@
     position: fixed;
     top: 0;
     left: 0;
-
+    
 }
   
 .radios:after {
-    content: '';
-    display: inline-block;
-    width: .7rem;
-    height: .7rem;
-    margin-top: 2px;
-    border-bottom: 1px solid currentColor;
-    border-left: 1px solid currentColor;
     transform: rotate(45deg) translate(50%, 0%);
     transform-origin: center center;
-    transition: transform ease-in-out 100ms
-
+    transition: transform ease-in-out 100ms;
+    
 }
   
 .radios:focus {
@@ -65,15 +68,16 @@
 }
   
 .list {
+    z-index: 2;
     width: 100%;
     background: #ddd;
     position: absolute;
     top: calc(100% + .5rem);
     
     padding: 1rem;
-    width: 210px;
-    margin-left: -5px;
-    margin-top: -5px;
+    width: 200px;
+    margin-left: 5px;
+    margin-top: -10px;
 
     box-sizing: border-box;
     border-radius: 5px;
@@ -130,13 +134,14 @@
 
 }
   
-.kundenInput[type=radio]:after {
-    content: attr(title);
-    font-size: 18px;
+
+
+.radios{
+    font-size: 20px;
 }
 
-@media only screen and (max-width: 1192px) {
-    .kundenInput[type=radio]:after {
+@media only screen and (max-width: 1406px) {
+    .radios{
         font-size: 18px;
     }
     .radios:after {
@@ -146,9 +151,9 @@
     }
 }
 
-@media only screen and (max-width: 1025px) {
-    .kundenInput[type=radio]:after {
-        font-size: 15px;
+@media only screen and (max-width: 1342px) {
+    .radios{
+        font-size: 16px;
     }
     .radios:after {
         width: .4rem;
@@ -158,8 +163,8 @@
 }
 
 @media only screen and (max-width: 860px) {
-    .kundenInput[type=radio]:after {
-        font-size: 18px;
+    .radios{
+        font-size: 1px;
     }
     .custom-select{
         display: none;

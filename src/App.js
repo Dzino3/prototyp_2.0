@@ -35,9 +35,9 @@ function App() {
     }
     Axios.post("https://codux.herokuapp.com/login", { ACC: details.acc, UNIT: details.unit }).then((response) => {
       if (response.data.length === 0 || details.acc !== response.data[0].ACC) {
-        setError("Wrong Input")
+        setError(t('error'))
       } else {
-
+        setError("")
         setUser({
           acc: details.acc,
           unit:  details.unit,
@@ -78,8 +78,8 @@ function App() {
                 </div>) : (
                 <div className="availabilityContent">
                   <div className='mainContent'>
-                    <AvailabilityForm t={t}></AvailabilityForm>
-                    <AvailabilityListForm t={t}></AvailabilityListForm>
+                    <AvailabilityForm user={user} t={t}></AvailabilityForm>
+                    <AvailabilityListForm user={user} t={t}></AvailabilityListForm>
                   </div>
                 </div>)}
             </div>

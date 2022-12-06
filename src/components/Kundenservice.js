@@ -6,7 +6,7 @@ function Kundenservice({t}) {
     <>
     <details className="custom-select">
       <summary className="radios">
-        <input className='kundenInput' type="radio" name="item" id="default" title={t('navbarLabel4')} checked />
+        {t('navbarLabel4')}
       </summary>
       <ul className="list">
         <li className='kundenLi'>

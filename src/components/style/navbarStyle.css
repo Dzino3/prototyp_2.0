@@ -4,44 +4,51 @@ body{
 
 .navbarDiv{
     flex-direction: row;
-    background-color: rgb(229, 230, 230);
+    background-color: white;
     width: 100%;
     height: 90px;
     display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: 0.6s;
+}
+
+.navbarDiv.active{
+    opacity: 0.3;
+    transition: 0.6s;
+}
+
+.navbarDiv.active:hover{
+    opacity: 1;
+    background-color: rgb(250, 250, 250);
 }
 
 
 .leftSide{
     display: flex;
     flex: 50%;
+    margin-left: 40px;
     justify-content: left;
     align-items: center;
 }
 .leftSide .links{
-    margin-left: 50px;
     max-height: 90px;
 }
 .leftSide .links .realLink{
     text-decoration: none;
-    font-size: 18px;
-    margin-left: 15px;
-    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 50px;
     font-weight: bold;
+    padding: 15px;
 }
 .leftSide .links .hiddenLink{
     display: none;
 }
-.leftSide .links .Kundenservice{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    font-size: 18px;
-    margin-left: 15px;
-    border-radius: 5px;
-    font-weight: bold;
-}
+
 .leftSide .links a:hover{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(240, 240, 240);
     color: rgb(54, 124, 43);
     border-color: rgb(54, 124, 43);
     cursor: pointer;
@@ -67,8 +74,8 @@ body{
     position: relative;
     background-color: rgb(255, 222, 0);
     display: inline-block;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 10px 20px;
+    margin-left: 20px;
     font-weight: bold;
     border: none;
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
@@ -93,24 +100,38 @@ body{
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 1192px) {
+@media only screen and (max-width: 1406px) {
     .leftSide .links .realLink{
         font-size: 18px;
     }
 
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1342px) {
     .leftSide .links .realLink{
-        font-size: 15px;
+        font-size: 16px;
     }
 
 
+}
+@media only screen and (max-width: 1277px) {
+    .leftSide .links .realLink{
+        margin-left: 30px;
+    }
 }
 
 /*Ab hier verschwinden die Links und der Menu Button taucht auf*/
 @media only screen and (max-width: 860px) {
 
+    .navbarDiv{
+        position: relative;
+    }
+
+    .navbarDiv.active{
+        opacity: 1;
+    }
+
     .leftSide .showLinksButton{
+        margin-left: -15px;
         width: 32px;
         height: 32px;
         background-image: url("./pictures/icons/burger-menu.png");
@@ -143,16 +164,19 @@ body{
     }
     .leftSide #hidden .realLink{
         margin: 8px;
-        font-size: 25px;
+        font-size: 18px;
+        padding: 0;
+    }
+    .leftSide .links a:hover{
+        background-color: white;
     }
 
     .leftSide .links .hiddenLink{
         color: black;
         margin: 8px;
-        font-size: 25px;
+        font-size: 18px;
         display: flex;
         text-decoration: none;
-        font-size: 25px;
         margin-left: 15px;
         border-radius: 5px;
         font-weight: bold;

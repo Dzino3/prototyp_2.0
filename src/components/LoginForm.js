@@ -68,8 +68,7 @@ function LoginForm({Login, error, t}) {
             
             <div className='loginForm-group'>
                 {(error !== "") ? (<div className='error'>{error}</div>) : ""}
-                <label className='loginLabel'>{t('loginAccN')}</label>
-                <input type="text" name='acc' id='acc'className='loginInput' onChange={e => setDetails({...details, acc: e.target.value})} value={details.acc}></input>
+                <input type="text" name='acc' id='acc'className='loginInput' placeholder={t('loginAccN')} onChange={e => setDetails({...details, acc: e.target.value})} value={details.acc}></input>
                 <input type="submit" value={t('loginButton')} className='loginButton'></input>
             </div>
             

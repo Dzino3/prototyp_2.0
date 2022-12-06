@@ -7,11 +7,22 @@ import './style/lngStyle.css'
 
 function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }) {
   const [showLinks, setShowLinks] = useState(false)
+  const [navbar, setNavbar] = useState(false)
   const lngChange = "Lng";
+
+  const changeBackground = () =>{
+    if(window.scrollY >= 100){
+      setNavbar(true)
+    }else{
+      setNavbar(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground)
 
   return (
     <>
-      <div className='navbarDiv'>
+      <div className={navbar ? 'navbarDiv active' : 'navbarDiv'}>
 
         <div className="leftSide">
           <div className="links" id={showLinks ? "hidden" : ""}>
@@ -30,9 +41,7 @@ function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }
           <div className='lngSelect'>
             <details className="custom-select-Lng">
               <summary className="radios-Lng">
-                <input className='kundenInput-Lng' type="radio" name="item-Lng" id="default" title={lngChange} checked />
-                <input className='kundenInput-Lng' type="radio" name="item-Lng" id="EN" title="EN" />
-                <input className='kundenInput-Lng' type="radio" name="item-Lng" id="DE" title="DE" />
+                
               </summary>
               <ul className="list-Lng">
                 <li className='kundenLi-Lng'>
@@ -50,6 +59,7 @@ function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }
           <button onClick={Logout} className="logoutButton">{t('navbarLabel5')}</button>
         </div>
       </div>
+      
 
       {/*
         <div className='navbarContainer'>

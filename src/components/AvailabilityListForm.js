@@ -5,12 +5,13 @@ import './style/filterStyle.css'
 import ListItem from './components-info/AvalabilityListItem';
 import Checkbox from './Checkbox';
 import Axios from 'axios';
+import FilterComponent from './FilterComponent';
 
-function AvailabilityListForm({t}) {
+function AvailabilityListForm({ user, t }) {
   const [products, setProducts] = useState([]);
   const [amountOfProductsShown, setAmountOfProductsShown] = useState(5);
-  const [filter, setFilter] = useState(["Commercial Mowing", "Compact Utility Tractory & Loaders","Golf", "Riding Lawn Tractors","Utility Tractors","Utility Vehicles"])
-  const [sort, setSort] = useState({sorting_type: "", ascending: false});
+  const [filter, setFilter] = useState([])
+  const [sort, setSort] = useState({ sorting_type: "", ascending: false });
 
   //gets called once when the landing page loads
   useEffect(() => {
@@ -29,48 +30,51 @@ function AvailabilityListForm({t}) {
     if (amountOfProductsShown === products.length) {
       setAmountOfProductsShown(5)
     } else {
-        setAmountOfProductsShown(products.length)
+      setAmountOfProductsShown(products.length)
     }
 
   };
 
   function checkFilter(category) {
-      var gets_shown = false
-      //if the given process_status is mentioned in the filter array then the order gets shown to the user
-      filter.map((f) => {
-        if (category === f) {
-          gets_shown = true;
-          return;
-        }
-      })
-      return gets_shown;
+    if (filter.length === 0) {
+      return true;
+    }
+    var gets_shown = false
+    //if the given process_status is mentioned in the filter array then the order gets shown to the user
+    filter.map((f) => {
+      if (category === f) {
+        gets_shown = true;
+        return;
+      }
+    })
+    return gets_shown;
   }
 
-  function addFilter(fil){
-    if (filter.indexOf(fil) > -1){
+  function addFilter(fil) {
+    if (filter.indexOf(fil) > -1) {
       //filter exists already so it gets removed
       setFilter(current => current.filter((filter_item) => filter_item !== fil))
-    } else{
+    } else {
       setFilter(current => [...current, fil])
     }
   }
 
 
-  function checkSort(a,b){
-    switch(sort.sorting_type){
+  function checkSort(a, b) {
+    switch (sort.sorting_type) {
       case "base_code_description":
-        if(sort.ascending){return a.PRODUCT > b.PRODUCT ? 1 : -1}
-        else {return a.PRODUCT > b.PRODUCT ? -1 : 1}
+        if (sort.ascending) { return a.PRODUCT > b.PRODUCT ? 1 : -1 }
+        else { return a.PRODUCT > b.PRODUCT ? -1 : 1 }
 
-        case "base_code":
-          if(sort.ascending){return a.BASE_CODE > b.BASE_CODE ? 1 : -1}
-          else {return a.BASE_CODE > b.BASE_CODE ? -1 : 1}
+      case "base_code":
+        if (sort.ascending) { return a.BASE_CODE > b.BASE_CODE ? 1 : -1 }
+        else { return a.BASE_CODE > b.BASE_CODE ? -1 : 1 }
 
     }
   }
-  function addSort(sor, isAscending){
-    setSort({sorting_type : sor, ascending: isAscending});
-    }
+  function addSort(sor, isAscending) {
+    setSort({ sorting_type: sor, ascending: isAscending });
+  }
 
 
   return (
@@ -79,88 +83,91 @@ function AvailabilityListForm({t}) {
         <h2 className='listH2'>{t('avalListLabel1')}</h2>
 
         <div className='avalCheckDiv'>
-        <div className="checkboxDiv">
-          <details className="custom-select-Show-2">
-            <summary className="radios-Show-2">
-              <input className='kundenInput-Show-2' type="radio" name="item-Show-2" id="default-Show-2" title={t('avalListLabel2')} checked />
-            </summary>
-            <ul className="list-Show-2">
-              <li className='kundenLi-Show-2'>
-                <label for="item1-Sort-2">
-                <input className='sortButton' type="button" value={t('avalListLabel2o1')} onClick={()=>addSort("base_code_description", false)}></input>
-                </label>
-              </li>
-              <li className='kundenLi-Show-2'>
-                <label for="item2-Sort-2">
-                <input className='sortButton' type="button" value={t('avalListLabel2o2')} onClick={()=>addSort("base_code_description", true)}></input>
-                </label>
-              </li>
-              <li className='kundenLi-Show-2'>
-                <label for="item3-Sort-2">
-                <input className='sortButton' type="button" value={t('avalListLabel2o3')} onClick={()=>addSort("base_code", false)}></input>
-                </label>
-              </li>
-              <li className='kundenLi-Show-2'>
-                <label for="item4-Sort-2">
-                <input className='sortButton' type="button" value={t('avalListLabel2o4')} onClick={()=>addSort("base_code", true)}></input>
-                </label>
-              </li>
-            </ul>
-          </details>
+          <div className="checkboxDiv">
+            <details className="custom-select-Show-2">
+              <summary className="radios-Show-2">
+                <input className='kundenInput-Show-2' type="radio" name="item-Show-2" id="default-Show-2" title={t('avalListLabel2')} checked />
+              </summary>
+              <ul className="list-Show-2">
+                <li className='kundenLi-Show-2'>
+                  <label for="item1-Sort-2">
+                    <input className='sortButton' type="button" value={t('avalListLabel2o1')} onClick={() => addSort("base_code_description", false)}></input>
+                  </label>
+                </li>
+                <li className='kundenLi-Show-2'>
+                  <label for="item2-Sort-2">
+                    <input className='sortButton' type="button" value={t('avalListLabel2o2')} onClick={() => addSort("base_code_description", true)}></input>
+                  </label>
+                </li>
+                <li className='kundenLi-Show-2'>
+                  <label for="item3-Sort-2">
+                    <input className='sortButton' type="button" value={t('avalListLabel2o3')} onClick={() => addSort("base_code", false)}></input>
+                  </label>
+                </li>
+                <li className='kundenLi-Show-2'>
+                  <label for="item4-Sort-2">
+                    <input className='sortButton' type="button" value={t('avalListLabel2o4')} onClick={() => addSort("base_code", true)}></input>
+                  </label>
+                </li>
+              </ul>
+            </details>
+          </div>
+
+          <div className="checkboxDiv">
+            <details className="custom-select-Show">
+              <summary className="radios-Show">
+                <input className='kundenInput-Show' type="radio" name="item-Show" id="default-Show" title={t('avalListLabel3')} checked />
+              </summary>
+              <ul className="list-Show">
+                <li className='kundenLi-Show'>
+                  <label for="item1-Show">
+                    <Checkbox label={t('avalListLabel3o1')} onClick={() => addFilter("Commercial Mowing")} checked={false}></Checkbox>
+                    <span></span>
+                  </label>
+                </li>
+                <li className='kundenLi-Show'>
+                  <label for="item2-Show">
+                    <Checkbox label={t('avalListLabel3o2')} onClick={() => addFilter("Compact Utility Tractory & Loaders")} checked={false}></Checkbox>
+                  </label>
+                </li>
+                <li className='kundenLi-Show'>
+                  <label for="item3-Show">
+                    <Checkbox label={t('avalListLabel3o3')} onClick={() => addFilter("Golf")} checked={false}></Checkbox>
+                  </label>
+                </li>
+                <li className='kundenLi-Show'>
+                  <label for="item4-Show">
+                    <Checkbox label={t('avalListLabel3o4')} onClick={() => addFilter("Riding Lawn Tractors")} checked={false}></Checkbox>
+                  </label>
+                </li>
+                <li className='kundenLi-Show'>
+                  <label for="item5-Show">
+                    <Checkbox label={t('avalListLabel3o5')} onClick={() => addFilter("Utility Tractors")} checked={false}></Checkbox>
+                  </label>
+                </li>
+                <li className='kundenLi-Show'>
+                  <label for="item6-Show">
+                    <Checkbox label={t('avalListLabel3o6')} onClick={() => addFilter("Utility Vehicles")} checked={false}></Checkbox>
+                  </label>
+                </li>
+              </ul>
+            </details>
+          </div>
+          {filter.map((element) => {
+            return <FilterComponent name={element} para={element} func={addFilter}></FilterComponent>
+          })}
         </div>
 
-        <div className="checkboxDiv">
-          <details className="custom-select-Show">
-            <summary className="radios-Show">
-              <input className='kundenInput-Show' type="radio" name="item-Show" id="default-Show" title={t('avalListLabel3')} checked />
-            </summary>
-            <ul className="list-Show">
-              <li className='kundenLi-Show'>
-                <label for="item1-Show">
-                  <Checkbox label={t('avalListLabel3o1')} onClick={()=>addFilter("Commercial Mowing")} checked={true}></Checkbox>
-                  <span></span>
-                </label>
-              </li>
-              <li className='kundenLi-Show'>
-                <label for="item2-Show">
-                  <Checkbox label={t('avalListLabel3o2')} onClick={()=>addFilter("Compact Utility Tractory & Loaders")} checked={true}></Checkbox>
-                </label>
-              </li>
-              <li className='kundenLi-Show'>
-                <label for="item3-Show">
-                  <Checkbox label={t('avalListLabel3o3')} onClick={()=>addFilter("Golf")} checked={true}></Checkbox>
-                </label>
-              </li>
-              <li className='kundenLi-Show'>
-                <label for="item4-Show">
-                  <Checkbox label={t('avalListLabel3o4')} onClick={()=>addFilter("Riding Lawn Tractors")} checked={true}></Checkbox>
-                </label>
-              </li>
-              <li className='kundenLi-Show'>
-                <label for="item5-Show">
-                  <Checkbox label={t('avalListLabel3o5')} onClick={()=>addFilter("Utility Tractors")} checked={true}></Checkbox>
-                </label>
-              </li>
-              <li className='kundenLi-Show'>
-                <label for="item6-Show">
-                  <Checkbox label={t('avalListLabel3o6')} onClick={()=>addFilter("Utility Vehicles")} checked={true}></Checkbox>
-                </label>
-              </li>
-            </ul>
-          </details>
-        </div>
-        </div>
-        
 
         <div className='wrapper'>
           <div className='accordion'>
             {products.length !== 0 ?
               //if the backend responded with a list of all order, every order gets displayed
-              products.filter(unfiltered_item => checkFilter(unfiltered_item.CATEGORY) === true).sort((a,b) => checkSort(a,b)).map((item, index) => {
+              products.filter(unfiltered_item => checkFilter(unfiltered_item.CATEGORY) === true).sort((a, b) => checkSort(a, b)).map((item, index) => {
                 //products.sort((a,b) => checkSort(a,b)).map((item, index) => {
                 //either 5 or all orders are rendered
                 if (index < amountOfProductsShown) {
-                  return <ListItem item={item} t={t}></ListItem>;
+                  return <ListItem user={user} item={item} t={t}></ListItem>;
                 }
               })
               : <></>}

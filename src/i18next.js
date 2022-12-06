@@ -8,6 +8,10 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
         en: {
             translation: {
                 /*
+                    Error
+                */
+               error: "Wrong Input!",
+                /*
                     Orders
                 */
                 loginWelcome: 'Welcome to the Tracker',
@@ -146,11 +150,15 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                avalItemLabel4: "Best case shipping month",
                avalItemLabel5: "Worst case shipping month",
                avalItemLabel6: "Comment",
+               avalItemLabel7: "Model year",
             }
         },
         de: {
             translation: {
-
+                /*
+                    Error
+                */
+               error: "Falsche Eingabe!",
                 /*
                     Login
                 */
@@ -287,6 +295,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                avalItemLabel4: "Versandmonat im günstigsten Fall",
                avalItemLabel5: "Versandmonat im ungünstigsten Fall",
                avalItemLabel6: "Kommentar",
+               avalItemLabel7: "Modelljahr",
             }
         }
     }

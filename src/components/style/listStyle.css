@@ -3,7 +3,7 @@
 }
 
 .listH2{
-    padding: 20px;
+    margin-bottom: 30px;
 }
 
 
@@ -25,10 +25,10 @@
     background: white;
     margin-bottom: 5px;
     padding: 10px 20px;
-    border-radius: 20px;
+    
 }
 .item:hover{
-    background: rgb(251, 251, 251);
+    background: rgb(233, 233, 233);
 }
 
 .beforeDiv{
@@ -36,6 +36,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    
 }
 
 .listItemH3{
@@ -43,6 +44,7 @@
 }
 
 .toggleSpan{
+    margin-top: 15px;
     font-size: 20px;
     color: gray;
 }
@@ -77,14 +79,18 @@
     display: flex;
 }
 
-.orderStatusLabel{
-    margin-left: -130px;
-    font-size: 18px;
-    font-weight: bold;
+.mobilStatus{
+    width:30%;
+    justify-content: space-between;
+    display: flex;
+}
+.mobilStatusHidden{
+    display: none;
 }
 
+
 .orderStatussourced{
-    color: rgb(24, 189, 98);
+    color: rgb(54, 124, 43);
     font-size: 18px;
     font-weight: bold;
     margin-left: 10px;
@@ -135,9 +141,8 @@
 .checkButtonShow{
     background-color: rgb(255, 222, 0);
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 20px;
     height: 35px;
-    border-radius: 8px;
     font-weight: bold;
     border: none;
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
@@ -172,8 +177,9 @@
 
 */
 .orderListItemSourced{
-    margin-left: 120px;
+    margin-left: 225px;
     margin-top: 40px;
+    margin-bottom: 10px;
     display: flex;
 }
 
@@ -192,8 +198,9 @@
 
 .orderListItemUnsourced{
     margin-top: 40px;
-    margin-left: 120px;
+    margin-left: 225px;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .orderListItemUnsourced p {
@@ -209,7 +216,8 @@
 
 .orderListItemInventory{
     margin-top: 40px;
-    margin-left: 120px;
+    margin-left: 225px;
+    margin-bottom: 10px;
     display: flex;
 }
 
@@ -226,7 +234,8 @@
 
 .orderListItemCanceled{
     margin-top: 40px;
-    margin-left: 120px;
+    margin-left: 390px;
+    margin-bottom: 10px;
     display: flex;
 }
 
@@ -247,7 +256,6 @@
     margin-bottom: 20px;
     padding: 5px;
     margin-right: 10px;
-    border-radius: 5px;
     width: 150px;
     justify-content: center;
     border: 2px;
@@ -277,10 +285,88 @@ MOBIL
 
 
 */
+@media only screen and (max-width : 1535px) {
+
+    /*
+
+    ITEM SOURCED
+
+    */
+.orderListItemSourced{
+    margin-left: 225px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.orderListItemSourced p{
+    margin-right: 30px;
+    
+    display: flex;
+}
+
+
+/*
+
+    ITEM UNSOURCED
+
+*/
+
+.orderListItemUnsourced{
+    margin-top: 40px;
+    margin-left: 225px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.orderListItemUnsourced p {
+    margin-right: 30px;
+    
+}
+
+/*
+
+    ITEM INVENTORY
+
+*/
+
+.orderListItemInventory{
+    margin-top: 40px;
+    margin-left: 225px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.orderListItemInventory p{
+    margin-right: 30px;
+   
+}
+
+/*
+
+    ITEM CANCELED
+
+*/
+
+.orderListItemCanceled{
+    margin-top: 40px;
+    margin-left: 390px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.orderListItemCanceled p{
+    margin-right: 30px;
+   
+}
+
+
+}
 
 
 
-@media only screen and (max-width : 480px) {
+
+@media only screen and (max-width : 1000px) {
     .listDiv{
         margin-left: 4%;
     }
@@ -316,7 +402,7 @@ MOBIL
     }
     
     .beforeDiv{
-        display: flex;
+        display: block;
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
@@ -327,6 +413,7 @@ MOBIL
     }
     
     .toggleSpan{
+        margin-top: 15px;
         font-size: 20px;
         color: gray;
     }
@@ -345,11 +432,11 @@ MOBIL
     
     .orderDiv1{
         margin-left: -20px;
-        display: flex;
+        display: block;
     }
     
     .orderListDivFlex{
-        display: flex;
+        display: block;
         margin-right: 10px;
         margin-bottom: -10px;
     }
@@ -359,46 +446,50 @@ MOBIL
         margin-left: 10px;
         margin-top: 6px;
     }
+
     .orderStatusDiv{
         display: flex;
+        margin-left: -20px;
     }
-    
-    .orderStatusLabel{
-        margin-left: -130px;
-        font-size: 18px;
-        font-weight: bold;
+    .topRow{
+        display: flex;
     }
-    
+    .mobilStatus{
+        display: none !important;
+    }
+    .mobilStatusHidden{
+        justify-content: right;
+        width: 90%;
+        display:flex;
+    }
+
     .orderStatussourced{
-        color: rgb(24, 189, 98);
+        color: rgb(54, 124, 43);
         font-size: 18px;
         font-weight: bold;
-        margin-left: 10px;
+        
     }
     .orderStatusunsourced{
         color: rgb(242, 169, 0);
         font-size: 18px;
         font-weight: bold;
-        margin-left: 10px;
+        
     }
     .orderStatuscanceled{
         color: rgb(242, 56, 0);
         font-size: 18px;
         font-weight: bold;
-        margin-left: 10px;
+        
     }
     .orderStatusinventory{
         color: rgb(0, 196, 179);
         font-size: 18px;
         font-weight: bold;
-        margin-left: 10px;
+        
     }
     
     .orderImg{
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
+        display: none;
     }
     
     .orderImg2{
@@ -420,9 +511,8 @@ MOBIL
     .checkButtonShow{
         background-color: rgb(255, 222, 0);
         display: inline-block;
-        padding: 10px 15px;
+        padding: 10px 20px;
         height: 35px;
-        border-radius: 8px;
         font-weight: bold;
         border: none;
         box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
@@ -455,7 +545,7 @@ MOBIL
     .orderListItemSourced{
         margin-left: -20px;
         margin-top: 20px;
-        display: flex;
+        display: block;
     }
     
     .orderListItemSourced p{
@@ -473,7 +563,7 @@ MOBIL
     .orderListItemUnsourced{
         margin-left: -20px;
         margin-top: 20px;
-        display: flex;
+        display: block;
     }
     
     .orderListItemUnsourced p {
@@ -491,7 +581,7 @@ MOBIL
     .orderListItemInventory{
         margin-left: -20px;
         margin-top: 20px;
-        display: flex;
+        display: block;
     }
     
     .orderListItemInventory p{
@@ -509,7 +599,7 @@ MOBIL
     .orderListItemCanceled{
         margin-left: -20px;
         margin-top: 20px;
-        display: flex;
+        display: block;
     }
     
     .orderListItemCanceled p{

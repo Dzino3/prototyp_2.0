@@ -3,9 +3,12 @@ import './style/heroStyle.css';
 
 function HeroForm({user , t}) {
   return (
-    <div className='heroDiv'>
-        <h1>{t('heroWelcome')} <span>{user.dealer}</span></h1>
-    </div>
+    <>
+    <div class="parallax"></div>
+      <div className='heroDiv'>
+          <h1>{t('heroWelcome')} <span>{user.dealer}</span></h1>
+      </div>
+    </>
   )
 }
 

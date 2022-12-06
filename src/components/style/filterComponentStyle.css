@@ -1,0 +1,33 @@
+
+.FilterDiv{
+    margin-right: 5px;
+}
+
+/* CSS */
+.filterButton {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 4px 7px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.filterButton:hover{
+    color: rgb(54, 124, 43);
+}
+

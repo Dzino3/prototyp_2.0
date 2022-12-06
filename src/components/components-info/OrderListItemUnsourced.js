@@ -5,8 +5,6 @@ function OrderListItemUnsourced({item, t}) {
     <div className='orderListItemUnsourced'>
       
       <div className='block'>
-        <p className='p2'>{t('listItemULabel1')} </p>
-        <p>{item.SOLD}</p>
         <p className='p2'>{t('listItemULabel2')} </p>
         <p>{item.ORDER_ENTRY_DATE}</p>
         <p className='p2'>{t('listItemULabel3')} </p>
