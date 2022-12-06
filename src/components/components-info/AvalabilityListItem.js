@@ -21,7 +21,9 @@ function AvalabilityListItem({user, item, selec = false, t }) {
     <div>
       <div className='item'>
         <div className='beforeDiv' onClick={() => toggle()}>
+
           <div className='orderDiv1'>
+
             <div className='topRow'>
               <h3 className='listItemH3'>{item.PRODUCT}</h3>
               <div className='mobilStatusAvalHidden'>
@@ -32,7 +34,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
               </div>
 
             </div>
-
+            
             <div className='orderDiv2'>
               <div className='orderListDivFlex'>
                 <p className='p1'>{t('avalItemLabel1')} </p>
@@ -62,13 +64,15 @@ function AvalabilityListItem({user, item, selec = false, t }) {
                 <p className='p3'>{'Info'}: {item.INFO}</p>
                 <p className='p3'>{t('avalItemLabel6')}: {item.COMMENTS_RESTRICTIONS}</p>
               </div>
+
+              {/* 
               <div className='EmailDiv'>
                 <input type="email" id="email" name="email" placeholder='Your E-Mail'></input>
                 <br></br>
                 <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder='Write your message...' onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
                 <br></br>
                 <button onClick={sendEmail}>Send</button>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

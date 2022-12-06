@@ -154,7 +154,7 @@ body{
         position: absolute;
         left:0px;
         top: 90px;
-        height: 290px;
+        height: 250px;
         max-height: 2300px;
         width: 100%;
         background-color: rgb(255, 255, 255);
@@ -173,7 +173,7 @@ body{
 
     .leftSide .links .hiddenLink{
         color: black;
-        margin: 8px;
+        margin: 10px;
         font-size: 18px;
         display: flex;
         text-decoration: none;

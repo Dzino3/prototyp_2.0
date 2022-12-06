@@ -53,6 +53,11 @@
     
 }
 
+
+.orderDiv1{
+    display: block;
+}
+
 .avalError{
     color: red;
     margin-bottom: 10px;

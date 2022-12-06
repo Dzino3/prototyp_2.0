@@ -4,13 +4,16 @@
 }
 
 .radios-Show-2 input:hover{
+    cursor: pointer;
     color: rgb(54, 124, 43);
 }
 
 .radios-Show-2 input{
     font-weight: bold;
 }
-  
+[type="checkbox"]{
+    opacity: 0;
+  }
 .custom-select-Show-2[open] {
     z-index: 1;
 }
@@ -105,7 +108,9 @@
     padding-bottom: 0px;
     border-bottom: none;
 }
-  
+.Checkbox:hover{
+    cursor: pointer;
+}
   /* FAKE SELECT */
   
 .radios-Show-2.radios-Show-2 {

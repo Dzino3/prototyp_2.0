@@ -58,6 +58,12 @@ function AvailabilityListForm({ user, t }) {
       setFilter(current => [...current, fil])
     }
   }
+  function removeAllFilter(a){
+    filter.map((element)=>{
+      setFilter(current => current.filter((filter_item) => filter_item !== element))
+    })
+    
+  }
 
 
   function checkSort(a, b) {
@@ -153,6 +159,7 @@ function AvailabilityListForm({ user, t }) {
               </ul>
             </details>
           </div>
+          {filter.length > 0 ? <FilterComponent name={t('listFilter2')} para={null} func={removeAllFilter}></FilterComponent> : <></>}
           {filter.map((element) => {
             return <FilterComponent name={element} para={element} func={addFilter}></FilterComponent>
           })}

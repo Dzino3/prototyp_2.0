@@ -17,17 +17,17 @@ function OrderListItemSourced({item, t}) {
         <p className='p2'>{t('listItemSLabel5')} </p>
         <p>{item.ORDER_SOURCE_DATE}</p>
         <p className='p2'>{t('listItemSLabel6')} </p>
-        <p>{item.REQ_SHIP_DATE}</p>
+        <p>{item.REQ_SHIP_DATE }</p>
       </div>
       <div className='block'>
         <p className='p2'>{t('listItemSLabel7')} </p>
-        <p>{item.MACHINE_STATUS}</p>
+        <p>{item.MACHINE_STATUS !== "" ? item.MACHINE_STATUS : "-"}</p>
         <p className='p2'>{t('listItemSLabel8')} </p>
         <p>{item.ORDER_STATUS}</p>
       </div>
       <div className='block'>
         <p className='p2'>{t('listItemSLabel9')} </p>
-        <p>{item.PRES_DATE}</p>
+        <p>{item.PRES_DATE !== "" ? item.PRES_DATE : "-"}</p>
         <p className='p2'>{t('listItemSLabel10')} </p>
         <p>{item.BASE_CODE_DESCR}</p>
         <p className='p2'>{t('listItemSLabel11')} </p>

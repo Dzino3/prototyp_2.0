@@ -93,7 +93,7 @@
     padding-bottom: 0px;
     border-bottom: none;
 }
-  
+
   /* FAKE SELECT */
   
 .radios-Show.radios-Show {
@@ -102,6 +102,11 @@
   
 .radios-Show.radios:before {
     content: var(--selection);
+}
+
+.kundenInput-Show:hover{
+    cursor: pointer;
+
 }
 
   

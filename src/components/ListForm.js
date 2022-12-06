@@ -64,6 +64,12 @@ function ListForm({ user, t }) {
       setFilter(current => current.filter((filter_item) => filter_item !== fil))
     }
   }
+  function removeAllFilter(a){
+    filter.map((element)=>{
+      setFilter(current => current.filter((filter_item) => filter_item !== element))
+    })
+    
+  }
 
 
   function checkSort(a, b) {
@@ -153,10 +159,11 @@ function ListForm({ user, t }) {
                 </li>
               </ul>
             </details>
-          </div>
+          </div>{filter.length > 0 ? <FilterComponent name={t('listFilter2')} para={null} func={removeAllFilter}></FilterComponent> : <></>}
           {filter.map((element) =>{
             return <FilterComponent name={element} para={element} func={removeFilter}></FilterComponent>
           })}
+          
         </div>
 
 

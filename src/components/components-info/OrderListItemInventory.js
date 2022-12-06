@@ -9,20 +9,18 @@ function OrderListItemInventory({item, t}) {
             <p>{item.FDD}</p>
             <p className='p2'>{t('listItemILabel2')} </p>
             <p>{item.ADD}</p>
-            <p className='p2'>{t('listItemILabel3')} </p>
-            <p>{item.INV_DATE}</p>
         </div>
         <div className='block'>
             <p className='p2'>{t('listItemILabel4')} </p>
-            <p>{item.BILLING_DATE}</p>
+            <p>{item.BILLING_DATE !== "" ? item.BILLING_DATE : "-"}</p>
             <p className='p2'>{t('listItemILabel5')} </p>
-            <p>{item.BILLING_NUMBER}</p>
+            <p>{item.BILLING_NUMBER !== "" ? item.BILLING_NUMBER : "-"}</p>
         </div>
         <div className='block'>
             <p className='p2'>{t('listItemILabel6')} </p>
             <p>{item.DAYS_ON_INV}</p>
-            <p className='p2'>{t('listItemILabel7')} </p>
-            <p>{item.ORDER_STATUS}</p>
+            <p className='p2'>{t('listItemILabel3')} </p>
+            <p>{item.INV_DATE}</p>
         </div>
         <div className='block'>
             <p className='p2'>{t('listItemILabel8')} </p>
