@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/prototyp_2.0/static/css/main.6e12d6e1.css",
-    "main.js": "/prototyp_2.0/static/js/main.f56f69e0.js",
+    "main.css": "/prototyp_2.0/static/css/main.f0e65057.css",
+    "main.js": "/prototyp_2.0/static/js/main.912c7774.js",
     "static/js/787.84f719dc.chunk.js": "/prototyp_2.0/static/js/787.84f719dc.chunk.js",
     "static/media/background3.jpg": "/prototyp_2.0/static/media/background3.9388354d58e907dfefad.jpg",
     "static/media/JohnDeere-Background2.jpg": "/prototyp_2.0/static/media/JohnDeere-Background2.5a6b71abc1924cba4272.jpg",
@@ -10,12 +10,12 @@
     "static/media/tractor1.webp": "/prototyp_2.0/static/media/tractor1.19880a3be6c06cfaed39.webp",
     "static/media/globus.png": "/prototyp_2.0/static/media/globus.29d883b11f20be41d033.png",
     "index.html": "/prototyp_2.0/index.html",
-    "main.6e12d6e1.css.map": "/prototyp_2.0/static/css/main.6e12d6e1.css.map",
-    "main.f56f69e0.js.map": "/prototyp_2.0/static/js/main.f56f69e0.js.map",
+    "main.f0e65057.css.map": "/prototyp_2.0/static/css/main.f0e65057.css.map",
+    "main.912c7774.js.map": "/prototyp_2.0/static/js/main.912c7774.js.map",
     "787.84f719dc.chunk.js.map": "/prototyp_2.0/static/js/787.84f719dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e12d6e1.css",
-    "static/js/main.f56f69e0.js"
+    "static/css/main.f0e65057.css",
+    "static/js/main.912c7774.js"
   ]
 }
