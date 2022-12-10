@@ -17,11 +17,9 @@
 }
   
 .radios {
-    
     cursor: pointer;
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius: 5px;
     list-style: none;
     display: flex;
     z-index: 1;
@@ -32,7 +30,6 @@
     background-color: rgb(240, 240, 240);
     color: rgb(54, 124, 43);
     border-color: rgb(54, 124, 43);
-
     cursor: pointer;
 }
   
@@ -56,32 +53,25 @@
     transform: rotate(45deg) translate(50%, 0%);
     transform-origin: center center;
     transition: transform ease-in-out 100ms;
-    
 }
   
-.radios:focus {
-    outline: none;
-}
-  
-.custom-select[open] .radios:after {
-    transform: rotate(-45deg) translate(0%, 0%);
-}
+
   
 .list {
     z-index: 2;
-    width: 100%;
-    background: #ddd;
+    background: rgb(240, 240, 240);
     position: absolute;
     top: calc(100% + .5rem);
     
     padding: 1rem;
-    width: 200px;
-    margin-left: 5px;
+    width: 204px;
+    margin-left: 0px;
     margin-top: -10px;
+    list-style: none;
+    
 
     box-sizing: border-box;
-    border-radius: 5px;
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
 
 }
@@ -99,6 +89,7 @@
 }
 
 .kundenLi label a:hover{
+    cursor: pointer;
     color: rgb(54, 124, 43);
 }
   
@@ -134,11 +125,6 @@
 
 }
   
-
-
-.radios{
-    font-size: 20px;
-}
 
 @media only screen and (max-width: 1406px) {
     .radios{

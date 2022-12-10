@@ -9,7 +9,7 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./pictures/backgroud/background3.jpg');
+    background-image: url('./pictures/backgroud/backgroundFinal.jpg');
 }
 
 .loginFormWhole{
@@ -29,10 +29,20 @@
 
 .loginForm{
     display: block;
-    background-color: white;
     padding: 4em;
-    box-shadow:1px 4px 4px 10px rgba(4, 4, 4, 0.368);
     margin-top: 17%;
+    z-index: 2;
+}
+
+.backgroundBlur{
+    background: rgba(255, 255, 255, 0.617);
+    backdrop-filter: blur(8px);
+    margin-top: 4.5rem;
+    justify-content: center;
+    position: fixed;
+    height: 321px;
+    width: 429px;
+    z-index: -1;
 }
 
 .loginH2{
@@ -86,7 +96,21 @@
 }
 
 .error{
+    animation: shake 300ms;
     color: rgb(194, 16, 32);
+    padding: 0%;
+}
+
+@keyframes shake {
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
 }
 
 .countrySelect{

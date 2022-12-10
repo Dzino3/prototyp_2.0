@@ -68,6 +68,7 @@
 .orderListDivFlex{
     display: flex;
     margin-bottom: -10px;
+    margin-right: 10px;
 }
 
 .orderDiv2{
@@ -183,7 +184,7 @@
 
 */
 .orderListItemSourced{
-    margin-left: 225px;
+    margin-left: 90px;
     margin-top: 40px;
     margin-bottom: 10px;
     display: flex;
@@ -204,7 +205,7 @@
 
 .orderListItemUnsourced{
     margin-top: 40px;
-    margin-left: 225px;
+    margin-left: 90px;
     display: flex;
     margin-bottom: 20px;
 }
@@ -222,7 +223,7 @@
 
 .orderListItemInventory{
     margin-top: 40px;
-    margin-left: 225px;
+    margin-left: 90px;
     margin-bottom: 10px;
     display: flex;
 }
@@ -240,7 +241,7 @@
 
 .orderListItemCanceled{
     margin-top: 40px;
-    margin-left: 225px;
+    margin-left: 90px;
     margin-bottom: 10px;
     display: flex;
 }
@@ -281,6 +282,79 @@
     display: flex;
 }
 
+/*
+    
+        CONTACT US AND STATUS BAR PART
+
+*/
+
+.afterDiv1-2{
+    display: flex;
+}
+
+.afterDiv1-3{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.contactUs{
+    width: 130px;
+}
+.contactUsButton{
+    background-color: rgb(54, 124, 43);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.contactUsButton:hover{
+    cursor: pointer;
+    background-color: rgb(40, 91, 32);
+}
+
+.progressBarhelper{
+    display: block;
+}
+
+.progressBarImgS{
+    height: 25%;
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 140px;
+    margin-left: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./pictures/progress-Bar/Search_bar-2.png');
+}
+
+.progressBarImgI{
+    height: 25%;
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 140px;
+    margin-left: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./pictures/progress-Bar/Search_bar-3.png');
+}
+
+.progressBarImgU{
+    height: 25%;
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 140px;
+    margin-left: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./pictures/progress-Bar/Search_bar-1.png');
+}
 
 
 /*
@@ -291,6 +365,9 @@ MOBIL
 
 
 */
+
+
+
 @media only screen and (max-width : 1535px) {
 
     /*
@@ -299,7 +376,7 @@ MOBIL
 
     */
 .orderListItemSourced{
-    margin-left: 225px;
+    margin-left: 90px;
     margin-top: 40px;
     margin-bottom: 10px;
     display: flex;
@@ -320,7 +397,7 @@ MOBIL
 
 .orderListItemUnsourced{
     margin-top: 40px;
-    margin-left: 225px;
+    margin-left: 90px;
     display: flex;
     margin-bottom: 20px;
 }
@@ -338,7 +415,7 @@ MOBIL
 
 .orderListItemInventory{
     margin-top: 40px;
-    margin-left: 225px;
+    margin-left: 90px;
     margin-bottom: 10px;
     display: flex;
 }
@@ -356,7 +433,7 @@ MOBIL
 
 .orderListItemCanceled{
     margin-top: 40px;
-    margin-left: 225px;
+    margin-left: 90px;
     margin-bottom: 10px;
     display: flex;
 }
@@ -646,7 +723,26 @@ MOBIL
     .listCheckDiv{
         display: flex;
     }
+
     
+    .afterDiv1-2{
+        display: block;
+    }
     
+    /*
+        Progress Bar
+    */
+
+    .progressBarImgU{
+        display: none;
+    }
+
+    .progressBarImgS{
+        display: none;
+    }
+
+    .progressBarImgI{
+        display: none;
+    }
     
 }

@@ -36,7 +36,7 @@ function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }
           </div>
           <button className="showLinksButton" onClick={() => setShowLinks(!showLinks)}></button>
         </div>
-        <div className='logoImgNav'></div>
+        <div><a target="blank" href="https://www.deere.de/de/index.html" className='logoImgNav'></a></div>
         <div className="rightSide">
           <div className='lngSelect'>
             <details className="custom-select-Lng">

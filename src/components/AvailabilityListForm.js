@@ -127,7 +127,7 @@ function AvailabilityListForm({ user, t }) {
               <ul className="list-Show">
                 <li className='kundenLi-Show'>
                   <label for="item1-Show">
-                    <Checkbox label={t('avalListLabel3o1')} onClick={() => addFilter("Commercial Mowing")} checked={false}></Checkbox>
+                    <Checkbox className='checkboxHover' label={t('avalListLabel3o1')} onClick={() => addFilter("Commercial Mowing")} checked={false}></Checkbox>
                     <span></span>
                   </label>
                 </li>

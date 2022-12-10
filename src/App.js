@@ -7,6 +7,7 @@ import ListForm from './components/ListForm';
 import HeroForm from './components/HeroForm';
 import FooterForm from './components/FooterForm';
 import AvailabilityListForm from './components/AvailabilityListForm';
+import About from './components/AboutJohnDeere';
 import './components/style/appStyle.css';
 import Axios from "axios";
 import { useTranslation, Trans } from 'react-i18next'
@@ -36,6 +37,7 @@ function App() {
     Axios.post("https://codux.herokuapp.com/login", { ACC: details.acc, UNIT: details.unit }).then((response) => {
       if (response.data.length === 0 || details.acc !== response.data[0].ACC) {
         setError(t('error'))
+        setTimeout(() => setError(""), 900);
       } else {
         setError("")
         setUser({
@@ -83,6 +85,7 @@ function App() {
                   </div>
                 </div>)}
             </div>
+            <About t={t}></About>
             <FooterForm t={t}></FooterForm>
           </div>
         ) : (

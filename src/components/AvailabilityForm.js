@@ -16,7 +16,8 @@ function AvailabilityForm({user, t}) {
             setProduktInfo(response.data);
             setError("");
         }else{
-            setError(t('error'));
+          setError(t('error'))
+          setTimeout(() => setError(""), 900);
             setProduktInfo([]);
         }
     });

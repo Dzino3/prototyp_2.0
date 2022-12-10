@@ -1,10 +1,7 @@
 .custom-select-Show {
     position: relative;
     width: 150px;
-}
-
-.radios-Show input:hover{
-    color: rgb(54, 124, 43);
+    display: inline-flex;
 }
 
 .radios-Show input{
@@ -65,15 +62,14 @@
     top: calc(100% + .5rem);
     
     padding: 1rem;
-    width: 176px;
+    width: 186px;
     margin-left: -27px;
     margin-top: -1px;
-    
+    list-style: none;
 
     box-sizing: border-box;
     border-style: solid;
-    border-color: rgb(204, 204, 204);;
-    border-radius: 5px;
+    border-color: rgb(204, 204, 204);
     max-height: 250px;
     overflow-y: auto;
 }
@@ -83,6 +79,12 @@
     margin-left: 10px;
     padding: 1rem 0;
     border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.checkbox-wrapper label:hover{
+    cursor: pointer;
+    color: rgb(54, 124, 43);
 }
   
 .kundenLi-Show:first-child {
@@ -103,12 +105,6 @@
 .radios-Show.radios:before {
     content: var(--selection);
 }
-
-.kundenInput-Show:hover{
-    cursor: pointer;
-
-}
-
   
 .kundenInput-Show[type=radio] {
     counter-increment: radios-Show;

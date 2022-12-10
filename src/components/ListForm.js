@@ -138,7 +138,7 @@ function ListForm({ user, t }) {
               <ul className="list-Show">
                 <li className='kundenLi-Show'>
                   <label for="item1-Show">
-                    <Checkbox id="sourced" label={t('listFilter1o1')} onClick={() => addFilter("sourced")} checked={false}></Checkbox>
+                    <Checkbox className="checkbox" id="sourced" label={t('listFilter1o1')} onClick={() => addFilter("sourced")} checked={false}></Checkbox>
                     <span></span>
                   </label>
                 </li>

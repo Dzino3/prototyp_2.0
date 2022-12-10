@@ -17,13 +17,19 @@ function AvalabilityListItem({user, item, selec = false, t }) {
   });
   }
 
+  function Mailto({ email, subject, body, ...props }) {
+    return (
+      <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+        {props.children}
+      </a>
+    );
+  }
+
   return (
     <div>
       <div className='item'>
         <div className='beforeDiv' onClick={() => toggle()}>
-
           <div className='orderDiv1'>
-
             <div className='topRow'>
               <h3 className='listItemH3'>{item.PRODUCT}</h3>
               <div className='mobilStatusAvalHidden'>
@@ -32,7 +38,6 @@ function AvalabilityListItem({user, item, selec = false, t }) {
                 </div>
                 <span className='toggleSpan'>{selected === true ? '▼' : '◄'}</span>
               </div>
-
             </div>
             
             <div className='orderDiv2'>
@@ -40,7 +45,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
                 <p className='p1'>{t('avalItemLabel1')} </p>
                 <p>{item.BASE_CODE}</p>
               </div>
-              <div className='AvalorderListDivFlex'>
+              <div className='orderListDivFlex'>
                 <p className='p1'>{t('avalItemLabel2')}</p>
                 <p> {item.BUNDLE}</p>
               </div>
@@ -56,13 +61,37 @@ function AvalabilityListItem({user, item, selec = false, t }) {
         </div>
         <div>
           <div className={selected === true ? 'afterDivshow' : 'afterDiv'}>
+            <div className='contactBlock'>
             <div className='afterDiv1'>
               <div className='flex'>
-                <p className='p3'>{t('avalItemLabel4')}: {item.BEST_CASE}</p>
-                <p className='p3'>{t('avalItemLabel5')}: {item.WORST_CASE}</p>
-                <p className='p3'>{t('avalItemLabel7')}: {item.MY}</p>
-                <p className='p3'>{'Info'}: {item.INFO}</p>
-                <p className='p3'>{t('avalItemLabel6')}: {item.COMMENTS_RESTRICTIONS}</p>
+                <div className='block'>
+                  <p className='p3'>{t('avalItemLabel4')}: </p>
+                  <p>{item.BEST_CASE !== "" ? item.BEST_CASE : "-"}</p>
+                </div>
+                <div className='block'>
+                  <p className='p3'>{t('avalItemLabel5')}: </p>
+                  <p>{item.WORST_CASE !== "" ? item.WORST_CASE : "-"}</p>
+                </div>
+                <div className='block'>
+                  <p className='p3'>{t('avalItemLabel7')}: </p>
+                  <p>{item.MY !== "" ? item.MY : "-"}</p>
+                </div>
+                <div className='block'>
+                  <p className='p3'>{'Info'}: </p>
+                  <p>{item.INFO !== "" ? item.INFO : "-"}</p>
+                </div>
+                <div className='block'>
+                  <p className='p3'>{t('avalItemLabel6')}: </p>
+                  <p>{item.COMMENTS_RESTRICTIONS !== "" ? item.COMMENTS_RESTRICTIONS : "-"}</p>
+                </div>
+                
+              </div>
+              <div className='contactUs'>
+                  <p className='needHelp'>{t('contactUsText2')}</p>
+                  <Mailto email="codux@gmx.de" subject={"Product: "+item.PRODUCT} body="Hello John Deere Support, I need help with this product:">
+                    <input  className='contactUsButton' type="button" value={t('contactUsButton')}></input>
+                  </Mailto>
+                </div>
               </div>
 
               {/* 

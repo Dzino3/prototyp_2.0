@@ -3,6 +3,7 @@ import React from 'react'
 
 function OrderListItemInventory({item, t}) {
   return (
+    <div className='progressBarhelper'>
     <div className='orderListItemInventory'>
         <div className='block'>
             <p className='p2'>{t('listItemILabel1')} </p>
@@ -26,6 +27,8 @@ function OrderListItemInventory({item, t}) {
             <p className='p2'>{t('listItemILabel8')} </p>
             <p>{item.QTY}</p>
         </div>
+    </div>
+    <div className='progressBarImgI'></div>
     </div>
   )
 }

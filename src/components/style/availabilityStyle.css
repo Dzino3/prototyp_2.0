@@ -65,8 +65,21 @@
 }
 
 .avalError{
-    color: red;
-    margin-bottom: 10px;
+    animation: shake 300ms;
+    color: rgb(194, 16, 32);
+    padding: 0%;
+}
+
+@keyframes shake {
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
 }
 
 .p1Aval{
@@ -97,12 +110,23 @@
 
 .flex{
     display: flex;
-    margin-left: 95px;
+    
 }
 
 .p3{
     font-weight: bold;
     margin-right: 200px;
+}
+
+.contactBlock{
+    display: block;
+}
+
+@media only screen and (max-width : 1500px) {
+
+    .p3{
+        margin-right: 50px;
+    }
 }
 
 @media only screen and (max-width : 1000px) {

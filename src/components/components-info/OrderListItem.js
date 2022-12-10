@@ -9,7 +9,6 @@ function OrderListItem({ item, selec = false, t }) {
 
   const [selected, setSelected] = useState(selec);
 
-
   const toggle = () => {
     setSelected(!selected)
   }
@@ -25,6 +24,14 @@ function OrderListItem({ item, selec = false, t }) {
       case 'canceled':
         return <OrderListItemCanceled item={item} t={t}></OrderListItemCanceled>;
     }
+  }
+
+  function Mailto({ email, subject, body, ...props }) {
+    return (
+      <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+        {props.children}
+      </a>
+    );
   }
   return (
 
@@ -63,12 +70,22 @@ function OrderListItem({ item, selec = false, t }) {
       <div>
         <div className={selected === true ? 'afterDivshow' : 'afterDiv'}>
           <div className='afterDiv1'>
-            {getStatusComponent()}
+            <div className='afterDiv1-2'>
+              <div className='afterDiv1-3'>
+                <div className='contactUs'>
+                  <p className='needHelp'>{t('contactUsText')}</p>
+                  <Mailto email="codux@gmx.de" subject={"Order #"+item.ORDER_NUMBER} body="Hello John Deere Support, I need help with this order:">
+                    <input  className='contactUsButton' type="button" value={t('contactUsButton')}></input>
+                  </Mailto>
+                </div>
+              </div>
+              {getStatusComponent()}
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+  
   )
 }
 

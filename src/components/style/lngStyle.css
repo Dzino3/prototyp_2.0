@@ -71,12 +71,9 @@
     margin-top: 3px;
     margin-left: -30px;
     
-    
-
     box-sizing: border-box;
     border-style: solid;
-    border-color: rgb(204, 204, 204);;
-    border-radius: 5px;
+    border-color: rgb(204, 204, 204);
     max-height: 250px;
     overflow-y: auto;
 }

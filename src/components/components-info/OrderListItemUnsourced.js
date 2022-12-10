@@ -2,8 +2,8 @@ import React from 'react'
 
 function OrderListItemUnsourced({item, t}) {
   return (
+    <div className='progressBarhelper'>
     <div className='orderListItemUnsourced'>
-      
       <div className='block'>
         <p className='p2'>{t('listItemULabel2')} </p>
         <p>{item.ORDER_ENTRY_DATE}</p>
@@ -26,6 +26,8 @@ function OrderListItemUnsourced({item, t}) {
         <p className='p2'>{t('listItemULabel8')} </p>
         <p>{item.QTY}</p>
       </div>
+    </div>
+    <div className='progressBarImgU'></div>
     </div>
   )
 }

@@ -70,6 +70,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 listItemLabel4: "Status",
 
                 listItemSLabel1: "Factory delivery date:",
+                listItemSLabelRDD: "Requested Delivery Date",
                 listItemSLabel2: "FDD - RDD:",
                 listItemSLabel3: "Sold:",
                 listItemSLabel4: "Order entry date:",
@@ -152,6 +153,25 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                avalItemLabel5: "Worst case shipping month",
                avalItemLabel6: "Comment",
                avalItemLabel7: "Model year",
+
+               /*
+               Contact us
+               */
+              contactUsText: "Need help with this order?",
+              contactUsText2: "Need help with this product?",
+              contactUsButton: "Contact us",
+
+              /* 
+                About John Deere
+              */
+                aboutH2: "About John Deere",
+                aboutH2_1: "Nothing runs like a Deere",
+                aboutText1: "We take care of essential business. We run for the people who trust us and for the planet that sustains us, we create intelligent, connected machines that give life the opportunity to leap forward.",
+                aboutH2_2: "Innovation and technology",
+                aboutText2: "We strive to create new ways of thinking and new ways of doing it. Not to shake up the status quo, but to create customer-centric solutions that advance their tasks in ways that make them easier and more profitable.",
+                aboutH2_3: "Sustainability",
+                aboutText3: "We strive to create solutions that preserve the livelihoods of our customers and communities around the world for generations to come.",
+                aboutButton: "More",
             }
         },
         de: {
@@ -163,7 +183,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 /*
                     Login
                 */
-                loginWelcome: 'Willkommen zu den Tracker',
+                loginWelcome: 'Willkommen zu dem Tracker',
                 loginSelect: "Wählen Sie Ihr Land (Unit) aus",
                 loginAccN: 'Kontonummer:',
                 loginButton: "Anmelden",
@@ -217,6 +237,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 listItemLabel4: "Status",
 
                 listItemSLabel1: "Aktuelle Lieferdatum:",
+                listItemSLabelRDD: "Angefordertes Lieferdatum",
                 listItemSLabel2: "Aktuelle Lieferdatum - Angefordertes Lieferdatum:",
                 listItemSLabel3: "Verkauft:",
                 listItemSLabel4: "Eingangsdatum der Bestellung:",
@@ -298,6 +319,25 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                avalItemLabel5: "Versandmonat im ungünstigsten Fall",
                avalItemLabel6: "Kommentar",
                avalItemLabel7: "Modelljahr",
+
+               /*
+               Contact us
+               */
+              contactUsText: "Benötigen Sie Hilfe bei dieser Bestellung?",
+              contactUsText2: "Benötigen Sie Hilfe zu diesem Produkt?",
+              contactUsButton: "Kontaktiere uns",
+
+              /* 
+                About John Deere
+              */
+                aboutH2: "Über JohnDeere",
+                aboutH2_1: "Nichts rennt so wie ein Deere",
+                aboutText1: "Wir kümmern uns um das Wesentliche. Wir laufen für die Menschen, die uns vertrauen, und für den Planeten, der uns ernährt. Wir schaffen intelligente, vernetzte Maschinen, die dem Leben die Möglichkeit geben, einen Sprung nach vorne zu machen.",
+                aboutH2_2: "Innovation und Technologie",
+                aboutText2: "Wir streben danach, neue Denkweisen und neue Vorgehensweisen zu schaffen. Nicht um den Status quo zu erschüttern, sondern um kundenorientierte Lösungen zu schaffen, die ihre Aufgaben so voranbringen, dass sie einfacher und profitabler werden.",
+                aboutH2_3: "Nachhaltigkeit",
+                aboutText3: "Wir streben danach, Lösungen zu schaffen, die die Lebensgrundlagen unserer Kunden und Gemeinschaften auf der ganzen Welt für kommende Generationen erhalten.",
+                aboutButton: "Mehr",
             }
         }
     }

@@ -62,8 +62,21 @@
 }
 
 .orderError{
-    margin-bottom: 10px;
-    color: red;
+    animation: shake 300ms;
+    color: rgb(194, 16, 32);
+    padding: 0%;
+}
+
+@keyframes shake {
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
 }
 
 

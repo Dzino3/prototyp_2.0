@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import './style/showStatusStayle.css';
+
 
 const Checkbox = ({ label, checked, ...props }) => {
     const [isChecked, setIsChecked] = useState(checked);
