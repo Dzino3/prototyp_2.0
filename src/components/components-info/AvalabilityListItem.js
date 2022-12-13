@@ -29,7 +29,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
     switch(x){
       case "Commercial Mowing":
         return t('avalListLabel3o1');
-      case "Compact Utility Tractory & Loaders":
+      case "Compact Utility Tractors & Loaders":
         return t('avalListLabel3o2');
       case "Golf":
         return t('avalListLabel3o3');

@@ -42,7 +42,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                     Search order
                 */
                 orderLabel1: "Search order",
-                orderLabel2: "Order number or Curtomer ID:",
+                orderLabel2: "Order number or Customer ID:",
                 orderButton: "Search",
 
 
@@ -142,7 +142,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                avalListLabel2o6: "Ship date ↑",
                avalListLabel3: "Show Category",
                avalListLabel3o1: "Commercial Mowing",
-               avalListLabel3o2: "Compact Utility Tractory & Loaders",
+               avalListLabel3o2: "Compact Utility Tractors & Loaders",
                avalListLabel3o3: "Golf",
                avalListLabel3o4: "Riding Lawn Tractors",
                avalListLabel3o5: "Utility Tractors",
