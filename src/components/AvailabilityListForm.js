@@ -12,6 +12,7 @@ function AvailabilityListForm({ user, t }) {
   const [amountOfProductsShown, setAmountOfProductsShown] = useState(5);
   const [filter, setFilter] = useState([])
   const [sort, setSort] = useState({ sorting_type: "", ascending: false });
+  const shipDatesInOrder = ["JANUARY", "APRIL", "MAY", "OCTOBER", "October", "NOVEMBER", "DECEMBER", "JANUARY 23", "FEBRUARY 23", "MARCH 23","APRIL 23","sold out", "-", "please contact your BP for lead time"]
 
   //gets called once when the landing page loads
   useEffect(() => {
@@ -68,6 +69,9 @@ function AvailabilityListForm({ user, t }) {
 
   function checkSort(a, b) {
     switch (sort.sorting_type) {
+      case "ship_date":
+        if (sort.ascending) {return shipDatesInOrder.indexOf(a.BEST_CASE) > shipDatesInOrder.indexOf(b.BEST_CASE) ? 1 : -1}
+        else {return shipDatesInOrder.indexOf(a.BEST_CASE) > shipDatesInOrder.indexOf(b.BEST_CASE) ? -1 : 1}
       case "base_code_description":
         if (sort.ascending) { return a.PRODUCT > b.PRODUCT ? 1 : -1 }
         else { return a.PRODUCT > b.PRODUCT ? -1 : 1 }
@@ -95,23 +99,33 @@ function AvailabilityListForm({ user, t }) {
                 <input className='kundenInput-Show-2' type="radio" name="item-Show-2" id="default-Show-2" title={t('avalListLabel2')} checked />
               </summary>
               <ul className="list-Show-2">
-                <li className='kundenLi-Show-2'>
+              <li className='kundenLi-Show-2'>
                   <label for="item1-Sort-2">
-                    <input className='sortButton' type="button" value={t('avalListLabel2o1')} onClick={() => addSort("base_code_description", false)}></input>
+                    <input className='sortButton' type="button" value={t('avalListLabel2o5')} onClick={() => addSort("ship_date", false)}></input>
                   </label>
                 </li>
                 <li className='kundenLi-Show-2'>
                   <label for="item2-Sort-2">
-                    <input className='sortButton' type="button" value={t('avalListLabel2o2')} onClick={() => addSort("base_code_description", true)}></input>
+                    <input className='sortButton' type="button" value={t('avalListLabel2o6')} onClick={() => addSort("ship_date", true)}></input>
                   </label>
                 </li>
                 <li className='kundenLi-Show-2'>
                   <label for="item3-Sort-2">
-                    <input className='sortButton' type="button" value={t('avalListLabel2o3')} onClick={() => addSort("base_code", false)}></input>
+                    <input className='sortButton' type="button" value={t('avalListLabel2o1')} onClick={() => addSort("base_code_description", false)}></input>
                   </label>
                 </li>
                 <li className='kundenLi-Show-2'>
                   <label for="item4-Sort-2">
+                    <input className='sortButton' type="button" value={t('avalListLabel2o2')} onClick={() => addSort("base_code_description", true)}></input>
+                  </label>
+                </li>
+                <li className='kundenLi-Show-2'>
+                  <label for="item5-Sort-2">
+                    <input className='sortButton' type="button" value={t('avalListLabel2o3')} onClick={() => addSort("base_code", false)}></input>
+                  </label>
+                </li>
+                <li className='kundenLi-Show-2'>
+                  <label for="item6-Sort-2">
                     <input className='sortButton' type="button" value={t('avalListLabel2o4')} onClick={() => addSort("base_code", true)}></input>
                   </label>
                 </li>

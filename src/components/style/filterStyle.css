@@ -1,6 +1,6 @@
 .custom-select-Show-2 {
     position: relative;
-    width: 120px;
+    width: 140px;
 }
 
 .radios-Show-2 input{
@@ -63,7 +63,7 @@
     top: calc(100% + .5rem);
     
     padding: 1rem;
-    width: 160px;
+    width: 170px;
     margin-left: -20px;
     margin-top: -1px;
     

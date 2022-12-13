@@ -8,6 +8,7 @@ import HeroForm from './components/HeroForm';
 import FooterForm from './components/FooterForm';
 import AvailabilityListForm from './components/AvailabilityListForm';
 import About from './components/AboutJohnDeere';
+import LngChange from './components/components-info/LanguageChange';
 import './components/style/appStyle.css';
 import Axios from "axios";
 import { useTranslation, Trans } from 'react-i18next'
@@ -89,7 +90,12 @@ function App() {
             <FooterForm t={t}></FooterForm>
           </div>
         ) : (
-          <LoginForm Login={Login} error={error} t={t}></LoginForm>
+          <>
+            <div className='lngsLogin'>
+              <LngChange lngs={lngs} i18n={i18n}></LngChange>
+            </div>
+            <LoginForm Login={Login} error={error} t={t}></LoginForm>
+          </>
         )
         }
       </div>

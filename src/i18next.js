@@ -14,7 +14,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 /*
                     Orders
                 */
-                loginWelcome: 'Welcome to the Tracker',
+                loginWelcome: 'Welcome to the Supporter',
                 loginSelect: "Select your (Unit) country",
                 loginAccN: 'Account number:',
                 loginButton: "Login",
@@ -42,7 +42,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                     Search order
                 */
                 orderLabel1: "Search order",
-                orderLabel2: "Order number:",
+                orderLabel2: "Order number or Curtomer ID:",
                 orderButton: "Search",
 
 
@@ -138,6 +138,8 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                avalListLabel2o2: "Product Name ↑",
                avalListLabel2o3: "Base Code ↓",
                avalListLabel2o4: "Base Code ↑",
+               avalListLabel2o5: "Ship date ↓",
+               avalListLabel2o6: "Ship date ↑",
                avalListLabel3: "Show Category",
                avalListLabel3o1: "Commercial Mowing",
                avalListLabel3o2: "Compact Utility Tractory & Loaders",
@@ -172,6 +174,12 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 aboutH2_3: "Sustainability",
                 aboutText3: "We strive to create solutions that preserve the livelihoods of our customers and communities around the world for generations to come.",
                 aboutButton: "More",
+
+                /*
+                CATEGORY
+                */
+
+
             }
         },
         de: {
@@ -183,7 +191,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 /*
                     Login
                 */
-                loginWelcome: 'Willkommen zu dem Tracker',
+                loginWelcome: 'Willkommen zu dem Supporter',
                 loginSelect: "Wählen Sie Ihr Land (Unit) aus",
                 loginAccN: 'Kontonummer:',
                 loginButton: "Anmelden",
@@ -210,7 +218,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                     Orders
                 */
                 orderLabel1: "Bestellung suchen",
-                orderLabel2: "Bestellnummer:",
+                orderLabel2: "Bestellnummer oder Kunden-ID:",
                 orderButton: "Suchen",
 
                 /*
@@ -304,6 +312,8 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                avalListLabel2o2: "Produktname ↑",
                avalListLabel2o3: "Basiscode ↓",
                avalListLabel2o4: "Basiscode ↑",
+               avalListLabel2o5: "Versanddatum ↓",
+               avalListLabel2o6: "Versanddatum ↑",
                avalListLabel3: "Zeige Kategorie",
                avalListLabel3o1: "Kommerzielles Mähen",
                avalListLabel3o2: "Kompakte Kommunaltraktoren und Lader",
@@ -331,7 +341,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 About John Deere
               */
                 aboutH2: "Über JohnDeere",
-                aboutH2_1: "Nichts rennt so wie ein Deere",
+                aboutH2_1: "Nothing runs like a Deere",
                 aboutText1: "Wir kümmern uns um das Wesentliche. Wir laufen für die Menschen, die uns vertrauen, und für den Planeten, der uns ernährt. Wir schaffen intelligente, vernetzte Maschinen, die dem Leben die Möglichkeit geben, einen Sprung nach vorne zu machen.",
                 aboutH2_2: "Innovation und Technologie",
                 aboutText2: "Wir streben danach, neue Denkweisen und neue Vorgehensweisen zu schaffen. Nicht um den Status quo zu erschüttern, sondern um kundenorientierte Lösungen zu schaffen, die ihre Aufgaben so voranbringen, dass sie einfacher und profitabler werden.",

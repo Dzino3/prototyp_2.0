@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Kundenservice from './Kundenservice';
+import LngChange from './components-info/LanguageChange';
 import "./style/appStyle.css"
 import './style/navbarStyle.css';
 import './style/lngStyle.css'
@@ -8,7 +9,7 @@ import './style/lngStyle.css'
 function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }) {
   const [showLinks, setShowLinks] = useState(false)
   const [navbar, setNavbar] = useState(false)
-  const lngChange = "Lng";
+  
 
   const changeBackground = () =>{
     if(window.scrollY >= 100){
@@ -38,24 +39,7 @@ function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }
         </div>
         <div><a target="blank" href="https://www.deere.de/de/index.html" className='logoImgNav'></a></div>
         <div className="rightSide">
-          <div className='lngSelect'>
-            <details className="custom-select-Lng">
-              <summary className="radios-Lng">
-                
-              </summary>
-              <ul className="list-Lng">
-                <li className='kundenLi-Lng'>
-
-                  {Object.keys(lngs).map((lng) => (
-
-                    <input for={lngs[lng].nativeName} className='lngButton' type='button' value={lngs[lng].nativeName} key={lng} onClick={() => { i18n.changeLanguage(lng); lngChange = lngs[lng].nativeName }} disabled={i18n.resolvedLanguage === lng}></input>
-
-                  ))}
-
-                </li>
-              </ul>
-            </details>
-          </div>
+          <LngChange lngs={lngs} i18n={i18n}></LngChange>
           <button onClick={Logout} className="logoutButton">{t('navbarLabel5')}</button>
         </div>
       </div>

@@ -25,6 +25,23 @@ function AvalabilityListItem({user, item, selec = false, t }) {
     );
   }
 
+  function translateCategory(x){
+    switch(x){
+      case "Commercial Mowing":
+        return t('avalListLabel3o1');
+      case "Compact Utility Tractory & Loaders":
+        return t('avalListLabel3o2');
+      case "Golf":
+        return t('avalListLabel3o3');
+      case "Riding Lawn Tractors":
+        return t('avalListLabel3o4');
+      case "Utility Tractors":
+        return t('avalListLabel3o5');
+      case "Utility Vehicles":
+        return t('avalListLabel3o6');
+    }
+  }
+
   return (
     <div>
       <div className='item'>
@@ -34,7 +51,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
               <h3 className='listItemH3'>{item.PRODUCT}</h3>
               <div className='mobilStatusAvalHidden'>
                 <div className='orderListDivFlex'>
-                  <p className='p1Aval'>{item.CATEGORY}</p>
+                  <p className='p1Aval'>{translateCategory(item.CATEGORY)}</p>
                 </div>
                 <span className='toggleSpan'>{selected === true ? '▼' : '◄'}</span>
               </div>
@@ -54,7 +71,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
           </div>
           <div className='mobilStatusAval'>
             <div className='orderListDivFlex'>
-              <p className='p1Aval'>{item.CATEGORY}</p>
+              <p className='p1Aval'>{translateCategory(item.CATEGORY)}</p>
             </div>
             <span className='toggleSpan'>{selected === true ? '▼' : '◄'}</span>
           </div>

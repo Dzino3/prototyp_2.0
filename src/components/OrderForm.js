@@ -16,7 +16,7 @@ function OrderForm({user, t}) {
         //console.log(user.unit);
         Axios.post("https://codux.herokuapp.com/order_number", {unit: user.unit, order_number: detailsB.order_numer, acc: user.acc}).then((response) =>{
             if (response.data.length !== 0){
-                setBestellInfo(response.data[0]);
+                setBestellInfo(response.data);
                 setError("");
             }else{
                 setError(t('error'))
@@ -28,11 +28,11 @@ function OrderForm({user, t}) {
 
    //Functional component for Order number Input
    const handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      Checked();
-      event.preventDefault();
+        if (event.key === 'Enter') {
+        Checked();
+        event.preventDefault();
+        }
     }
-}
     
 
   return (
@@ -57,7 +57,7 @@ function OrderForm({user, t}) {
         </div>
     </div>
     </form>
-    <div className='orderItem'>{bestellInfo.length !== 0 ? <ListItem item={bestellInfo} selec={true} t={t}></ListItem> : <></>}</div>
+    <div className='orderItem'>{bestellInfo.length !== 0 ? bestellInfo.map((order)=>{return <ListItem item={order} selec={false} t={t}></ListItem>}) : <></>}</div>
     </div>
   )
 }
