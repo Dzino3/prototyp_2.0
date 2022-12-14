@@ -6,7 +6,7 @@ function HeroForm({user , t}) {
     <>
     <div class="parallax"></div>
       <div className='heroDiv'>
-          <h1>{t('heroWelcome')} <span>{user.dealer}</span></h1>
+          <h1>{t('heroWelcome')} <span>Tractors Dispatch GmbH</span></h1>
       </div>
     </>
   )
