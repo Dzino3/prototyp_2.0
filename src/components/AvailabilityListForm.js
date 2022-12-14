@@ -86,6 +86,23 @@ function AvailabilityListForm({ user, t }) {
     setSort({ sorting_type: sor, ascending: isAscending });
   }
 
+  function translateCategory(x){
+    switch(x){
+      case "Commercial Mowing":
+        return t('avalListLabel3o1');
+      case "Compact Utility Tractors & Loaders":
+        return t('avalListLabel3o2');
+      case "Golf":
+        return t('avalListLabel3o3');
+      case "Riding Lawn Tractors":
+        return t('avalListLabel3o4');
+      case "Utility Tractors":
+        return t('avalListLabel3o5');
+      case "Utility Vehicles":
+        return t('avalListLabel3o6');
+    }
+  }
+
 
   return (
     <>
@@ -147,7 +164,7 @@ function AvailabilityListForm({ user, t }) {
                 </li>
                 <li className='kundenLi-Show'>
                   <label for="item2-Show">
-                    <Checkbox label={t('avalListLabel3o2')} onClick={() => addFilter("Compact Utility Tractory & Loaders")} checked={false}></Checkbox>
+                    <Checkbox label={t('avalListLabel3o2')} onClick={() => addFilter("Compact Utility Tractors & Loaders")} checked={false}></Checkbox>
                   </label>
                 </li>
                 <li className='kundenLi-Show'>
@@ -175,7 +192,7 @@ function AvailabilityListForm({ user, t }) {
           </div>
           {filter.length > 0 ? <FilterComponent name={t('listFilter2')} para={null} func={removeAllFilter}></FilterComponent> : <></>}
           {filter.map((element) => {
-            return <FilterComponent name={element} para={element} func={addFilter}></FilterComponent>
+            return <FilterComponent name={translateCategory(element)} para={element} func={addFilter}></FilterComponent>
           })}
         </div>
 

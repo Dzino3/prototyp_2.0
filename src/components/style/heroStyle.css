@@ -7,9 +7,10 @@
 
 .parallax {
     /* The image used */
-    background-image: url("./pictures/backgroud/JohnDeere-Background2.jpg");
+    background-image: url("./pictures/backgroud/backgroundFinal.jpg");
     /* Set a specific height */
-    min-height:480px;
+    min-height:570px;
+    
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;

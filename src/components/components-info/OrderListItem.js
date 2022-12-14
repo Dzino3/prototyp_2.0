@@ -33,6 +33,11 @@ function OrderListItem({ item, selec = false, t }) {
       </a>
     );
   }
+
+  function getRandomNumber(){
+    return Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+  }
+
   return (
 
     <div className='item'>
@@ -48,7 +53,7 @@ function OrderListItem({ item, selec = false, t }) {
           </div>
 
           <div className='orderDiv2'>
-            <div className='orderImg'></div>
+            <div className="orderImg2"></div>
             <div className='listH3andPBlock'>
               <h3 className='listItemH3'>{t('listItemLabel1')} {item.ORDER_NUMBER}</h3>
               <div className='orderListDivFlex'>

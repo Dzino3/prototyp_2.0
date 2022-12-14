@@ -3,6 +3,7 @@ import React from 'react'
 
 function OrderListItemCanceled({ item }) {
   return (
+    <div className='progressBarhelper'>
     <div className='orderListItemCanceled'>
       <div className='block'>
         <p className='p2'>{t('listItemCLabel1')} </p>
@@ -22,6 +23,8 @@ function OrderListItemCanceled({ item }) {
       <p className='p2'>{t('listItemCLabel6')} </p>
       <p>{item.REASON}</p>
       </div>
+    </div>
+    <div className='progressBarImgC'></div>
     </div>
   )
 }

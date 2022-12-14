@@ -4,17 +4,9 @@ import Axios from "axios"
 function AvalabilityListItem({user, item, selec = false, t }) {
 
   const [selected, setSelected] = useState(selec);
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
 
   const toggle = () => {
     setSelected(!selected)
-  }
-
-  const sendEmail = () =>{
-    Axios.post("https://codux.herokuapp.com/email", {unit: user.unit, acc: user.acc, EMail: email, Message: message, product:item.PRODUCT, bundle:item.BUNDLE}).then((response) =>{
-
-  });
   }
 
   function Mailto({ email, subject, body, ...props }) {
@@ -99,26 +91,17 @@ function AvalabilityListItem({user, item, selec = false, t }) {
                 </div>
                 <div className='block'>
                   <p className='p3'>{t('avalItemLabel6')}: </p>
-                  <p>{item.COMMENTS_RESTRICTIONS !== "" ? item.COMMENTS_RESTRICTIONS : "-"}</p>
+                  <p className='p3Comment'>{item.COMMENTS_RESTRICTIONS !== "" ? item.COMMENTS_RESTRICTIONS : "-"}</p>
                 </div>
                 
               </div>
-              <div className='contactUs'>
+              <div className='contactUsAval'>
                   <p className='needHelp'>{t('contactUsText2')}</p>
                   <Mailto email="codux@gmx.de" subject={"Product: "+item.PRODUCT} body="Hello John Deere Support, I need help with this product:">
                     <input  className='contactUsButton' type="button" value={t('contactUsButton')}></input>
                   </Mailto>
                 </div>
               </div>
-
-              {/* 
-              <div className='EmailDiv'>
-                <input type="email" id="email" name="email" placeholder='Your E-Mail'></input>
-                <br></br>
-                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder='Write your message...' onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
-                <br></br>
-                <button onClick={sendEmail}>Send</button>
-              </div>*/}
             </div>
           </div>
         </div>

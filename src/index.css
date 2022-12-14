@@ -1,1 +1,10 @@
+@font-face {
+    font-family: inter;
+    src: url(./components/style/fonts/Interwght.ttf);
+}
 
+
+body,
+html{
+    font-family: inter;
+}

@@ -1,5 +1,6 @@
 .orderWholeDiv{
     margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 .orderForm{
@@ -13,7 +14,6 @@
 
 .order-inner-inner{
     display: block;
-    margin-top: 40px;
 }
 
 .orderForm-groupOut{
@@ -33,7 +33,8 @@
 .orderInput{
     color: rgb(54, 124, 43);
     display: block;
-    width: 200px;
+    width: 213px;
+    height: 18px;
     padding: 8px 15px;
     background-color: white;
     transition: 0.4s;

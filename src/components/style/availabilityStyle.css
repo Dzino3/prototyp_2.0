@@ -21,7 +21,7 @@
 
 .avalInput{
     display: block;
-    width: 200px;
+    width: 213px;
     height: 18px;
     padding: 8px 15px;
     background-color: white;
@@ -39,9 +39,9 @@
     background-color: rgb(255, 222, 0);
     display: inline-block;
     padding: 10px 20px;
+    height: 35px;
     font-weight: bold;
     border: none;
-    margin-bottom: 40px;
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
 }
 .avalCheckButton:hover{
@@ -114,8 +114,13 @@
 }
 
 .p3{
+    width: 130px;
     font-weight: bold;
-    margin-right: 200px;
+    margin-right: 130px;
+}
+
+.p3Comment{
+    width: 110px;
 }
 
 .contactBlock{
@@ -125,7 +130,7 @@
 @media only screen and (max-width : 1500px) {
 
     .p3{
-        margin-right: 50px;
+        margin-right: 30px;
     }
 }
 

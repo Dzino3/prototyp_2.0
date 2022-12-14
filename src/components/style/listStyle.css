@@ -121,7 +121,25 @@
     margin-left: 10px;
 }
 
-.orderImg{
+
+/*
+Order Images
+*/
+.orderImgContainer{
+    height: 130px;
+    width: 220px;
+}
+
+.orderImg1{
+    background-image: url(./pictures/icons/tractor1.png);
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.orderImg2{
     background-image: url(./pictures/icons/tractor2.webp);
     height: 130px;
     width: 220px;
@@ -129,13 +147,33 @@
     background-repeat: no-repeat;
 }
 
-.orderImg2{
-    background-image: url(./pictures/icons/tractor1.webp);
-    height: 130px;
-    width: 220px;
-    background-size: 100% 100%;
+.orderImg3{
+    background-image: url(./pictures/icons/tractor3.png);
+    background-size: cover;
     background-repeat: no-repeat;
 }
+
+.orderImg4{
+    background-image: url(./pictures/icons/tractor4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.orderImg5{
+    background-image: url(./pictures/icons/tractor5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.orderImg6{
+    background-image: url(./pictures/icons/tractor6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+Order bar
+*/
 
 .orderBar{
     background-image: url('./pictures/icons/bar1.png');
@@ -299,6 +337,13 @@
 }
 
 .contactUs{
+    margin-top: 115px;
+    width: 130px;
+}
+
+.contactUsAval{
+    text-align: center;
+    margin-top: 40px;
     width: 130px;
 }
 .contactUsButton{
@@ -337,7 +382,7 @@
 .progressBarImgI{
     height: 25%;
     width: 90%;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 140px;
     margin-left: 45px;
     background-size: contain;
@@ -355,6 +400,24 @@
     background-repeat: no-repeat;
     background-image: url('./pictures/progress-Bar/Search_bar-1.png');
 }
+
+.progressBarImgC{
+    height: 25%;
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 140px;
+    margin-left: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./pictures/progress-Bar/Search_bar_canceled.png');
+}
+.listCheckDivHelper{
+    display: flex;
+}
+.filterComponentsDiv{
+    display: flex;
+}
+
 
 
 /*
@@ -576,14 +639,6 @@ MOBIL
         display: none;
     }
     
-    .orderImg2{
-        background-image: url(./pictures/icons/tractor1.webp);
-        height: 130px;
-        width: 220px;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-    
     .orderBar{
         background-image: url('./pictures/icons/bar1.png');
         height: 160px;
@@ -744,5 +799,24 @@ MOBIL
     .progressBarImgI{
         display: none;
     }
+
     
 }
+
+@media only screen and (max-width : 896px) {
+    .listCheckDivHelper{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width : 470px) {
+
+    .filterComponentsDiv{
+        display: block;
+    }
+    
+
+}
+

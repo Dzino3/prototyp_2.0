@@ -62,10 +62,11 @@
     top: calc(100% + .5rem);
     
     padding: 1rem;
-    width: 186px;
+    width: 190px;
     margin-left: -27px;
     margin-top: -1px;
     list-style: none;
+    
 
     box-sizing: border-box;
     border-style: solid;
@@ -75,16 +76,16 @@
 }
   
 .kundenLi-Show {
-    margin: 0;
-    margin-left: 10px;
+    
     padding: 1rem 0;
     border-bottom: 1px solid #ccc;
-    text-align: left;
+    text-align: center;
+    font-size: 15px;
 }
 
 .checkbox-wrapper label:hover{
     cursor: pointer;
-    color: rgb(54, 124, 43);
+    color: black;
 }
   
 .kundenLi-Show:first-child {

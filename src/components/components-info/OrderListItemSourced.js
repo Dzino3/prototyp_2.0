@@ -14,7 +14,7 @@ function OrderListItemSourced({item, t}) {
       <div className='block'>
         {console.log(formatDate("26.09.2022"))}
         <p className='p2'>{t('listItemSLabel1')} </p>
-        <p>{item.FDD + " (" + Math.round((formatDate(item.FDD).getTime()-todayString.getTime()) / (1000 * 3600 *24)) + " days left)"}</p>
+        <p>{item.FDD + " (" + Math.round((formatDate(item.FDD).getTime()-formatDate("26.09.2022").getTime()) / (1000 * 3600 *24)) + " days left)"}</p>
         <p className='p2'>{t('listItemSLabelRDD')}</p>
         <p>{item.RDD}</p>
         <p className='p2'>{t('listItemSLabel2')} </p>

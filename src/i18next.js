@@ -244,9 +244,9 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 listItemLabel3: "PRES DATE:",
                 listItemLabel4: "Status",
 
-                listItemSLabel1: "Aktuelle Lieferdatum:",
+                listItemSLabel1: "Aktuelles Lieferdatum:",
                 listItemSLabelRDD: "Angefordertes Lieferdatum",
-                listItemSLabel2: "Aktuelle Lieferdatum - Angefordertes Lieferdatum:",
+                listItemSLabel2: "Aktuelles Lieferdatum - Angefordertes Lieferdatum:",
                 listItemSLabel3: "Verkauft:",
                 listItemSLabel4: "Eingangsdatum der Bestellung:",
                 listItemSLabel5: "Source Eingangsdatum der Bestellung:",
@@ -257,7 +257,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 listItemSLabel10: "Beschreibung des Basiscodes:",
                 listItemSLabel11: "Menge.:",
 
-                listItemULabel1: "Aktuelle Lieferdatum:",
+                listItemULabel1: "Aktuelles Lieferdatum:",
                 listItemULabel2: "Eingangsdatum der Bestellung:",
                 listItemULabel3: "Source Eingangsdatum der Bestellung:",
                 listItemULabel4: "Bestellstatus:",
@@ -266,7 +266,7 @@ i18next.use(initReactI18next).use(LanguageDetector).init({
                 listItemULabel7: "Beschreibung des Basiscodes:",
                 listItemULabel8: "Menge.:",
 
-                listItemILabel1: "Aktuelle Lieferdatum:",
+                listItemILabel1: "Aktuelles Lieferdatum:",
                 listItemILabel2: "Tatsächliches Lieferdatum:",
                 listItemILabel3: "Inv. Datum:",
                 listItemILabel4: "Rechnungsdatum:",

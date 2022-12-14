@@ -87,18 +87,11 @@ function ListForm({ user, t }) {
     setSort({ sorting_type: sor, ascending: isAscending });
   }
 
-  /*
-  <Checkbox label="Show Sourced" onClick={()=>addFilter("sourced")} checked={true}></Checkbox>
-  <Checkbox label="Show Unsourced" onClick={()=>addFilter("unsourced")} checked={true}></Checkbox>
-  <Checkbox label="Show Inventory" onClick={()=>addFilter("inventory")} checked={true}></Checkbox>
-  <Checkbox label="Show Canceled" onClick={()=>addFilter("canceled")} checked={false}></Checkbox>
-  */
-
   return (
     <>
       <div className='listDiv'>
         {orders.length !== 0 ? <h2 className='listH2'>{t('listLabel1')} {orders.length}</h2> : <h2 className='listH2'>{t('listLabel1')} </h2>}
-
+        <div className='listCheckDivHelper'>
         <div className='listCheckDiv'>
           <div className="checkboxDiv">
             <details className="custom-select-Show-2">
@@ -159,14 +152,16 @@ function ListForm({ user, t }) {
                 </li>
               </ul>
             </details>
-          </div>{filter.length > 0 ? <FilterComponent name={t('listFilter2')} para={null} func={removeAllFilter}></FilterComponent> : <></>}
-          {filter.map((element) =>{
-            return <FilterComponent name={element} para={element} func={removeFilter}></FilterComponent>
-          })}
+          </div>
           
         </div>
-
-
+          <div className='filterComponentsDiv'>
+            {filter.length > 0 ? <FilterComponent name={t('listFilter2')} para={null} func={removeAllFilter}></FilterComponent> : <></>}
+            {filter.map((element) =>{
+              return <FilterComponent name={element} para={element} func={removeFilter}></FilterComponent>
+            })}
+          </div>
+          </div>
         <div className='wrapper'>
           <div className='accordion'>
 

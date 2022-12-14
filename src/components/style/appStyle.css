@@ -1,8 +1,13 @@
-.App{
-    font-family: sans-serif;
-    width: 100vw;
-    height: 100vh;
+@font-face {
+    font-family: inter;
+    src: url(./fonts/Interwght.ttf);
 }
+
+
+.App{
+    font-family: inter;
+}
+
 body{
     margin: 0;
     padding: 0;

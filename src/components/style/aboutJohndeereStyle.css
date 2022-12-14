@@ -40,7 +40,7 @@
     padding: 10px 20px;
     font-weight: bold;
     border: none;
-    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
+    border-radius: 10px;
 }
 
 .aboutButton:hover{
@@ -70,20 +70,6 @@
     margin-left: 16%;
 }
 
-.aboutButton{
-    background-color: rgb(255, 222, 0);
-    display: inline-block;
-    padding: 10px 20px;
-    font-weight: bold;
-    border: none;
-    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
-}
-
-.aboutButton:hover{
-    cursor: pointer;
-    background-color: rgba(207, 180, 6, 0.925);
-}
-
 .about3{
     background-color: white;
     padding: 30px;
@@ -104,20 +90,6 @@
 .about3Group{
     display: block;
     margin-left: 16%;
-}
-
-.aboutButton{
-    background-color: rgb(255, 222, 0);
-    display: inline-block;
-    padding: 10px 20px;
-    font-weight: bold;
-    border: none;
-    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
-}
-
-.aboutButton:hover{
-    cursor: pointer;
-    background-color: rgba(207, 180, 6, 0.925);
 }
 
 .aboutIcons{
@@ -181,5 +153,9 @@
 
     .aboutText{
         width: 200px;
+    }
+
+    .aboutIconsFirst{
+        margin-left: 15%;
     }
 }
