@@ -145,11 +145,15 @@
     }
     
     .orderForm-groupButton{
-        display: flex;
+        display: block;
     }
     
     .orderInput{
         margin-bottom: 10px;
+    }
+
+    .checkButton{
+        margin-left: -30px;
     }
     
     .orderInput{
