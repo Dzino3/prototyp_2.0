@@ -1,6 +1,7 @@
 import React from 'react'
 import './style/kundenserviceStyle.css';
 
+//Subcomponent for navbar
 function Kundenservice({t}) {
   return (
     <>

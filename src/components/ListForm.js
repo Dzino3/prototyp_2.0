@@ -8,10 +8,10 @@ import Axios from 'axios';
 import FilterComponent from './FilterComponent';
 
 function ListForm({ user, t }) {
-  const [orders, setOrders] = useState([]);
-  const [amountOfOrdersShown, setAmountOfOrdersShown] = useState(5);
-  const [filter, setFilter] = useState([])
-  const [sort, setSort] = useState({ sorting_type: "", ascending: false });
+  const [orders, setOrders] = useState([]); //Array fir saving all the orders, for refference and database comminication
+  const [amountOfOrdersShown, setAmountOfOrdersShown] = useState(5); //Amount of orders
+  const [filter, setFilter] = useState([]) //For filtering Orders
+  const [sort, setSort] = useState({ sorting_type: "", ascending: false }); //For sorting 
 
   //gets called once when the landing page loads
   useEffect(() => {
@@ -35,6 +35,9 @@ function ListForm({ user, t }) {
 
   };
 
+  /* 
+  Explain
+  */
   function checkFilter(process_status) {
     if (filter.length === 0) {
       return true;
@@ -92,79 +95,82 @@ function ListForm({ user, t }) {
       <div className='listDiv'>
         {orders.length !== 0 ? <h2 className='listH2'>{t('listLabel1')} {orders.length}</h2> : <h2 className='listH2'>{t('listLabel1')} </h2>}
         <div className='listCheckDivHelper'>
-        <div className='listCheckDiv'>
-          <div className="checkboxDiv">
-            <details className="custom-select-Show-2">
-              <summary className="radios-Show-2">
-                <input className='kundenInput-Show-2' type="radio" name="item-Show-2" id="default-Show-2" title={t('listSort1')} checked />
-              </summary>
-              <ul className="list-Show-2">
-                <li className='kundenLi-Show-2'>
-                  <label for="item1-Sort-2">
-                    <input className='sortButton' type="button" value={t('listSort1o1')} onClick={() => addSort("order_number", false)}></input>
-                  </label>
-                </li>
-                <li className='kundenLi-Show-2'>
-                  <label for="item2-Sort-2">
-                    <input className='sortButton' type="button" value={t('listSort1o2')} onClick={() => addSort("order_number", true)}></input>
-                  </label>
-                </li>
-                <li className='kundenLi-Show-2'>
-                  <label for="item3-Sort-2">
-                    <input className='sortButton' type="button" value={t('listSort1o3')} onClick={() => addSort("base_code_description", false)}></input>
-                  </label>
-                </li>
-                <li className='kundenLi-Show-2'>
-                  <label for="item4-Sort-2">
-                    <input className='sortButton' type="button" value={t('listSort1o4')} onClick={() => addSort("base_code_description", true)}></input>
-                  </label>
-                </li>
-              </ul>
-            </details>
-          </div>
-
-          <div className="checkboxDiv">
-            <details className="custom-select-Show">
-              <summary className="radios-Show">
-                <input className='kundenInput-Show' type="radio" name="item-Show" id="default-Show" title={t('listFilter1')} checked />
-              </summary>
-              <ul className="list-Show">
-                <li className='kundenLi-Show'>
-                  <label for="item1-Show">
-                    <Checkbox className="checkbox" id="sourced" label={t('listFilter1o1')} onClick={() => addFilter("sourced")} checked={false}></Checkbox>
-                    <span></span>
-                  </label>
-                </li>
-                <li className='kundenLi-Show'>
-                  <label for="item2-Show">
-                    <Checkbox id="unsourced" label={t('listFilter1o2')} onClick={() => addFilter("unsourced")} checked={false}></Checkbox>
-                  </label>
-                </li>
-                <li className='kundenLi-Show'>
-                  <label for="item3-Show">
-                    <Checkbox id="inventory" label={t('listFilter1o3')} onClick={() => addFilter("inventory")} checked={false}></Checkbox>
-                  </label>
-                </li>
-                <li className='kundenLi-Show'>
-                  <label for="item4-Show">
-                    <Checkbox id="canceled" label={t('listFilter1o4')} onClick={() => addFilter("canceled")} checked={false}></Checkbox>
-                  </label>
-                </li>
-              </ul>
-            </details>
-          </div>
+          <div className='listCheckDiv'>
+            {/*Sorting part of the list */}
+            <div className="checkboxDiv">
+              <details className="custom-select-Show-2">
+                <summary className="radios-Show-2">
+                  <input className='kundenInput-Show-2' type="radio" name="item-Show-2" id="default-Show-2" title={t('listSort1')} checked />
+                </summary>
+                <ul className="list-Show-2">
+                  <li className='kundenLi-Show-2'>
+                    <label for="item1-Sort-2">
+                      <input className='sortButton' type="button" value={t('listSort1o1')} onClick={() => addSort("order_number", false)}></input>
+                    </label>
+                  </li>
+                  <li className='kundenLi-Show-2'>
+                    <label for="item2-Sort-2">
+                      <input className='sortButton' type="button" value={t('listSort1o2')} onClick={() => addSort("order_number", true)}></input>
+                    </label>
+                  </li>
+                  <li className='kundenLi-Show-2'>
+                    <label for="item3-Sort-2">
+                      <input className='sortButton' type="button" value={t('listSort1o3')} onClick={() => addSort("base_code_description", false)}></input>
+                    </label>
+                  </li>
+                  <li className='kundenLi-Show-2'>
+                    <label for="item4-Sort-2">
+                      <input className='sortButton' type="button" value={t('listSort1o4')} onClick={() => addSort("base_code_description", true)}></input>
+                    </label>
+                  </li>
+                </ul>
+              </details>
+            </div>
+            
+            {/*Filtering part of the list */}
+            <div className="checkboxDiv">
+              <details className="custom-select-Show">
+                <summary className="radios-Show">
+                  <input className='kundenInput-Show' type="radio" name="item-Show" id="default-Show" title={t('listFilter1')} checked />
+                </summary>
+                <ul className="list-Show">
+                  <li className='kundenLi-Show'>
+                    <label for="item1-Show">
+                      <Checkbox className="checkbox" id="sourced" label={t('listFilter1o1')} onClick={() => addFilter("sourced")} checked={false}></Checkbox>
+                      <span></span>
+                    </label>
+                  </li>
+                  <li className='kundenLi-Show'>
+                    <label for="item2-Show">
+                      <Checkbox id="unsourced" label={t('listFilter1o2')} onClick={() => addFilter("unsourced")} checked={false}></Checkbox>
+                    </label>
+                  </li>
+                  <li className='kundenLi-Show'>
+                    <label for="item3-Show">
+                      <Checkbox id="inventory" label={t('listFilter1o3')} onClick={() => addFilter("inventory")} checked={false}></Checkbox>
+                    </label>
+                  </li>
+                  <li className='kundenLi-Show'>
+                    <label for="item4-Show">
+                      <Checkbox id="canceled" label={t('listFilter1o4')} onClick={() => addFilter("canceled")} checked={false}></Checkbox>
+                    </label>
+                  </li>
+                </ul>
+              </details>
+            </div>
           
-        </div>
+          </div>
+          {/*Filter Component, shows pressed filter components*/}
           <div className='filterComponentsDiv'>
             {filter.length > 0 ? <FilterComponent name={t('listFilter2')} para={null} func={removeAllFilter}></FilterComponent> : <></>}
             {filter.map((element) =>{
               return <FilterComponent name={element} para={element} func={removeFilter}></FilterComponent>
             })}
           </div>
-          </div>
+        </div>
+
         <div className='wrapper'>
           <div className='accordion'>
-
             {orders.length !== 0 ?
               //if the backend responded with a list of all order, every order gets displayed
               orders.filter(unfiltered_item => checkFilter(unfiltered_item.PROCESS_STATUS) === true).sort((a, b) => checkSort(a, b)).map((item, index) => {
@@ -176,8 +182,8 @@ function ListForm({ user, t }) {
               : <></>}
           </div>
         </div>
+        {/*Button to show all or less items*/}
         <input className='checkButtonShow' type="button" value={amountOfOrdersShown !== orders.length ? t('listButton1') : t('listButton2')} onClick={showAll}></input>
-
       </div>
     </>
   )

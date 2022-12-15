@@ -5,12 +5,12 @@ import "./style/appStyle.css"
 import './style/navbarStyle.css';
 import './style/lngStyle.css'
 
-
+//Navbar component
 function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }) {
   const [showLinks, setShowLinks] = useState(false)
-  const [navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false) //variable for visibility of navbar
   
-
+  //Sets navbar to false when scrolling past 100px
   const changeBackground = () =>{
     if(window.scrollY >= 100){
       setNavbar(true)
@@ -18,17 +18,17 @@ function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }
       setNavbar(false)
     }
   }
-
+  //event for scrolling, makes navbar invisible
   window.addEventListener('scroll', changeBackground)
 
   return (
     <>
       <div className={navbar ? 'navbarDiv active' : 'navbarDiv'}>
-
         <div className="leftSide">
           <div className="links" id={showLinks ? "hidden" : ""}>
             <a className="realLink" onClick={() => { ShowsOrdersTrue(); }}>{t('navbarLabel1')}</a>
             <a className="realLink" onClick={() => { ShowsOrdersFalse(); }}>{t('navbarLabel2')}</a>
+            {/*Subcomponent for navbar*/}
             <Kundenservice t={t}></Kundenservice>
             <a className="hiddenLink" href='https://www.deere.de/de/ersatzteile-und-service/ersatzteile/suche-nach-teilen-h%C3%A4ufig-gestellte-fragen/' target="blank">{t('navbarLabel4o1')}</a>
             <a className="hiddenLink" target="blank" href='https://www.deere.de/de/ersatzteile-und-service/service/'>{t('navbarLabel4o2')}</a>
@@ -39,6 +39,7 @@ function NavbarForm({ Logout, ShowsOrdersFalse, ShowsOrdersTrue, t, i18n, lngs }
         </div>
         <div><a target="blank" href="https://www.deere.de/de/index.html" className='logoImgNav'></a></div>
         <div className="rightSide">
+          {/*Language change component*/}
           <LngChange lngs={lngs} i18n={i18n}></LngChange>
           <button onClick={Logout} className="logoutButton">{t('navbarLabel5')}</button>
         </div>

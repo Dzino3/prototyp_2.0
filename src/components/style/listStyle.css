@@ -130,15 +130,6 @@ Order Images
     width: 220px;
 }
 
-.orderImg1{
-    background-image: url(./pictures/icons/tractor1.png);
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .orderImg2{
     background-image: url(./pictures/icons/tractor2.webp);
     height: 130px;
@@ -147,41 +138,9 @@ Order Images
     background-repeat: no-repeat;
 }
 
-.orderImg3{
-    background-image: url(./pictures/icons/tractor3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.orderImg4{
-    background-image: url(./pictures/icons/tractor4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.orderImg5{
-    background-image: url(./pictures/icons/tractor5.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.orderImg6{
-    background-image: url(./pictures/icons/tractor6.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 /*
 Order bar
 */
-
-.orderBar{
-    background-image: url('./pictures/icons/bar1.png');
-    height: 160px;
-    width: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
 
 .checkButtonShow{
     background-color: rgb(255, 222, 0);
@@ -190,7 +149,7 @@ Order bar
     height: 35px;
     font-weight: bold;
     border: none;
-    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
+    border-radius: 6px;
     margin-top: 38px;
     margin-bottom: 30px;
 }
@@ -411,10 +370,21 @@ Order bar
     background-repeat: no-repeat;
     background-image: url('./pictures/progress-Bar/Search_bar_canceled.png');
 }
+
+/*
+Filter component
+*/
 .listCheckDivHelper{
     display: flex;
 }
 .filterComponentsDiv{
+    display: flex;
+}
+
+.listCheckDivHelperAval{
+    display: flex;
+}
+.filterComponentsDivAval{
     display: flex;
 }
 
@@ -517,10 +487,6 @@ MOBIL
         margin-left: 4%;
     }
     
-    .listH2{
-        padding: 20px;
-    }
-    
     
     /*
     
@@ -549,17 +515,17 @@ MOBIL
     
     .beforeDiv{
         display: block;
-        justify-content: space-between;
-        align-items: center;
         cursor: pointer;
     }
     
     .listItemH3{
         color: rgb(54, 124, 43);
+        width: 50px;
     }
     
     .toggleSpan{
-        margin-top: 15px;
+        margin-top: 48px;
+        margin-left: 10px;
         font-size: 20px;
         color: gray;
     }
@@ -595,7 +561,6 @@ MOBIL
 
     .orderStatusDiv{
         display: flex;
-        margin-left: -20px;
     }
     .topRow{
         display: flex;
@@ -637,26 +602,6 @@ MOBIL
     
     .orderImg2{
         display: none;
-    }
-    
-    .orderBar{
-        background-image: url('./pictures/icons/bar1.png');
-        height: 160px;
-        width: 100%;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-    
-    .checkButtonShow{
-        background-color: rgb(255, 222, 0);
-        display: inline-block;
-        padding: 10px 20px;
-        height: 35px;
-        font-weight: bold;
-        border: none;
-        box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
-        margin-top: 38px;
-        margin-bottom: 30px;
     }
     
     .block{
@@ -814,6 +759,23 @@ MOBIL
 @media only screen and (max-width : 470px) {
 
     .filterComponentsDiv{
+        display: block;
+    }
+    
+
+}
+
+@media only screen and (max-width : 1435px) {
+    .listCheckDivHelperAval{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media only screen and (max-width : 1045px) {
+
+    .filterComponentsDivAval{
         display: block;
     }
     

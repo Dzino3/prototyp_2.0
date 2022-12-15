@@ -86,6 +86,7 @@
     color: rgb(54, 124, 43);
     font-weight: bold;
     font-size: 18px;
+    margin-top: 40px;
 }
 
 .mobilStatusAval{
@@ -127,6 +128,32 @@
     display: block;
 }
 
+/*
+Availability List
+*/
+
+.toggleSpanAval{
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+.beforeDivAval{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.orderDiv2Aval{
+    display: flex;
+    margin-top: 6px;
+}
+
+.listItemH3Aval{
+    color: rgb(54, 124, 43);
+}
+
+
 @media only screen and (max-width : 1500px) {
 
     .p3{
@@ -144,6 +171,33 @@
         justify-content: right;
         width: 90%;
         display:flex;
+    }
+
+    .toggleSpanAval{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+        color: gray;
+    }
+
+    .p1Aval{
+        margin-top: 10px;
+    }
+
+    .beforeDivAval{
+        display: block;
+        cursor: pointer;
+    }
+
+    .orderDiv2Aval{
+        display: flex;
+        margin-left: 10px;
+        margin-top: 6px;
+    }
+    .listItemH3Aval{
+        color: rgb(54, 124, 43);
+        width: 50px;
+        margin-top: 50px;
     }
     
     /*

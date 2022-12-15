@@ -37,19 +37,19 @@ function AvalabilityListItem({user, item, selec = false, t }) {
   return (
     <div>
       <div className='item'>
-        <div className='beforeDiv' onClick={() => toggle()}>
+        <div className='beforeDivAval' onClick={() => toggle()}>
           <div className='orderDiv1'>
             <div className='topRow'>
-              <h3 className='listItemH3'>{item.PRODUCT}</h3>
+              <h3 className='listItemH3Aval'>{item.PRODUCT}</h3>
               <div className='mobilStatusAvalHidden'>
                 <div className='orderListDivFlex'>
                   <p className='p1Aval'>{translateCategory(item.CATEGORY)}</p>
                 </div>
-                <span className='toggleSpan'>{selected === true ? '▼' : '◄'}</span>
+                <span className='toggleSpanAval'>{selected === true ? '▼' : '◄'}</span>
               </div>
             </div>
             
-            <div className='orderDiv2'>
+            <div className='orderDiv2Aval'>
               <div className='orderListDivFlex'>
                 <p className='p1'>{t('avalItemLabel1')} </p>
                 <p>{item.BASE_CODE}</p>
@@ -65,7 +65,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
             <div className='orderListDivFlex'>
               <p className='p1Aval'>{translateCategory(item.CATEGORY)}</p>
             </div>
-            <span className='toggleSpan'>{selected === true ? '▼' : '◄'}</span>
+            <span className='toggleSpanAval'>{selected === true ? '▼' : '◄'}</span>
           </div>
         </div>
         <div>

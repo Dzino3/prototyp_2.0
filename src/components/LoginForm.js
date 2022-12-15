@@ -4,9 +4,10 @@ import { useTranslation } from 'react-i18next'
 
 function LoginForm({Login, error, t}) {
 
-    const [details, setDetails] = useState({acc: "", unit: ""});
+    const [details, setDetails] = useState({acc: "", unit: ""}); //variable for account details (Accoutn number and Unit code)
+
+    //callse when the Form is submitted
     const submitHandler = e => {
-        console.log(details.unit)
         e.preventDefault();
         Login(details);
     }
@@ -19,7 +20,6 @@ function LoginForm({Login, error, t}) {
             <div className='backgroundBlur'></div>
             
             <form onSubmit={submitHandler} className='loginForm'>
-                
                 <div className='form-inner'>
                     <h2 className='loginH2'>{t('loginWelcome')}</h2>
             
@@ -63,15 +63,12 @@ function LoginForm({Login, error, t}) {
                         <option className='unitOption' value="48">(48) Switzerland</option>
                         <option className='unitOption' value="48">(48) Ukraine</option>
                     </select>
-        
 
-            
                     <div className='loginForm-group'>
                         {(error !== "") ? (<div className='error'>{error}</div>) : ""}
                         <input type="text" name='acc' id='acc'className='loginInput' placeholder={t('loginAccN')} onChange={e => setDetails({...details, acc: e.target.value.slice(3,e.target.value.length)})} value={details.unit === "" ? details.acc : details.unit + "-" + details.acc}></input>
                         <input type="submit" value={t('loginButton')} className='loginButton'></input>
                     </div>
-            
                 </div>
             </form>
         </div>

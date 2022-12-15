@@ -1,6 +1,7 @@
 import React from 'react'
 import './style/aboutJohndeereStyle.css'
 
+//About John Deere section of the website
 function AboutJohnDeere({t}) {
   return (
     <div className='aboutWhole'>

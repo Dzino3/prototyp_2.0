@@ -4,6 +4,7 @@
     margin-left: 10.5%;
     display: block;
     width: 90%;
+    color: #7D7D7D;
 }
 
 .aboutText{
@@ -21,7 +22,7 @@
 }
 
 .about1Img{
-    margin-left: 15%;
+    margin-left: 13%;
     background-image: url('./pictures/infoImages/image1.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -67,7 +68,7 @@
 
 .about2Group{
     display: block;
-    margin-left: 16%;
+    margin-left: 13%;
 }
 
 .about3{
@@ -79,7 +80,7 @@
 }
 
 .about3Img{
-    margin-left: 15%;
+    margin-left: 13%;
     background-image: url('./pictures/infoImages/image3.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -136,7 +137,7 @@
 
 */
 
-@media only screen and (max-width : 750px) {
+@media only screen and (max-width : 1000px) {
 
     .about1Img{
         display: none;
@@ -146,6 +147,16 @@
     }
     .about3Img{
         display: none;
+    }
+
+    .about1Group{
+        margin-left: 10px;
+    }
+    .about2Group{
+        margin-left: 10px;
+    }
+    .about3Group{
+        margin-left: 10px;
     }
 }
 
@@ -157,5 +168,31 @@
 
     .aboutIconsFirst{
         margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width : 1700px) {
+
+    .about1Img{
+        margin-left: 7%;
+    }
+    .about2Group{
+        margin-left: 7%;
+    }
+    .about3Img{
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width : 1470px) {
+
+    .about1Img{
+        margin-left: 2%;
+    }
+    .about2Group{
+        margin-left: 2%;
+    }
+    .about3Img{
+        margin-left: 2%;
     }
 }

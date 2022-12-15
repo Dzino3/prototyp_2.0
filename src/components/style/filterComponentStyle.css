@@ -43,3 +43,13 @@
   
 
 }
+
+@media only screen and (max-width : 1045px) {
+
+  .FilterDiv{
+    margin-bottom: 10px;
+  }
+  
+
+}
+
