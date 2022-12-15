@@ -130,25 +130,3 @@
     margin-left: 90%;
     
 }
-
-
-
-
-@media only screen and (max-width : 445px) {
-    
-    .backgroundBlur{
-        width: 350px;
-    }
-    .loginH2{
-        margin-left: -30px;
-    }
-    .countrySelect{
-        margin-left: -30px;
-    }
-    .loginForm-group{
-        margin-left: -30px;
-    }
-    .logoImg{
-        margin-left: 24%;
-    }
-}

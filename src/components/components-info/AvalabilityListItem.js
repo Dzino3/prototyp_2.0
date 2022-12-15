@@ -9,6 +9,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
     setSelected(!selected)
   }
 
+  //Function for sending mails
   function Mailto({ email, subject, body, ...props }) {
     return (
       <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
@@ -17,6 +18,7 @@ function AvalabilityListItem({user, item, selec = false, t }) {
     );
   }
 
+  //Trabslator function
   function translateCategory(x){
     switch(x){
       case "Commercial Mowing":

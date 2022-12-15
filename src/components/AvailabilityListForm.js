@@ -217,11 +217,10 @@ function AvailabilityListForm({ user, t }) {
                   return <ListItem user={user} item={item} t={t}></ListItem>;
                 }
               })
-              : <></>}
+            : <></>}
           </div>
         </div>
         <input className='checkButtonShow' type="button" value={amountOfProductsShown !== products.length ? t('listButton1') : t('listButton2')} onClick={showAll}></input>
-
       </div>
     </>
   )

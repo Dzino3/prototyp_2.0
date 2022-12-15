@@ -4,12 +4,14 @@ import Axios from "axios"
 import Availability from './components-info/Availability';
 import ListItem from './components-info/AvalabilityListItem';
 
+//Component for searching individual base codes or model names
 function AvailabilityForm({user, t}) {
 
   const [produktInfo, setProduktInfo] = useState([]);
   const [enteredInput, setEnteredInput] = useState("");
   const [error, setError] = useState("");
 
+  //Function for looking if base code or model name isin the database
   const LookForProduct = () =>{
     Axios.post("https://codux.herokuapp.com/base_code", {input : enteredInput}).then((response) =>{
         if (response.data.length !== 0){
@@ -35,20 +37,19 @@ function AvailabilityForm({user, t}) {
 
   return (
     <>
-    <form className='avalForm'>
-
-    <div className='avalForm-inner'>
-        <div className='avalForm-group'>
-          <h2 className='avalH2'>{t('availabilityLabel1')}</h2>
-          {(error !== "") ? (<div className='avalError'>{error}</div>) : ""}
-          <div className='orderForm-AvalgroupButton'>
-            <input onKeyDown={handleKeyDown} placeholder={t('availabilityLabel2')} className='avalInput' type="text" name='base_code' id='base_code' onChange={e => setEnteredInput(e.target.value)} value={enteredInput}></input>
-            <input className='avalCheckButton' type="button" value={t('availabilityButton')} onClick={LookForProduct}></input>
+      <form className='avalForm'>
+        <div className='avalForm-inner'>
+          <div className='avalForm-group'>
+            <h2 className='avalH2'>{t('availabilityLabel1')}</h2>
+            {(error !== "") ? (<div className='avalError'>{error}</div>) : ""}
+            <div className='orderForm-AvalgroupButton'>
+              <input onKeyDown={handleKeyDown} placeholder={t('availabilityLabel2')} className='avalInput' type="text" name='base_code' id='base_code' onChange={e => setEnteredInput(e.target.value)} value={enteredInput}></input>
+              <input className='avalCheckButton' type="button" value={t('availabilityButton')} onClick={LookForProduct}></input>
+            </div>
           </div>
+          {produktInfo.length !== 0 ? produktInfo.map((item)=>{return <ListItem user={user} item={item} selec={true} t={t}></ListItem>; }) : <></>}
         </div>
-        {produktInfo.length !== 0 ? produktInfo.map((item)=>{return <ListItem user={user} item={item} selec={true} t={t}></ListItem>; }) : <></>}
-    </div>
-    </form>
+      </form>
     </>
   )
 }

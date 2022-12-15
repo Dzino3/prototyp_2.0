@@ -42,7 +42,7 @@
     height: 35px;
     font-weight: bold;
     border: none;
-    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.101);
+    border-radius: 6px;
 }
 .avalCheckButton:hover{
     background-color: rgba(207, 180, 6, 0.925);
@@ -309,5 +309,9 @@ Availability List
     .p3{
         font-weight: bold;
         margin-right: 20px;
+    }
+
+    .toggleSpanAval{
+        margin-top: 0px;
     }
 }
