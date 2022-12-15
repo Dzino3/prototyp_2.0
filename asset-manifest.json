@@ -1,18 +1,13 @@
 {
   "files": {
-    "main.css": "/prototyp_2.0/static/css/main.55585c0a.css",
-    "main.js": "/prototyp_2.0/static/js/main.13750b46.js",
+    "main.css": "/prototyp_2.0/static/css/main.182ecea7.css",
+    "main.js": "/prototyp_2.0/static/js/main.49e391a2.js",
     "static/js/787.84f719dc.chunk.js": "/prototyp_2.0/static/js/787.84f719dc.chunk.js",
     "static/media/backgroundFinal.jpg": "/prototyp_2.0/static/media/backgroundFinal.0660e8e90e57f2197291.jpg",
     "static/media/image3.jpg": "/prototyp_2.0/static/media/image3.a3696aceab90c015d8e8.jpg",
-    "static/media/tractor1.png": "/prototyp_2.0/static/media/tractor1.5143b78f79f3d980208e.png",
     "static/media/Interwght.ttf": "/prototyp_2.0/static/media/Interwght.49e5a1728db1870b15ef.ttf",
-    "static/media/tractor6.png": "/prototyp_2.0/static/media/tractor6.b49c076365e5b2d29850.png",
-    "static/media/tractor5.png": "/prototyp_2.0/static/media/tractor5.c3f839129ebabe55a7ae.png",
     "static/media/image2.jpg": "/prototyp_2.0/static/media/image2.0534f0fdb84c4dda9dca.jpg",
-    "static/media/tractor4.png": "/prototyp_2.0/static/media/tractor4.2723c3129255409a2bcd.png",
     "static/media/image1.jpg": "/prototyp_2.0/static/media/image1.88c868c5c5573423dab0.jpg",
-    "static/media/tractor3.png": "/prototyp_2.0/static/media/tractor3.22872a831148b25df968.png",
     "static/media/android-chrome-512x512.png": "/prototyp_2.0/static/media/android-chrome-512x512.5d2da5ec0d159a0736ab.png",
     "static/media/tractor2.webp": "/prototyp_2.0/static/media/tractor2.531e92ee041c7e4bf855.webp",
     "static/media/globus.png": "/prototyp_2.0/static/media/globus.29d883b11f20be41d033.png",
@@ -23,12 +18,12 @@
     "static/media/linkedin-icon.png": "/prototyp_2.0/static/media/linkedin-icon.6892b3ae328c7a1e055f.png",
     "static/media/Search_bar_canceled.png": "/prototyp_2.0/static/media/Search_bar_canceled.9e1ece7a62d37cc7358a.png",
     "index.html": "/prototyp_2.0/index.html",
-    "main.55585c0a.css.map": "/prototyp_2.0/static/css/main.55585c0a.css.map",
-    "main.13750b46.js.map": "/prototyp_2.0/static/js/main.13750b46.js.map",
+    "main.182ecea7.css.map": "/prototyp_2.0/static/css/main.182ecea7.css.map",
+    "main.49e391a2.js.map": "/prototyp_2.0/static/js/main.49e391a2.js.map",
     "787.84f719dc.chunk.js.map": "/prototyp_2.0/static/js/787.84f719dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55585c0a.css",
-    "static/js/main.13750b46.js"
+    "static/css/main.182ecea7.css",
+    "static/js/main.49e391a2.js"
   ]
 }
