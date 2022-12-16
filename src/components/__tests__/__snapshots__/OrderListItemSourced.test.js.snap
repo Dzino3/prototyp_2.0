@@ -2,89 +2,115 @@
 
 exports[`Rendering OrderListItemSourced should render OrderListItemSourced with item SOURCED 1`] = `
 <div
-  className="orderListItemSourced"
+  className="progressBarhelper"
 >
   <div
-    className="block"
+    className="orderListItemSourced"
   >
-    <p
-      className="p2"
+    <div
+      className="block"
     >
-      Factory delivery date: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+        listItemSLabel1
+         
+      </p>
+      <p>
+        26.09.2022 (0 days left)
+      </p>
+      <p
+        className="p2"
+      >
+        listItemSLabelRDD
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel2
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      FDD - RDD: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+        listItemSLabel4
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel5
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel6
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Sold: 
-    </p>
-    <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel3
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel7
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel8
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="p2"
+      >
+        listItemSLabel9
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel10
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel11
+         
+      </p>
+      <p />
+    </div>
   </div>
   <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Order entry date: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Order source date: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Req. ship date: 
-    </p>
-    <p />
-  </div>
-  <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Machine status: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Order status: 
-    </p>
-    <p />
-  </div>
-  <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Pres. date: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Base Code Desciption: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Qty.: 
-    </p>
-    <p />
-  </div>
+    className="progressBarImgS"
+  />
 </div>
 `;

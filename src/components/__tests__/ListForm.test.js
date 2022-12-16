@@ -9,18 +9,18 @@ describe(`Rendering ListForm`, () => {
             dealer: "Hallo42"
         };
         let tree = renderer.create(
-            <ListForm user={userX}></ListForm>
+            <ListForm user={userX} t={key => key}></ListForm>
         );
 
         expect(tree.toJSON()).toMatchSnapshot();
     });
 
-    // test('should render ListForm with empty user', function () {
-    //     let userX = {};
-    //     let tree = renderer.create(
-    //         <ListForm user={userX}></ListForm>
-    //     );
+    test.skip('should render ListForm with empty user', function () {
+        let userX = {};
+        let tree = renderer.create(
+            <ListForm user={userX} t={key => key}></ListForm>
+        );
 
-    //     expect(tree.toJSON()).toMatchSnapshot();
-    // });
+        expect(tree.toJSON()).toMatchSnapshot();
+    });
 })

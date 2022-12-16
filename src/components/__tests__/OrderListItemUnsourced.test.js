@@ -8,7 +8,7 @@ describe(`Rendering OrderListItemSourced`, () => {
         let itemX = {
             item: "UNSOURCED"
         }
-        let tree = renderer.create(<OrderListItemUnsourced item={itemX}></OrderListItemUnsourced>);
+        let tree = renderer.create(<OrderListItemUnsourced item={itemX} t={key => key}></OrderListItemUnsourced>);
 
         expect(tree.toJSON()).toMatchSnapshot();
     });

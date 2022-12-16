@@ -1,14 +1,36 @@
-import App from '../Checkbox';
 import React from "react";
 import renderer from 'react-test-renderer';
+import Checkbox from '../Checkbox';
 
-import { useState } from "react";
+import { useState as useStateMock } from "react";
+
+jest.mock('react', () => ({
+  ...jest.requireActual('react'),
+  useState: jest.fn(),
+}))
 
 describe(`Rendering Checkbox `, () => {
+    const setState = jest.fn()
 
-    test.skip('should render Checkbox', function () {
-        // let tree = renderer.create(<App/>);
+    beforeEach(() => {
+      useStateMock.mockImplementation(init => [init, setState])
+    })
 
-        // expect(tree.toJSON()).toMatchSnapshot();
+    test('should render Checkbox', function () {
+        let labelX = "Hallo42";
+        let checkedX = "true";
+
+        let tree = renderer.create(<Checkbox label={labelX} checked={checkedX}/>);
+        expect(tree.toJSON()).toMatchSnapshot();
     });
+
+    it('checkbox state', () => {
+      
+      let tree = renderer.create(
+        <Checkbox />
+      )
+      expect(setState).toHaveBeenCalledTimes(0)
+      expect(tree).toBeTruthy()
+     
+    })
 })

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering Checkbox  should render Checkbox 1`] = `
+<div
+  className="checkbox-wrapper"
+>
+  <label>
+    <input
+      checked="true"
+      className="checkBoxInput"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="spanLabel"
+    >
+      Hallo42
+    </span>
+  </label>
+</div>
+`;

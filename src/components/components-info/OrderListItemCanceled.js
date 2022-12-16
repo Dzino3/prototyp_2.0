@@ -1,6 +1,7 @@
 import { t } from 'i18next'
 import React from 'react'
 
+//Subcomponent for Canceled orders
 function OrderListItemCanceled({ item }) {
   return (
     <div className='progressBarhelper'>

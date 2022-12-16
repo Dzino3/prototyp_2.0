@@ -8,14 +8,14 @@ describe(`Rendering OrderListItemInventory`, () => {
         let itemX = {
             item: "INVENTORY"
         }
-        let tree = renderer.create(<OrderListItemInventory item={itemX}></OrderListItemInventory>);
+        let tree = renderer.create(<OrderListItemInventory item={itemX} t={key => key}></OrderListItemInventory>);
 
         expect(tree.toJSON()).toMatchSnapshot();
     });
 
     test('should render OrderListItemInventory with no item', function () {
         let itemX = {}
-        let tree = renderer.create(<OrderListItemInventory item={itemX}></OrderListItemInventory>);
+        let tree = renderer.create(<OrderListItemInventory item={itemX} t={key => key}></OrderListItemInventory>);
 
         expect(tree.toJSON()).toMatchSnapshot();
     });

@@ -17,9 +17,9 @@ import renderer from 'react-test-renderer';
 
 describe(`Rendering NavbarForm`, () => {
 
-    test('should render NavbarForm', function () {
+    test.skip('should render NavbarForm', function () {
         let tree = renderer.create(
-        <NavbarForm></NavbarForm>);
+        <NavbarForm />);
 
         expect(tree.toJSON()).toMatchSnapshot();
     });

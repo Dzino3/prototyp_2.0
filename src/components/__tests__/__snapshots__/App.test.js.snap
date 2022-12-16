@@ -5,16 +5,60 @@ exports[`Rendering App should render App 1`] = `
   className="App"
 >
   <div
+    className="lngsLogin"
+  >
+    <div>
+      <div
+        className="lngSelect"
+      >
+        <details
+          className="custom-select-Lng"
+        >
+          <summary
+            className="radios-Lng"
+          />
+          <ul
+            className="list-Lng"
+          >
+            <li
+              className="kundenLi-Lng"
+            >
+              <input
+                className="lngButton"
+                disabled={false}
+                for="EN"
+                onClick={[Function]}
+                type="button"
+                value="EN"
+              />
+              <input
+                className="lngButton"
+                disabled={false}
+                for="DE"
+                onClick={[Function]}
+                type="button"
+                value="DE"
+              />
+            </li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div
     className="loginFormWhole"
   >
     <div
       className="backImg"
     />
     <div
-      className="fuckYou"
+      className="loginDivnt"
     >
       <div
         className="logoImg"
+      />
+      <div
+        className="backgroundBlur"
       />
       <form
         className="loginForm"
@@ -26,7 +70,7 @@ exports[`Rendering App should render App 1`] = `
           <h2
             className="loginH2"
           >
-            Welcome to the Tracker
+            loginWelcome
           </h2>
           <select
             className="countrySelect"
@@ -34,8 +78,10 @@ exports[`Rendering App should render App 1`] = `
             name="country"
             onChange={[Function]}
           >
-            <option>
-              Select your (unit) country
+            <option
+              disabled={false}
+            >
+              loginSelect
             </option>
             <option
               className="unitOption"
@@ -201,9 +247,9 @@ exports[`Rendering App should render App 1`] = `
             </option>
             <option
               className="unitOption"
-              value="32"
+              value="48"
             >
-              (32) Romania
+              (48) Romania
             </option>
             <option
               className="unitOption"
@@ -257,23 +303,19 @@ exports[`Rendering App should render App 1`] = `
           <div
             className="loginForm-group"
           >
-            <label
-              className="loginLabel"
-            >
-              Account number:
-            </label>
             <input
               className="loginInput"
               id="acc"
               name="acc"
               onChange={[Function]}
+              placeholder="loginAccN"
               type="text"
               value=""
             />
             <input
               className="loginButton"
               type="submit"
-              value="Login"
+              value="loginButton"
             />
           </div>
         </div>

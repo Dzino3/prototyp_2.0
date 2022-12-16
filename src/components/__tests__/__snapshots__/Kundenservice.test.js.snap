@@ -7,42 +7,7 @@ exports[`Rendering Kundenservice should render Kundenservice 1`] = `
   <summary
     className="radios"
   >
-    <input
-      checked={true}
-      className="kundenInput"
-      id="default"
-      name="item"
-      title="Customer support"
-      type="radio"
-    />
-    <input
-      className="kundenInput"
-      id="item1"
-      name="item"
-      title="FAQ"
-      type="radio"
-    />
-    <input
-      className="kundenInput"
-      id="item2"
-      name="item"
-      title="Service"
-      type="radio"
-    />
-    <input
-      className="kundenInput"
-      id="item3"
-      name="item"
-      title="Newsletter"
-      type="radio"
-    />
-    <input
-      className="kundenInput"
-      id="item4"
-      name="item"
-      title="Privacy policy"
-      type="radio"
-    />
+    navbarLabel4
   </summary>
   <ul
     className="list"
@@ -57,7 +22,7 @@ exports[`Rendering Kundenservice should render Kundenservice 1`] = `
           href="https://www.deere.de/de/ersatzteile-und-service/ersatzteile/suche-nach-teilen-h%C3%A4ufig-gestellte-fragen/"
           target="blank"
         >
-          FAQ
+          navbarLabel4o1
         </a>
         <span />
       </label>
@@ -72,7 +37,7 @@ exports[`Rendering Kundenservice should render Kundenservice 1`] = `
           href="https://www.deere.de/de/ersatzteile-und-service/service/"
           target="blank"
         >
-          Service
+          navbarLabel4o2
         </a>
       </label>
     </li>
@@ -86,7 +51,7 @@ exports[`Rendering Kundenservice should render Kundenservice 1`] = `
           href="https://www.deere.de/de/forms/digital-news-service/"
           target="blank"
         >
-          Newsletter
+          navbarLabel4o3
         </a>
       </label>
     </li>
@@ -100,7 +65,7 @@ exports[`Rendering Kundenservice should render Kundenservice 1`] = `
           href="https://www.deere.de/de/datenschutzerkl%C3%A4rung/"
           target="blank"
         >
-          Privacy and Data
+          navbarLabel4o4
         </a>
       </label>
     </li>

@@ -13,27 +13,28 @@ exports[`Rendering AvailabilityForm should render AvailabilityForm with empty 1`
       <h2
         className="avalH2"
       >
-        Availability
+        availabilityLabel1
       </h2>
-      <label
-        className="avalLabel"
+      <div
+        className="orderForm-AvalgroupButton"
       >
-        Base Code:
-      </label>
-      <input
-        className="avalInput"
-        id="base_code"
-        name="base_code"
-        onChange={[Function]}
-        type="text"
-        value=""
-      />
-      <input
-        className="avalCheckButton"
-        onClick={[Function]}
-        type="button"
-        value="Check"
-      />
+        <input
+          className="avalInput"
+          id="base_code"
+          name="base_code"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="availabilityLabel2"
+          type="text"
+          value=""
+        />
+        <input
+          className="avalCheckButton"
+          onClick={[Function]}
+          type="button"
+          value="availabilityButton"
+        />
+      </div>
     </div>
   </div>
 </form>
@@ -52,27 +53,28 @@ exports[`Rendering AvailabilityForm should render AvailabilityForm with user Hal
       <h2
         className="avalH2"
       >
-        Availability
+        availabilityLabel1
       </h2>
-      <label
-        className="avalLabel"
+      <div
+        className="orderForm-AvalgroupButton"
       >
-        Base Code:
-      </label>
-      <input
-        className="avalInput"
-        id="base_code"
-        name="base_code"
-        onChange={[Function]}
-        type="text"
-        value=""
-      />
-      <input
-        className="avalCheckButton"
-        onClick={[Function]}
-        type="button"
-        value="Check"
-      />
+        <input
+          className="avalInput"
+          id="base_code"
+          name="base_code"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="availabilityLabel2"
+          type="text"
+          value=""
+        />
+        <input
+          className="avalCheckButton"
+          onClick={[Function]}
+          type="button"
+          value="availabilityButton"
+        />
+      </div>
     </div>
   </div>
 </form>

@@ -8,8 +8,10 @@ describe(`Rendering HeroForm`, () => {
         let userX = {
             dealer: "Hallo42"
         };
+
+
         let tree = renderer.create(
-            <HeroForm user={userX}></HeroForm>
+            <HeroForm user={userX} t={key => key}></HeroForm>
         );
 
         expect(tree.toJSON()).toMatchSnapshot();
@@ -18,7 +20,7 @@ describe(`Rendering HeroForm`, () => {
     test('should render HeroForm with empty user', function () {
         let userX = {};
         let tree = renderer.create(
-            <HeroForm user={userX}></HeroForm>
+            <HeroForm user={userX} t={key => key}></HeroForm>
         );
 
         expect(tree.toJSON()).toMatchSnapshot();

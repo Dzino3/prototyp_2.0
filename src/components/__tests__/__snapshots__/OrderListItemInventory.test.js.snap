@@ -2,142 +2,158 @@
 
 exports[`Rendering OrderListItemInventory should render OrderListItemInventory with item INVENTORY 1`] = `
 <div
-  className="orderListItemInventory"
+  className="progressBarhelper"
 >
   <div
-    className="block"
+    className="orderListItemInventory"
   >
-    <p
-      className="p2"
+    <div
+      className="block"
     >
-      Factory delivery date: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+        listItemILabel1
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemILabel2
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      ADD: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+        listItemILabel4
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemILabel5
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Inv. date: 
-    </p>
-    <p />
+      <p
+        className="p2"
+      >
+        listItemILabel6
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemILabel3
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="p2"
+      >
+        listItemILabel8
+         
+      </p>
+      <p />
+    </div>
   </div>
   <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Billing date: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Billing number: 
-    </p>
-    <p />
-  </div>
-  <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Days on Inv.: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Order status: 
-    </p>
-    <p />
-  </div>
-  <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Qty.: 
-    </p>
-    <p />
-  </div>
+    className="progressBarImgI"
+  />
 </div>
 `;
 
 exports[`Rendering OrderListItemInventory should render OrderListItemInventory with no item 1`] = `
 <div
-  className="orderListItemInventory"
+  className="progressBarhelper"
 >
   <div
-    className="block"
+    className="orderListItemInventory"
   >
-    <p
-      className="p2"
+    <div
+      className="block"
     >
-      Factory delivery date: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+        listItemILabel1
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemILabel2
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      ADD: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+        listItemILabel4
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemILabel5
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Inv. date: 
-    </p>
-    <p />
+      <p
+        className="p2"
+      >
+        listItemILabel6
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemILabel3
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="p2"
+      >
+        listItemILabel8
+         
+      </p>
+      <p />
+    </div>
   </div>
   <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Billing date: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Billing number: 
-    </p>
-    <p />
-  </div>
-  <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Days on Inv.: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Order status: 
-    </p>
-    <p />
-  </div>
-  <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Qty.: 
-    </p>
-    <p />
-  </div>
+    className="progressBarImgI"
+  />
 </div>
 `;

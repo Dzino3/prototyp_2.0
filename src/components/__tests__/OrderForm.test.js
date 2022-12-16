@@ -9,7 +9,7 @@ describe(`Rendering OrderForm`, () => {
             dealer: "Hallo42"
         };
         let tree = renderer.create(
-            <OrderForm user={userX}></OrderForm>
+            <OrderForm user={userX} t={key => key}></OrderForm>
         );
 
         expect(tree.toJSON()).toMatchSnapshot();
@@ -18,7 +18,7 @@ describe(`Rendering OrderForm`, () => {
     it('should render OrderForm with empty user', function () {
         let userX = {}
         let tree = renderer.create(
-            <OrderForm user={userX}></OrderForm>
+            <OrderForm user={userX} t={key => key}></OrderForm>
         );
 
         expect(tree.toJSON()).toMatchSnapshot();

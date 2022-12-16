@@ -2,71 +2,79 @@
 
 exports[`Rendering OrderListItemSourced should render OrderListItemSourced with item UNSOURCED 1`] = `
 <div
-  className="orderListItemUnsourced"
+  className="progressBarhelper"
 >
   <div
-    className="block"
+    className="orderListItemUnsourced"
   >
-    <p
-      className="p2"
+    <div
+      className="block"
     >
-      Factory delivery date: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+        listItemULabel2
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel3
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Order entry date: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+        listItemCLabel1
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemULabel5
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Order source date: 
-    </p>
-    <p />
+      <p
+        className="p2"
+      >
+        listItemULabel6
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemULabel7
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="p2"
+      >
+        listItemULabel8
+         
+      </p>
+      <p />
+    </div>
   </div>
   <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Order status: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Req. ship date: 
-    </p>
-    <p />
-  </div>
-  <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Pres. date: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Base Code Desciption: 
-    </p>
-    <p />
-  </div>
-  <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Qty.: 
-    </p>
-    <p />
-  </div>
+    className="progressBarImgU"
+  />
 </div>
 `;

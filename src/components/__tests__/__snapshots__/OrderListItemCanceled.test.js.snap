@@ -2,102 +2,124 @@
 
 exports[`Rendering OrderListItemCanceled should render OrderListItemCanceled with item CANCELED 1`] = `
 <div
-  className="orderListItemCanceled"
+  className="progressBarhelper"
 >
   <div
-    className="block"
+    className="orderListItemCanceled"
   >
-    <p
-      className="p2"
+    <div
+      className="block"
     >
-      RDD: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Req. ship date: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Order entry date: 
-    </p>
-    <p />
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+    </div>
   </div>
   <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Date of cancellation:
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Cancellation Moth: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Reason: 
-    </p>
-    <p />
-  </div>
+    className="progressBarImgC"
+  />
 </div>
 `;
 
 exports[`Rendering OrderListItemCanceled should render OrderListItemCanceled with no item 1`] = `
 <div
-  className="orderListItemCanceled"
+  className="progressBarhelper"
 >
   <div
-    className="block"
+    className="orderListItemCanceled"
   >
-    <p
-      className="p2"
+    <div
+      className="block"
     >
-      RDD: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Req. ship date: 
-    </p>
-    <p />
-    <p
-      className="p2"
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
     >
-      Order entry date: 
-    </p>
-    <p />
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+         
+      </p>
+      <p />
+    </div>
   </div>
   <div
-    className="block"
-  >
-    <p
-      className="p2"
-    >
-      Date of cancellation:
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Cancellation Moth: 
-    </p>
-    <p />
-    <p
-      className="p2"
-    >
-      Reason: 
-    </p>
-    <p />
-  </div>
+    className="progressBarImgC"
+  />
 </div>
 `;

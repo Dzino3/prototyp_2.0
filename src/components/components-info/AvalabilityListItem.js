@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Axios from "axios"
 
+//Subcomponent for individual products
 function AvalabilityListItem({user, item, selec = false, t }) {
 
   const [selected, setSelected] = useState(selec);

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import '../style/listStyle.css'
+
+//Subcompoments for individual type of status a order can have
 import OrderListItemSourced from './OrderListItemSourced';
 import OrderListItemUnsourced from './OrderListItemUnsourced';
 import OrderListItemInventory from './OrderListItemInventory';
 import OrderListItemCanceled from './OrderListItemCanceled';
 
+//Subcompoment for individual orders in the order list
 function OrderListItem({ item, selec = false, t }) {
 
   const [selected, setSelected] = useState(selec);
@@ -26,16 +29,13 @@ function OrderListItem({ item, selec = false, t }) {
     }
   }
 
+  //Function for sending emails - Deafault sends to CODUX email
   function Mailto({ email, subject, body, ...props }) {
     return (
       <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
         {props.children}
       </a>
     );
-  }
-
-  function getRandomNumber(){
-    return Math.floor(Math.random() * (6 - 1 + 1)) + 1;
   }
 
   return (

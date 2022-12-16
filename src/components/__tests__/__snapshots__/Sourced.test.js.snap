@@ -1,391 +1,231 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rendering Sourced should render Sourced with empty sourcedInfo  1`] = `
-<div>
+exports[`Rendering OrderListItemSourced should render OrderListItemSourced with sourcedInfo  1`] = `
+<div
+  className="progressBarhelper"
+>
   <div
-    className="orderInfo"
+    className="orderListItemSourced"
   >
     <div
-      className="infoSourcedLabel"
+      className="block"
     >
-      <h3
-        className="orderH3"
+      <p
+        className="p2"
       >
-        Sourced
-      </h3>
-      <label
-        className="reqInfo"
+        listItemSLabel1
+         
+      </p>
+      <p>
+        26.09.2022 (0 days left)
+      </p>
+      <p
+        className="p2"
       >
-        ACC:
-      </label>
-      <label
-        className="reqInfo"
+        listItemSLabelRDD
+      </p>
+      <p />
+      <p
+        className="p2"
       >
-        Base Code Description:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Factory Delivery:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Original Factory Delivery:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Requested Delivery:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        FDD-RDD:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Sold:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Order entry date:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Order source date:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Machine status:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Order staus:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Req. ship date:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Pres date:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Qty.:
-      </label>
+        listItemSLabel2
+         
+      </p>
+      <p />
     </div>
     <div
-      className="infoSourced"
+      className="block"
     >
-      <h3
-        className="orderH3i"
+      <p
+        className="p2"
       >
-        Info
-      </h3>
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="ACCinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Base Code Descriptioninfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="FDDinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="OFDDinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="RDDinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="FDD-RDDinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Soldinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Order entry dateinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Order source dateinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Machine statusinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Order stausinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Req. ship dateinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Pres dateinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Qtyinfo"
-        name="info"
-        type="text"
-      />
+        listItemSLabel4
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel5
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel6
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="p2"
+      >
+        listItemSLabel3
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel7
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel8
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="p2"
+      >
+        listItemSLabel9
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel10
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel11
+         
+      </p>
+      <p />
     </div>
   </div>
+  <div
+    className="progressBarImgS"
+  />
 </div>
 `;
 
-exports[`Rendering Sourced should render Sourced with sourcedInfo  1`] = `
-<div>
+exports[`Rendering OrderListItemSourced should render Sourced with empty sourcedInfo  1`] = `
+<div
+  className="progressBarhelper"
+>
   <div
-    className="orderInfo"
+    className="orderListItemSourced"
   >
     <div
-      className="infoSourcedLabel"
+      className="block"
     >
-      <h3
-        className="orderH3"
+      <p
+        className="p2"
       >
-        Sourced
-      </h3>
-      <label
-        className="reqInfo"
+        listItemSLabel1
+         
+      </p>
+      <p>
+        26.09.2022 (0 days left)
+      </p>
+      <p
+        className="p2"
       >
-        ACC:
-      </label>
-      <label
-        className="reqInfo"
+        listItemSLabelRDD
+      </p>
+      <p />
+      <p
+        className="p2"
       >
-        Base Code Description:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Factory Delivery:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Original Factory Delivery:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Requested Delivery:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        FDD-RDD:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Sold:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Order entry date:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Order source date:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Machine status:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Order staus:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Req. ship date:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Pres date:
-      </label>
-      <label
-        className="reqInfo"
-      >
-        Qty.:
-      </label>
+        listItemSLabel2
+         
+      </p>
+      <p />
     </div>
     <div
-      className="infoSourced"
+      className="block"
     >
-      <h3
-        className="orderH3i"
+      <p
+        className="p2"
       >
-        Info
-      </h3>
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="ACCinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Base Code Descriptioninfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="FDDinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="OFDDinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="RDDinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="FDD-RDDinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Soldinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Order entry dateinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Order source dateinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Machine statusinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Order stausinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Req. ship dateinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Pres dateinfo"
-        name="info"
-        type="text"
-      />
-      <input
-        className="reqInfoOut"
-        disabled={true}
-        id="Qtyinfo"
-        name="info"
-        type="text"
-      />
+        listItemSLabel4
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel5
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel6
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="p2"
+      >
+        listItemSLabel3
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel7
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel8
+         
+      </p>
+      <p />
+    </div>
+    <div
+      className="block"
+    >
+      <p
+        className="p2"
+      >
+        listItemSLabel9
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel10
+         
+      </p>
+      <p />
+      <p
+        className="p2"
+      >
+        listItemSLabel11
+         
+      </p>
+      <p />
     </div>
   </div>
+  <div
+    className="progressBarImgS"
+  />
 </div>
 `;

@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const lngChange = "Lng";
 
 function LanguageChange({lngs, i18n}) {

@@ -8,10 +8,13 @@ exports[`Rendering LoginForm should render LoginForm component when login failed
     className="backImg"
   />
   <div
-    className="fuckYou"
+    className="loginDivnt"
   >
     <div
       className="logoImg"
+    />
+    <div
+      className="backgroundBlur"
     />
     <form
       className="loginForm"
@@ -23,7 +26,7 @@ exports[`Rendering LoginForm should render LoginForm component when login failed
         <h2
           className="loginH2"
         >
-          Welcome to the Tracker
+          loginWelcome
         </h2>
         <select
           className="countrySelect"
@@ -31,8 +34,10 @@ exports[`Rendering LoginForm should render LoginForm component when login failed
           name="country"
           onChange={[Function]}
         >
-          <option>
-            Select your (unit) country
+          <option
+            disabled={false}
+          >
+            loginSelect
           </option>
           <option
             className="unitOption"
@@ -198,9 +203,9 @@ exports[`Rendering LoginForm should render LoginForm component when login failed
           </option>
           <option
             className="unitOption"
-            value="32"
+            value="48"
           >
-            (32) Romania
+            (48) Romania
           </option>
           <option
             className="unitOption"
@@ -257,23 +262,19 @@ exports[`Rendering LoginForm should render LoginForm component when login failed
           <div
             className="error"
           />
-          <label
-            className="loginLabel"
-          >
-            Account number:
-          </label>
           <input
             className="loginInput"
             id="acc"
             name="acc"
             onChange={[Function]}
+            placeholder="loginAccN"
             type="text"
             value=""
           />
           <input
             className="loginButton"
             type="submit"
-            value="Login"
+            value="loginButton"
           />
         </div>
       </div>
@@ -290,10 +291,13 @@ exports[`Rendering LoginForm should render LoginForm component when login succee
     className="backImg"
   />
   <div
-    className="fuckYou"
+    className="loginDivnt"
   >
     <div
       className="logoImg"
+    />
+    <div
+      className="backgroundBlur"
     />
     <form
       className="loginForm"
@@ -305,7 +309,7 @@ exports[`Rendering LoginForm should render LoginForm component when login succee
         <h2
           className="loginH2"
         >
-          Welcome to the Tracker
+          loginWelcome
         </h2>
         <select
           className="countrySelect"
@@ -313,8 +317,10 @@ exports[`Rendering LoginForm should render LoginForm component when login succee
           name="country"
           onChange={[Function]}
         >
-          <option>
-            Select your (unit) country
+          <option
+            disabled={false}
+          >
+            loginSelect
           </option>
           <option
             className="unitOption"
@@ -480,9 +486,9 @@ exports[`Rendering LoginForm should render LoginForm component when login succee
           </option>
           <option
             className="unitOption"
-            value="32"
+            value="48"
           >
-            (32) Romania
+            (48) Romania
           </option>
           <option
             className="unitOption"
@@ -539,23 +545,19 @@ exports[`Rendering LoginForm should render LoginForm component when login succee
           <div
             className="error"
           />
-          <label
-            className="loginLabel"
-          >
-            Account number:
-          </label>
           <input
             className="loginInput"
             id="acc"
             name="acc"
             onChange={[Function]}
+            placeholder="loginAccN"
             type="text"
             value=""
           />
           <input
             className="loginButton"
             type="submit"
-            value="Login"
+            value="loginButton"
           />
         </div>
       </div>

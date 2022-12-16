@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+//Subcomponent for orders in Inventory
 function OrderListItemInventory({item, t}) {
   return (
     <div className='progressBarhelper'>

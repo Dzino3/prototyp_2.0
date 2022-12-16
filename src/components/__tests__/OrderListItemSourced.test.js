@@ -6,9 +6,9 @@ describe(`Rendering OrderListItemSourced`, () => {
 
     test('should render OrderListItemSourced with item SOURCED', function () {
         let itemX = {
-            item: "SOURCED"
-        }
-        let tree = renderer.create(<OrderListItemSourced item={itemX}></OrderListItemSourced>);
+            FDD: "26.09.2022"
+        };
+        let tree = renderer.create(<OrderListItemSourced item={itemX} t={key => key}></OrderListItemSourced>);
 
         expect(tree.toJSON()).toMatchSnapshot();
     });

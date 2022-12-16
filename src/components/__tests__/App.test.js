@@ -1,22 +1,12 @@
-import App from '../../App';
 import React from "react";
-import renderer from 'react-test-renderer';
+import renderer from "react-test-renderer";
+import App from "../../App";
 
-// describe('something truthy and falsy', () => {
-//     test.skip('true to be true', () => {
-//       expect(true).toBe(true);
-//     });
-  
-//     test.skip('false to be false', () => {
-//       expect(false).toBe(false);
-//     });
-//   });
 
-  describe(`Rendering App`, () => {
+describe(`Rendering App`, () => {
+  test("should render App", function () {
+    let tree = renderer.create(<App />);
 
-    test('should render App', function () {
-        let tree = renderer.create(<App/>);
-
-        expect(tree.toJSON()).toMatchSnapshot();
-    });
-})
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
+});
